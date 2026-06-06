@@ -41,7 +41,8 @@ function Index() {
   useLenisScroll();
 
   return (
-    <div className="min-h-screen bg-cream overflow-x-hidden">
+    <div className="relative min-h-screen bg-cream overflow-x-hidden">
+      <ParallaxBackdrop />
       <CinematicEntry />
       <Navbar />
       <main>
