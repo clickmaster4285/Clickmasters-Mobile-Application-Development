@@ -15,7 +15,7 @@ import { Footer } from "@/components/landing/Footer";
 import { FAQ } from "@/components/landing/FAQ";
 import { Industries } from "@/components/landing/Industries";
 import { FloatingContact } from "@/components/landing/FloatingContact";
-import { useLenisScroll } from "@/components/landing/motion";
+import { useLenisScroll, ParallaxBackdrop } from "@/components/landing/motion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,7 +41,8 @@ function Index() {
   useLenisScroll();
 
   return (
-    <div className="min-h-screen bg-cream overflow-x-hidden">
+    <div className="relative min-h-screen bg-cream overflow-x-hidden">
+      <ParallaxBackdrop />
       <CinematicEntry />
       <Navbar />
       <main>

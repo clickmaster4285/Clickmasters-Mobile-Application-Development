@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
 import Lenis from "lenis";
 
 let lenisStarted = false;
@@ -170,5 +170,92 @@ export function MouseParallax({
     >
       {children}
     </motion.div>
+  );
+}
+
+const staggerContainerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.15 },
+  },
+};
+
+const staggerItemVariants: Variants = {
+  hidden: { opacity: 0, filter: "blur(10px)", y: 24 },
+  visible: {
+    opacity: 1,
+    filter: "blur(0px)",
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
+export function StaggerContainer({
+  children,
+  className,
+  as: Component = motion.div,
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: typeof motion.div;
+}) {
+  return (
+    <Component
+      className={className}
+      variants={staggerContainerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+    >
+      {children}
+    </Component>
+  );
+}
+
+export function StaggerItem({ children, className }: { children: ReactNode; className?: string }) {
+  return (
+    <motion.div className={className} variants={staggerItemVariants}>
+      {children}
+    </motion.div>
+  );
+}
+
+export function FloatingDoodle({
+  children,
+  className,
+  strength = 14,
+}: {
+  children: ReactNode;
+  className?: string;
+  strength?: number;
+}) {
+  return (
+    <MouseParallax className={className} strength={strength}>
+      {children}
+    </MouseParallax>
+  );
+}
+
+export function ParallaxBackdrop() {
+  const { scrollYProgress } = useScroll();
+  const yBack = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const yMid = useTransform(scrollYProgress, [0, 1], ["0%", "55%"]);
+
+  return (
+    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <motion.div
+        style={{ y: yBack }}
+        className="absolute -top-32 -left-32 h-[42rem] w-[42rem] rounded-full bg-electric/10 blur-3xl"
+      />
+      <motion.div
+        style={{ y: yBack }}
+        className="absolute top-1/3 -right-40 h-[36rem] w-[36rem] rounded-full bg-hot-pink/10 blur-3xl"
+      />
+      <motion.div
+        style={{ y: yMid }}
+        className="absolute top-2/3 left-1/4 h-[28rem] w-[28rem] rounded-full bg-sun/15 blur-3xl"
+      />
+    </div>
   );
 }
