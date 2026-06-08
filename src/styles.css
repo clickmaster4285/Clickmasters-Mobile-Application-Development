@@ -180,9 +180,18 @@
 
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to { transform: translateX(-33.3333%); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(-33.3333%); }
+  to { transform: translateX(0); }
 }
 
 @utility animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+.group:hover [style*="marquee"] {
+  animation-play-state: paused;
 }

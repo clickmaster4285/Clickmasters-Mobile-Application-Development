@@ -3,6 +3,7 @@ import { CinematicEntry } from "@/components/landing/CinematicEntry";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { Awesoop } from "@/components/landing/Awesoop";
+import { TrustedPartners } from "@/components/landing/TrustedPartners";
 import { MeetPartner } from "@/components/landing/MeetPartner";
 import { Portfolio } from "@/components/landing/Portfolio";
 import { Process } from "@/components/landing/Process";
@@ -47,6 +48,7 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
+        <TrustedPartners />
         <Awesoop />
         <MeetPartner />
         <Portfolio />
