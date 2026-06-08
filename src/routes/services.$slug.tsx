@@ -13,15 +13,43 @@ export const Route = createFileRoute("/services/$slug")({
     if (!service) throw notFound();
     return { service };
   },
-  head: ({ loaderData }) => {
+  head: ({ params, loaderData }) => {
     const service = loaderData?.service;
-    if (!service) return { meta: [{ title: "Service Not Found" }] };
+    if (!service) return { meta: [{ title: "Service Not Found — ClickMasters" }] };
+    const title = `${service.title} — ClickMasters`;
+    const description = service.fullDescription.slice(0, 160);
+    const url = `https://wolfpack-partners.lovable.app/services/${params.slug}`;
     return {
       meta: [
-        { title: `${service.title} — ClickMasters` },
-        { name: "description", content: service.fullDescription.slice(0, 160) },
-        { property: "og:title", content: `${service.title} — ClickMasters` },
-        { property: "og:description", content: service.fullDescription.slice(0, 160) },
+        { title },
+        { name: "description", content: description },
+        { name: "keywords", content: service.technologies.join(", ") },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: url },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: service.title,
+            description: service.fullDescription,
+            serviceType: service.title,
+            provider: {
+              "@type": "Organization",
+              name: "ClickMasters",
+              url: "https://wolfpack-partners.lovable.app",
+            },
+            url,
+          }),
+        },
       ],
     };
   },
