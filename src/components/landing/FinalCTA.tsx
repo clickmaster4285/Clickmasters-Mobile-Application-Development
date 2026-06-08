@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MessageCircle } from "lucide-react";
 import { RevealText, useMagnetic, MouseParallax } from "./motion";
 import { DoodleCircle, PaperAirplane, RocketSketch, Sparkle, Squiggle, Drift, DottedTrail } from "./decor";
+import growthEngine from "@/assets/marketing/growth-engine.jpeg.asset.json";
 
 function MagneticCard({
   href,
@@ -78,6 +79,24 @@ export function FinalCTA() {
         >
           Tell us your idea. We'll come back within 24 hours with a clear plan, timeline, and pricing.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+          className="mt-16 relative rounded-3xl overflow-hidden border border-ink/10 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.3)]"
+        >
+          <img
+            src={growthEngine.url}
+            alt="Digital growth engine: Strategy → Design → Development → Marketing → Growth"
+            className="w-full h-auto block"
+            loading="lazy"
+          />
+          <div className="absolute top-4 left-4 rounded-full bg-ink/85 text-cream text-[10px] font-semibold uppercase tracking-[0.25em] px-3 py-1.5">
+            Your end-to-end tech partner
+          </div>
+        </motion.div>
 
         <div className="mt-16 grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           <MagneticCard
