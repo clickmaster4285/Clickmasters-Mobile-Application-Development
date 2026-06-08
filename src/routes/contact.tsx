@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MessageCircle, Send, MapPin } from "lucide-react";
+import { Mail, Phone, MessageCircle, Send, MapPin, Loader2, AlertCircle } from "lucide-react";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { useLenisScroll } from "@/components/landing/motion";
@@ -26,15 +26,65 @@ export const Route = createFileRoute("/contact")({
 });
 
 const channels = [
-  { icon: Mail, label: "Email", value: "hello@clickmasters.dev", href: "mailto:hello@clickmasters.dev" },
+  { icon: Mail, label: "Email", value: "sale@clickmastersmobiledevelopmentcompany.com", href: "mailto:sale@clickmastersmobiledevelopmentcompany.com" },
   { icon: Phone, label: "Phone", value: "+1 (555) 012-3456", href: "tel:+15550123456" },
   { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/15550123456" },
   { icon: MapPin, label: "Studio", value: "Remote-first · Worldwide", href: undefined },
 ];
 
+type Status = "idle" | "submitting" | "success" | "error";
+
 function ContactPage() {
   useLenisScroll();
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (status === "submitting") return;
+    setStatus("submitting");
+    setErrorMsg("");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") ?? "").trim(),
+      email: String(data.get("email") ?? "").trim(),
+      project: String(data.get("project") ?? "").trim(),
+      budget: String(data.get("budget") ?? "").trim(),
+      message: String(data.get("message") ?? "").trim(),
+    };
+
+    if (!payload.name || !payload.email || !payload.message) {
+      setStatus("error");
+      setErrorMsg("Please fill in your name, email, and message.");
+      return;
+    }
+
+    try {
+      const res = await fetch("/api/public/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await res.json().catch(() => ({}))) as {
+        error?: string;
+        success?: boolean;
+      };
+
+      if (!res.ok || !result.success) {
+        setStatus("error");
+        setErrorMsg(result.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMsg("Network error — please check your connection and try again.");
+    }
+  }
 
   return (
     <div className="relative min-h-screen bg-cream overflow-x-hidden">
@@ -63,7 +113,7 @@ function ContactPage() {
                       </div>
                       <div>
                         <p className="text-xs uppercase tracking-[0.2em] text-ink/45">{c.label}</p>
-                        <p className="font-semibold text-ink">{c.value}</p>
+                        <p className="font-semibold text-ink break-all">{c.value}</p>
                       </div>
                     </div>
                   );
@@ -84,24 +134,34 @@ function ContactPage() {
               animate={{ opacity: 1, y: 0 }}
               className="rounded-3xl border border-ink/10 bg-white p-8 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.3)]"
             >
-              {sent ? (
+              {status === "success" ? (
                 <div className="h-full grid place-items-center text-center py-16">
                   <div>
                     <div className="mx-auto size-14 rounded-full bg-hot-pink text-white grid place-items-center">
                       <Send className="size-6" />
                     </div>
                     <h2 className="mt-4 font-display font-extrabold text-2xl text-ink">Message sent!</h2>
-                    <p className="mt-2 text-ink/60">We'll be in touch shortly.</p>
+                    <p className="mt-2 text-ink/60">
+                      Thanks for reaching out — we've received your enquiry and will reply within one
+                      business day.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setStatus("idle")}
+                      className="mt-6 inline-flex items-center gap-2 rounded-full border-2 border-ink text-ink px-6 py-3 font-semibold hover:bg-ink hover:text-cream transition-colors"
+                    >
+                      Send another message
+                    </button>
                   </div>
                 </div>
               ) : (
-                <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSent(true);
-                  }}
-                  className="space-y-5"
-                >
+                <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                  {status === "error" && (
+                    <div className="flex items-start gap-3 rounded-2xl border border-red-300 bg-red-50 p-4 text-red-700">
+                      <AlertCircle className="size-5 flex-shrink-0 mt-0.5" />
+                      <p className="text-sm font-medium">{errorMsg}</p>
+                    </div>
+                  )}
                   <div className="grid sm:grid-cols-2 gap-5">
                     <Field label="Name" name="name" placeholder="Jane Doe" required />
                     <Field label="Email" name="email" type="email" placeholder="jane@company.com" required />
@@ -114,16 +174,27 @@ function ContactPage() {
                       name="message"
                       rows={4}
                       required
+                      maxLength={2000}
                       placeholder="Tell us about your idea…"
                       className="w-full rounded-2xl border border-ink/15 bg-cream px-4 py-3 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-hot-pink/40"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-hot-pink text-white px-6 py-4 font-semibold shadow-[0_18px_50px_-18px_rgba(255,71,127,0.7)]"
+                    disabled={status === "submitting"}
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-hot-pink text-white px-6 py-4 font-semibold shadow-[0_18px_50px_-18px_rgba(255,71,127,0.7)] disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    Send message
-                    <Send className="size-4" />
+                    {status === "submitting" ? (
+                      <>
+                        Sending…
+                        <Loader2 className="size-4 animate-spin" />
+                      </>
+                    ) : (
+                      <>
+                        Send message
+                        <Send className="size-4" />
+                      </>
+                    )}
                   </button>
                 </form>
               )}
@@ -157,6 +228,7 @@ function Field({
         name={name}
         required={required}
         placeholder={placeholder}
+        maxLength={255}
         className="w-full rounded-2xl border border-ink/15 bg-cream px-4 py-3 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-hot-pink/40"
       />
     </div>
