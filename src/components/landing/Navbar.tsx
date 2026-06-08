@@ -8,7 +8,7 @@ import logo from "@/assets/logo-white.webp.asset.json";
 type NavLink = { label: string; to: string; hash?: string };
 
 const links: NavLink[] = [
-  { label: "Work", to: "/", hash: "work" },
+  { label: "Solutions", to: "/solutions" },
   { label: "Services", to: "/services" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
