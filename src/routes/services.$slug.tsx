@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Check, type LucideIcon } from "lucide-react";
 import * as Icons from "lucide-react";
-import { getServiceBySlug, services } from "@/data/services";
+import { getServiceBySlug, services, type Service } from "@/data/services";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { useLenisScroll } from "@/components/landing/motion";
@@ -54,7 +54,7 @@ function getIcon(name: string): LucideIcon {
 
 function ServiceDetailPage() {
   useLenisScroll();
-  const { service } = Route.useLoaderData();
+  const { service } = Route.useLoaderData() as { service: Service };
   const Icon = getIcon(service.icon);
   const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
 
