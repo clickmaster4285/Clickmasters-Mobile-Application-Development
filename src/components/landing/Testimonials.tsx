@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import dashboard from "@/assets/marketing/growth-dashboard.jpeg.asset.json";
 
 const items = [
   {
@@ -27,6 +28,36 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <p className="font-script text-3xl text-hot-pink">what</p>
         <h2 className="font-display font-extrabold text-4xl md:text-5xl">our partners say</h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+          className="mt-12 relative rounded-3xl overflow-hidden border border-cream/10"
+        >
+          <img
+            src={dashboard.url}
+            alt="Growth dashboard: 1M+ impressions, 500+ projects, +245% growth"
+            className="w-full h-auto block"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
+          <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-cream/60">Results in numbers</p>
+              <p className="font-display font-extrabold text-2xl md:text-3xl mt-1">
+                Real metrics from real clients
+              </p>
+            </div>
+            <div className="flex gap-6 text-sm">
+              <div><p className="font-display font-bold text-xl">1M+</p><p className="text-cream/60 text-xs">Impressions</p></div>
+              <div><p className="font-display font-bold text-xl">500+</p><p className="text-cream/60 text-xs">Projects</p></div>
+              <div><p className="font-display font-bold text-xl">+245%</p><p className="text-cream/60 text-xs">Growth</p></div>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="mt-14 grid md:grid-cols-3 gap-6">
           {items.map((t, i) => (
             <motion.figure

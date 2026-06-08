@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { RevealText, ScrollFloat } from "./motion";
 import { Search, Layers, Smartphone, Globe, ShieldCheck, GitBranch, type LucideIcon } from "lucide-react";
+import agencyReel from "@/assets/marketing/agency-reel.jpeg.asset.json";
 
 const cols: { name: string; color: string; items: { label: string; icon: LucideIcon }[] }[] = [
   {
@@ -55,6 +56,23 @@ export function Process() {
             time, in scope, and built to scale.
           </p>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+          className="mb-16 relative rounded-3xl overflow-hidden border border-ink/10 shadow-[0_24px_60px_-25px_rgba(0,0,0,0.35)]"
+        >
+          <img
+            src={agencyReel.url}
+            alt="Design. Code. Collaborate. Launch. Analyze. Optimize."
+            className="w-full h-auto block"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/35 via-transparent to-ink/20" />
+        </motion.div>
+
 
         <ScrollFloat yRange={[20, -20]} className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 relative">
           {cols.map((c, i) => (
