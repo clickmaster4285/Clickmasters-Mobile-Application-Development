@@ -226,8 +226,29 @@ export function Hero() {
           className="relative aspect-[4/5] max-w-lg mx-auto w-full"
         >
           <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-electric/20 via-hot-pink/15 to-sun/30 blur-2xl" />
-          <PhoneMockupBack />
-          <PhoneMockup />
+
+          {/* Digital city visualization */}
+          <motion.div
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-2 left-0 right-0 mx-auto w-[92%] aspect-[16/10] rounded-3xl overflow-hidden border-2 border-ink/10 shadow-[0_30px_60px_-25px_rgba(0,0,0,0.45)] rotate-[-3deg]"
+          >
+            <img
+              src={digitalCity.url}
+              alt="Connected digital ecosystem: apps, websites, AI, marketing and analytics"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">
+              <p className="text-[10px] uppercase tracking-[0.25em] opacity-90">Connected ecosystem</p>
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/15 backdrop-blur">LIVE</span>
+            </div>
+          </motion.div>
+
+          <div className="absolute bottom-0 right-0 w-[58%] aspect-[3/5]">
+            <PhoneMockup />
+          </div>
         </motion.div>
       </div>
     </section>
