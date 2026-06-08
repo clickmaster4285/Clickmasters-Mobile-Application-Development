@@ -53,6 +53,7 @@ function Index() {
         <Awesoop />
         <MeetPartner />
         <Portfolio />
+        <ServicesSection />
         <Industries />
         <Process />
         <Testimonials />
