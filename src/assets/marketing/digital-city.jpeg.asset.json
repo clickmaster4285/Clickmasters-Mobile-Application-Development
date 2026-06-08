@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "9d7c33e3-87e2-41b2-ada8-1de43b5b8220",
-  "project_id": "5e30f1b6-e726-4062-8ddd-0740e006ea00",
-  "url": "/__l5e/assets-v1/9d7c33e3-87e2-41b2-ada8-1de43b5b8220/digital-city.jpeg",
-  "r2_key": "a/v1/5e30f1b6-e726-4062-8ddd-0740e006ea00/9d7c33e3-87e2-41b2-ada8-1de43b5b8220/digital-city.jpeg",
-  "original_filename": "digital-city.jpeg",
-  "size": 1208363,
   "content_type": "image/jpeg",
-  "created_at": "2026-06-08T05:52:07Z"
+  "created_at": "2026-06-08T05:52:07Z",
+  "original_filename": "digital-city.jpeg",
+  "project_id": "ea4afe40-b2f5-4b53-a283-a2cfd780267c",
+  "r2_key": "a/v1/ea4afe40-b2f5-4b53-a283-a2cfd780267c/9d7c33e3-87e2-41b2-ada8-1de43b5b8220/digital-city.jpeg",
+  "size": 1208363,
+  "url": "/__l5e/assets-v1/9d7c33e3-87e2-41b2-ada8-1de43b5b8220/digital-city.jpeg",
+  "version": 1
 }
