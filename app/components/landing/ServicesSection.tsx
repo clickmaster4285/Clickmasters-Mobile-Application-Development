@@ -15,7 +15,7 @@ function getIcon(name: string): LucideIcon {
 export function ServicesSection() {
   return (
     <section id="services" className="relative px-6 lg:px-10 py-28 bg-cream">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[85vw] mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="font-script text-3xl text-hot-pink -rotate-2">what we build</p>
           <RevealText className="mt-3 font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">

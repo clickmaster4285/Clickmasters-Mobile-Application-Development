@@ -38,7 +38,7 @@
     "./next-env.d.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "app/lib", "app/hooks", "app/dataapp/componentsents"  ],
   "exclude": [
     "./node_modules"
   ]

@@ -152,7 +152,7 @@ function PhoneMockupBack() {
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden px-6 pt-36 pb-24 lg:px-10">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center relative">
+      <div className="max-w-[85vw] mx-auto grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center relative">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 18, filter: "blur(6px)" }}

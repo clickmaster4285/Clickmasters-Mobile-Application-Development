@@ -22,7 +22,7 @@ const industries = [
 export function Industries() {
   return (
     <section id="industries" className="px-6 lg:px-10 py-24 bg-cream">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[85vw] mx-auto">
         <div className="mb-14 max-w-2xl">
           <p className="font-script text-3xl text-hot-pink">industries</p>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">

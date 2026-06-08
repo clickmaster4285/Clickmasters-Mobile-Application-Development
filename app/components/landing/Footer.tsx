@@ -22,7 +22,7 @@ const cols = [
 export function Footer() {
   return (
     <footer className="px-6 lg:px-10 py-16 bg-ink text-cream">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[85vw] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-10">
           <div>
             <img src={logo} alt="ClickMasters" className="h-8 w-auto mb-5" />

@@ -47,7 +47,7 @@ const cols: { name: string; color: string; items: { label: string; icon: LucideI
 export function Process() {
   return (
     <section id="process" className="relative px-6 lg:px-10 py-24 border-t border-border overflow-hidden">
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-[85vw] mx-auto relative">
         <div className="mb-16 max-w-2xl">
           <p className="font-script text-3xl text-hot-pink">our studio path</p>
           <RevealText className="font-display font-extrabold text-5xl md:text-7xl text-ink leading-none mt-2">

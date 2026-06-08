@@ -122,7 +122,28 @@ Delete:
 - `bunfig.toml`, `bun.lock` (if switching to npm)
 - Lovable-specific lib files: `lovable-error-reporting.ts`, `error-capture.ts`, `error-page.ts`, `config.server.ts`
 
-## Phase 12: Build & Fix Iteratively
+## Phase 12: `'use client'` Audit
+
+Next.js enforces the server/client component boundary. Any file using client-only APIs **must** have `"use client"` as its very first line. TanStack Start didn't have this boundary, so many components will be missing it.
+
+**How to audit systematically:**
+
+1. List all `.tsx` files in `app/components/` (and subfolders)
+2. For each file, check if it uses any of:
+   - React hooks: `useState`, `useEffect`, `useRef`, `useContext`, `useReducer`, `useMemo`, `useCallback`, `useLayoutEffect`, `use`, etc.
+   - Framer Motion: `motion`, `AnimatePresence`, `useMotionValue`, `useScroll`, `useTransform`, `useReducedMotion`, etc.
+   - Browser APIs: `window`, `document`, `navigator`, `localStorage`, `sessionStorage`
+   - Client-only libraries: `lenis`, event handlers (`onClick`, `onChange`, `onSubmit`)
+   - Imports from a module that is itself a client component (e.g., `useMagnetic`, `useLenisScroll`, `MouseParallax`)
+3. If the file needs it and doesn't have it → add `"use client"` as line 1
+
+**Important:** Shared utility modules (like `motion.tsx`, `decor.tsx`) that export components using hooks/motion are the **highest priority** — without `"use client"` on these root dependencies, all consumers break.
+
+**Exceptions (do NOT add `"use client"`):**
+- `app/layout.tsx` — must remain a server component (it exports `metadata`)
+- Pure static JSX components with no hooks, motion, or browser APIs (e.g., a simple `Footer.tsx` with only JSX)
+
+## Phase 13: Build & Fix Iteratively
 
 1. Run `npx next build` — expect asset/component errors
 2. Fix asset imports (most common: .mp4, .webp, .asset.json)
@@ -135,6 +156,8 @@ Delete:
 - **Don't use `src/` unless asked** — the user may expect everything in root `app/`
 - **`--legacy-peer-deps`** may be needed during install due to Lovable package conflicts
 - **Asset imports are the #1 build failure** — plan the asset migration early
+- **Missing `"use client"` is the #2 build failure** — audit ALL components, especially shared motion/animation utility modules that many others import from
 - **API routes don't work with `output: 'export'`** — use server mode if you need them
 - **Lovable `.asset.json` sidecars may be orphans** — the actual image files they reference don't exist on disk; they were served from the Lovable platform. You must provide real images or placeholders.
 - **Supabase `.server.ts` imports** may reference files not on disk (Lovable generated) — handle gracefully
+- **When replacing asset imports with URL strings**, also remove `.url` property accesses — Vite `.asset.json` imports returned objects with a `.url` field, but plain URL strings don't have a `.url` property. Replace `x.url` → just `x`.

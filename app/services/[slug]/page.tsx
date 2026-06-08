@@ -175,7 +175,7 @@ export default function ServiceDetailPage({
 
         {/* Related */}
         <section className="px-6 lg:px-10 py-20 bg-white/60">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-[85vw] mx-auto">
             <h2 className="font-display font-extrabold text-3xl md:text-4xl text-ink">
               Related services
             </h2>

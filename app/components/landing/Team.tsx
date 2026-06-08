@@ -61,7 +61,7 @@ export function Team() {
         </Drift>
       </DecorativeLayer>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-[85vw] mx-auto">
         <div className="max-w-3xl">
           <p className="font-script text-4xl text-hot-pink">Meet the</p>
           <RevealText className="mt-2 font-display font-extrabold text-4xl md:text-6xl leading-[0.95]">

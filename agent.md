@@ -62,23 +62,30 @@ Reference: https://nextjs.org/docs/app/guides/migrating/from-vite
 - ✅ Deleted: `vite.config.ts`, `app/router.tsx`, `app/routeTree.gen.ts`, `app/start.ts`, `app/server.ts`, `app/routes/`, `bunfig.toml`, `bun.lock`
 - ✅ Deleted: `app/lib/config.server.ts`, `app/lib/error-capture.ts`, `app/lib/error-page.ts`, `app/lib/lovable-error-reporting.ts`
 
+### 7. Asset Migration
+- ✅ Moved all assets from `app/assets/` → `public/assets/` (logo, videos, images, team photos, marketing images, service images)
+- ✅ Replaced all `import x from "@/assets/..."` with URL string constants (`"/assets/..."`)
+- ✅ Replaced all `.asset.json` sidecar imports (Lovable-specific) with direct URL strings
+- ✅ Replaced all `*.mp4` module imports with URL strings
+- ✅ Removed `.url` property accesses (Vite returns strings, Next.js returns objects — URL strings need no `.url`)
+- ✅ Deleted `app/assets/` directory
+
+### 8. `'use client'` Audit
+- ✅ Added `'use client'` to all 17 landing components that use Framer Motion, hooks, or browser APIs
+- ✅ `motion.tsx`, `decor.tsx`, `Hero.tsx`, `FinalCTA.tsx`, `Testimonials.tsx`, `Process.tsx`, `Portfolio.tsx`, `Team.tsx`, `TrustedPartners.tsx`, `TechStack.tsx`, `MeetPartner.tsx`, `Industries.tsx`, `FloatingContact.tsx`, `FAQ.tsx`, `CinematicEntry.tsx`, `Awesoop.tsx`, `Awards.tsx`
+
+### 9. Build Verification
+- ✅ `npm run build` passes — all 7 routes compile successfully
+- ✅ Static pages: `/`, `/about`, `/contact`, `/services`, `/solutions`, `/_not-found`
+- ✅ Dynamic page: `/services/[slug]`
+
 ---
 
-## Remaining (Build Blockers)
+## Remaining
 
-### ❌ 1. Asset Imports (5 build errors)
-Next.js handles static imports differently from Vite:
-
-- **`.mp4` video files** — imported as modules via `@/assets/*.mp4`. Next.js doesn't support video imports. **Fix:** Move to `public/assets/` and use URL strings (`"/assets/file.mp4"`).
-- **`.webp/.jpeg/.png` images** — Vite returns URL string; Next.js returns `{src, width, height}` object. **Fix:** Either use `img.src` or move to `public/` and use URL strings.
-- **`.asset.json` sidecars** — Lovable-specific metadata files. All `import x from '@/assets/foo.webp.asset.json'` patterns need to be replaced with direct file references.
-
-### ❌ 2. `'use client'` Audit
-Components using Framer Motion, `useState`, `useEffect`, or browser APIs need `'use client'`. May be missing on some landing components.
-
-### ❌ 3. CSS/Tailwind Verification
+### ⚠️ 1. CSS/Tailwind Verification
 - Removed `source(none)` and `@source "../src"` from `styles.css`
-- Need to verify Tailwind v4 content scanning works correctly with Next.js
+- Need to visually verify Tailwind v4 content scanning works correctly with Next.js (`npm run dev`)
 
 ---
 

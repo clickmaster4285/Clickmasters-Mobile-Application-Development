@@ -87,7 +87,7 @@ export function Portfolio() {
         <DoodleCircle tone="pink" className="size-full" />
       </Drift>
 
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-[85vw] mx-auto relative">
         <div className="mb-20 max-w-3xl">
           <div className="flex items-center gap-3">
             <p className="font-script text-3xl text-hot-pink -rotate-3">our</p>

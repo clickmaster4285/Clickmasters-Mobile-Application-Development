@@ -30,7 +30,7 @@ const stack = [
 export function TechStack() {
   return (
     <section className="px-6 lg:px-10 py-24 border-t border-border">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+      <div className="max-w-[85vw] mx-auto grid lg:grid-cols-2 gap-16">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}

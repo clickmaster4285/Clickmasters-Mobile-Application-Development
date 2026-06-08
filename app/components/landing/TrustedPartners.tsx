@@ -42,7 +42,7 @@ function Marquee({ items, reverse = false, duration = 32 }: { items: string[]; r
 export function TrustedPartners() {
   return (
     <section className="px-6 lg:px-10 py-20 bg-cream border-t border-border">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[85vw] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

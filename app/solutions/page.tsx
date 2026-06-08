@@ -83,7 +83,7 @@ export default function SolutionsPage() {
         </section>
 
         <section className="px-6 lg:px-10 pb-32">
-          <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="max-w-[85vw] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutions.map((s, i) => (
               <motion.div
                 key={s.title}

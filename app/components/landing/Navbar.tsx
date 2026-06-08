@@ -37,7 +37,7 @@ export function Navbar() {
       className="fixed top-4 inset-x-0 z-50 flex justify-center px-4"
     >
       <nav
-        className={`flex items-center gap-2 md:gap-8 rounded-full border transition-all duration-500 md:min-w-[560px] ${
+        className={`flex items-center gap-2 md:gap-8 rounded-full border transition-all duration-500 md:min-w-[85vw] ${
           scrolled
             ? "bg-ink/90 border-white/10 backdrop-blur-xl shadow-[0_18px_60px_-20px_rgba(0,0,0,0.6)]"
             : "bg-ink/55 border-white/10 backdrop-blur-md"
