@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import type { ReactNode, RefObject } from "react";
 import { useMagnetic } from "@/components/landing/motion";
+import digitalCity from "@/assets/marketing/digital-city.jpeg.asset.json";
 
 function MagneticLink({ href, children, className }: { href: string; children: ReactNode; className: string }) {
   const ref = useMagnetic();
