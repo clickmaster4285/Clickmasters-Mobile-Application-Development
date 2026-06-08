@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { RevealText, ScrollFloat } from "./motion";
-import { DoodleCircle, PaperAirplane, RocketSketch, Sparkle, Squiggle, ZigZag, Drift } from "./decor";
+import { Search, Layers, Smartphone, Globe, ShieldCheck, GitBranch } from "lucide-react";
 
 const cols = [
   {
