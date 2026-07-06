@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { allData } from "@/content/servicesDetail/index";
+import { allData, getCategoryForSlug } from "@/content/servicesDetail/index";
 
 function getCategoryLabel(key: string) {
   const names: Record<string, string> = {
@@ -47,6 +47,7 @@ export function ServicesContentDropdown() {
           slug: item.slug,
           title: formatTitle(item.metadata.title_tag || item.slug),
           description: item.metadata.meta_description || "",
+          category: getCategoryForSlug(item.slug),
         })),
       })),
     [],
@@ -116,7 +117,7 @@ export function ServicesContentDropdown() {
               {selectedCategory.items.map((item) => (
                 <Link
                   key={item.slug}
-                  href={`/services/${item.slug}`}
+                  href={`/${item.category}/${item.slug}`}
                   className="block rounded-3xl border border-ink/10 bg-cream px-4 py-4 transition hover:border-hot-pink/20 hover:bg-hot-pink/5"
                 >
                   <div className="flex items-start justify-between gap-3">

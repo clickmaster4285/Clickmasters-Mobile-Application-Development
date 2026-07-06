@@ -700,7 +700,9 @@ export function ArticleRenderer({ markdown }: { markdown: string }) {
 
   // Separate final CTA and other blocks
   const finalCtaBlock = body.find((b) => b.kind === "finalCta");
-  const otherBlocks = body.filter((b) => b.kind !== "finalCta" && b.kind !== "section");
+  const otherBlocks = body.filter(
+    (b) => b.kind !== "finalCta" && b.kind !== "section",
+  );
 
   let sectionIndex = 0;
 

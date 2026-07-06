@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import * as Icons from "lucide-react";
 import { ArrowRight, type LucideIcon } from "lucide-react";
 import { services } from "@/data/services";
+import { getCategoryForSlug } from "@/content/servicesDetail/index";
 import { RevealText } from "./motion";
 
 function getIcon(name: string): LucideIcon {
@@ -44,7 +45,7 @@ export function ServicesSection() {
                 }}
               >
                 <Link
-                  href={`/services/${service.slug}`}
+                  href={`/${getCategoryForSlug(service.slug)}/${service.slug}`}
                   className="group relative block h-full rounded-3xl border border-ink/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-ink/20 hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.35)] overflow-hidden"
                 >
                   <div className="absolute inset-x-0 -top-px h-1 bg-gradient-to-r from-electric via-hot-pink to-sun opacity-0 group-hover:opacity-100 transition-opacity" />

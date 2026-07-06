@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Calendar, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useMagnetic } from "./motion";
-import { allData } from "@/content/servicesDetail/index";
+import { allData, getCategoryForSlug } from "@/content/servicesDetail/index";
 
 const logo = "/assets/logo_white.webp";
 
@@ -69,6 +69,7 @@ export function Navbar() {
         slug: item.slug,
         title: formatTitle(item.metadata.title_tag || item.slug),
         description: item.metadata.meta_description || "",
+        category: getCategoryForSlug(item.slug),
       })),
     })),
   ).current;
@@ -232,7 +233,7 @@ export function Navbar() {
                               {selectedCategory?.items.map((item) => (
                                 <Link
                                   key={item.slug}
-                                  href={`/services/${item.slug}`}
+                                  href={`/${item.category}/${item.slug}`}
                                   onClick={() => {
                                     setServicesDropdownOpen(false);
                                     setActiveCategory("");
