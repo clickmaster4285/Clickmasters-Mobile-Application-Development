@@ -20,29 +20,29 @@ const links: NavLink[] = [
 
 function getCategoryLabel(key: string) {
   const names: Record<string, string> = {
-    ai_in_app_development: "AI Development",
-    android_development: "Android Development",
-    careers_salaries: "Careers & Salaries",
-    cost_pricing: "Cost & Pricing",
-    cross_platform_flutter_rn: "Cross-Platform (Flutter/RN)",
-    general_mobile_app_development: "Mobile Development",
-    hiring_agencies_money_pages: "Hiring & Agencies",
-    how_to_build_an_app: "How to Build an App",
-    industry_ecommerce: "E-Commerce",
-    industry_fintech: "FinTech",
-    industry_healthcare: "Healthcare",
-    ios_development: "iOS Development",
-    learning_courses: "Learning & Courses",
-    no_code_app_builders: "No-Code App Builders",
-    testing_qa_maintenance: "Testing & QA",
-    tools_frameworks_software: "Tools & Frameworks",
-    ui_ux_design: "UI/UX Design",
-    web_pwa_development: "Web & PWA Development",
+    "ai-in-app-development": "AI Development",
+    "android-development": "Android Development",
+    "careers-salaries": "Careers & Salaries",
+    "cost-pricing": "Cost & Pricing",
+    "cross-platform-flutter-rn": "Cross-Platform (Flutter/RN)",
+    "general-mobile-app-development": "Mobile Development",
+    "hiring-agencies-money-pages": "Hiring & Agencies",
+    "how-to-build-an-app": "How to Build an App",
+    "industry-ecommerce": "E-Commerce",
+    "industry-fintech": "FinTech",
+    "industry-healthcare": "Healthcare",
+    "ios-development": "iOS Development",
+    "learning-courses": "Learning & Courses",
+    "no-code-app-builders": "No-Code App Builders",
+    "testing-qa-maintenance": "Testing & QA",
+    "tools-frameworks-software": "Tools & Frameworks",
+    "ui-ux-design": "UI/UX Design",
+    "web-pwa-development": "Web & PWA Development",
   };
 
   return (
     names[key] ||
-    key.replace(/_/g, "-").replace(/\b\w/g, (l) => l.toUpperCase())
+    key.replace(/[_-]/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())
   );
 }
 

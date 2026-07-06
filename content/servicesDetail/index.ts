@@ -73,26 +73,26 @@ export { default as tools_frameworks_software } from "./tools-frameworks-softwar
 export { default as ui_ux_design } from "./ui-ux-design";
 export { default as web_pwa_development } from "./web-pwa-development";
 
-// Also export as a single combined object
+// Also export as a single combined object keyed by route segment
 export const allData = {
-  ai_in_app_development,
-  android_development,
-  careers_salaries,
-  cost_pricing,
-  cross_platform_flutter_rn,
-  general_mobile_app_development,
-  hiring_agencies_money_pages,
-  how_to_build_an_app,
-  industry_ecommerce,
-  industry_fintech,
-  industry_healthcare,
-  ios_development,
-  learning_courses,
-  no_code_app_builders,
-  testing_qa_maintenance,
-  tools_frameworks_software,
-  ui_ux_design,
-  web_pwa_development,
+  "ai-in-app-development": ai_in_app_development,
+  "android-development": android_development,
+  "careers-salaries": careers_salaries,
+  "cost-pricing": cost_pricing,
+  "cross-platform-flutter-rn": cross_platform_flutter_rn,
+  "general-mobile-app-development": general_mobile_app_development,
+  "hiring-agencies-money-pages": hiring_agencies_money_pages,
+  "how-to-build-an-app": how_to_build_an_app,
+  "industry-ecommerce": industry_ecommerce,
+  "industry-fintech": industry_fintech,
+  "industry-healthcare": industry_healthcare,
+  "ios-development": ios_development,
+  "learning-courses": learning_courses,
+  "no-code-app-builders": no_code_app_builders,
+  "testing-qa-maintenance": testing_qa_maintenance,
+  "tools-frameworks-software": tools_frameworks_software,
+  "ui-ux-design": ui_ux_design,
+  "web-pwa-development": web_pwa_development,
 };
 
 // All slugs across all folders
@@ -146,24 +146,24 @@ export function getContentBySlug(slug: string) {
 
 export function getCategoryForSlug(slug: string) {
   const categories = {
-    ai_in_app_development: ai_in_app_development_slugs,
-    android_development: android_development_slugs,
-    careers_salaries: careers_salaries_slugs,
-    cost_pricing: cost_pricing_slugs,
-    cross_platform_flutter_rn: cross_platform_flutter_rn_slugs,
-    general_mobile_app_development: general_mobile_app_development_slugs,
-    hiring_agencies_money_pages: hiring_agencies_money_pages_slugs,
-    how_to_build_an_app: how_to_build_an_app_slugs,
-    industry_ecommerce: industry_ecommerce_slugs,
-    industry_fintech: industry_fintech_slugs,
-    industry_healthcare: industry_healthcare_slugs,
-    ios_development: ios_development_slugs,
-    learning_courses: learning_courses_slugs,
-    no_code_app_builders: no_code_app_builders_slugs,
-    testing_qa_maintenance: testing_qa_maintenance_slugs,
-    tools_frameworks_software: tools_frameworks_software_slugs,
-    ui_ux_design: ui_ux_design_slugs,
-    web_pwa_development: web_pwa_development_slugs,
+    "ai-in-app-development": ai_in_app_development_slugs,
+    "android-development": android_development_slugs,
+    "careers-salaries": careers_salaries_slugs,
+    "cost-pricing": cost_pricing_slugs,
+    "cross-platform-flutter-rn": cross_platform_flutter_rn_slugs,
+    "general-mobile-app-development": general_mobile_app_development_slugs,
+    "hiring-agencies-money-pages": hiring_agencies_money_pages_slugs,
+    "how-to-build-an-app": how_to_build_an_app_slugs,
+    "industry-ecommerce": industry_ecommerce_slugs,
+    "industry-fintech": industry_fintech_slugs,
+    "industry-healthcare": industry_healthcare_slugs,
+    "ios-development": ios_development_slugs,
+    "learning-courses": learning_courses_slugs,
+    "no-code-app-builders": no_code_app_builders_slugs,
+    "testing-qa-maintenance": testing_qa_maintenance_slugs,
+    "tools-frameworks-software": tools_frameworks_software_slugs,
+    "ui-ux-design": ui_ux_design_slugs,
+    "web-pwa-development": web_pwa_development_slugs,
   } as const;
 
   for (const [category, slugs] of Object.entries(categories)) {
@@ -172,5 +172,5 @@ export function getCategoryForSlug(slug: string) {
     }
   }
 
-  return "general_mobile_app_development";
+  return "general-mobile-app-development";
 }

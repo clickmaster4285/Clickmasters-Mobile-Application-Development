@@ -1577,6 +1577,7 @@ For a startup, web and PWA development is worth it when it removes a real, measu
 export const ai_in_app_development = data.find(
   (d) => d.services === "ai-in-app-development",
 );
+
 export const android_development = data.find(
   (d) => d.services === "android-development",
 );
