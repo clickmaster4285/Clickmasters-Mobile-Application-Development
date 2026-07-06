@@ -110,6 +110,9 @@ export function Navbar() {
     categories.find((category) => category.key === activeCategory) ||
     categories[0];
 
+  // Determine dropdown background based on scroll state (solid, not transparent)
+  const dropdownBg = scrolled ? "bg-[#0a0a0a]" : "bg-[#0a0a0a]";
+
   return (
     <motion.header
       initial={{ y: -60, opacity: 0 }}
@@ -125,10 +128,10 @@ export function Navbar() {
         } px-3 py-2 md:pl-6 md:pr-3 md:py-3`}
       >
         <Link href="/" className="flex items-center pl-1 pr-2 md:pr-4">
-          <img src={logo} alt="ClickMasters" className="h-6 md:h-7 w-auto" />
+          <img src={logo} alt="ClickMasters" className="h-4 md:h-5 w-auto" />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-12 ext-sm font-medium text-cream/80 md:ml-auto">
+        <ul className="hidden md:flex items-center justify-center flex-1 gap-12 text-md font-medium text-cream/80">
           {links.map((l) => (
             <li key={l.label}>
               {l.label === "Services" ? (
@@ -170,10 +173,10 @@ export function Navbar() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute left-1/2 -translate-x-1/2 top-full mt-3 
+                        className={`absolute left-1/2 -translate-x-1/2 top-full mt-3 
                  w-[720px] max-w-[92vw] h-[520px] 
-                 bg-ink/95 backdrop-blur-xl border border-white/10 
-                 rounded-3xl shadow-2xl overflow-hidden z-50"
+                 ${dropdownBg} border border-white/10 
+                 rounded-3xl shadow-2xl overflow-hidden z-50`}
                         onMouseEnter={() => setServicesDropdownOpen(true)}
                         onMouseLeave={() => {
                           setServicesDropdownOpen(false);
@@ -187,31 +190,36 @@ export function Navbar() {
                               CATEGORIES
                             </p>
                             <div className="space-y-1 pr-2">
-  {categories.map((category) => {
-    const isActive = category.key === selectedCategory?.key;
+                              {categories.map((category) => {
+                                const isActive =
+                                  category.key === selectedCategory?.key;
 
-    return (
-      <Link
-        key={category.key}
-        href={`/${category.key}`}
-        onMouseEnter={() => setActiveCategory(category.key)}
-        onClick={() => setActiveCategory(category.key)}
-        className={`block w-full rounded-2xl border px-4 py-3 text-left transition-all duration-200 ${
-          isActive
-            ? "border-hot-pink/40 bg-hot-pink/10 text-cream shadow-sm"
-            : "border-transparent text-cream/70 hover:border-white/10 hover:bg-white/5 hover:text-cream"
-        }`}
-      >
-        <div className="text-sm font-medium">
-          {category.label}
-        </div>
-        <div className="mt-0.5 text-[10px] text-cream/40">
-          {category.items.length} guides
-        </div>
-      </Link>
-    );
-  })}
-</div>
+                                return (
+                                  <Link
+                                    key={category.key}
+                                    href={`/${category.key}`}
+                                    onMouseEnter={() =>
+                                      setActiveCategory(category.key)
+                                    }
+                                    onClick={() =>
+                                      setActiveCategory(category.key)
+                                    }
+                                    className={`block w-full rounded-2xl border px-4 py-3 text-left transition-all duration-200 ${
+                                      isActive
+                                        ? "border-hot-pink/40 bg-hot-pink/10 text-cream shadow-sm"
+                                        : "border-transparent text-cream/70 hover:border-white/10 hover:bg-white/5 hover:text-cream"
+                                    }`}
+                                  >
+                                    <div className="text-sm font-medium">
+                                      {category.label}
+                                    </div>
+                                    <div className="mt-0.5 text-[10px] text-cream/40">
+                                      {category.items.length} guides
+                                    </div>
+                                  </Link>
+                                );
+                              })}
+                            </div>
                           </aside>
 
                           {/* Guides List */}
@@ -252,19 +260,6 @@ export function Navbar() {
                                   No guides available in this category
                                 </div>
                               )}
-                            </div>
-
-                            <div className="p-4 border-t border-white/10">
-                              <Link
-                                href="/services"
-                                onClick={() => {
-                                  setServicesDropdownOpen(false);
-                                  setActiveCategory("");
-                                }}
-                                className="block text-center text-sm py-2.5 text-cream/60 hover:text-cream transition-colors hover:bg-white/5 rounded-2xl"
-                              >
-                                View All Services →
-                              </Link>
                             </div>
                           </div>
                         </div>
