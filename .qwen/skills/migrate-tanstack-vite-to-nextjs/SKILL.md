@@ -2,7 +2,7 @@
 name: migrate-tanstack-vite-to-nextjs
 description: Procedure for migrating a TanStack Start (Vite) app to Next.js App Router, including route conversion, Link replacement, asset handling, and cleanup.
 source: auto-skill
-extracted_at: '2026-06-08T09:50:32.015Z'
+extracted_at: "2026-06-08T09:50:32.015Z"
 ---
 
 # Migrate TanStack Start (Vite) → Next.js App Router
@@ -37,6 +37,7 @@ This is not a standard Vite SPA migration. TanStack Start adds SSR, file-based r
 ## Phase 4: Root Layout & Providers
 
 Convert `__root.tsx` → `app/layout.tsx`:
+
 - `RootShell` (HTML shell) → root layout return
 - Google Fonts `<link>` tags → keep in `<head>`
 - Metadata from `head()` → `export const metadata: Metadata`
@@ -49,14 +50,15 @@ Create not-found: `app/not-found.tsx`
 
 Map TanStack routes to Next.js App Router:
 
-| TanStack | Next.js |
-|---|---|
-| `routes/index.tsx` → `createFileRoute("/")` | `app/page.tsx` |
-| `routes/about.tsx` → `createFileRoute("/about")` | `app/about/page.tsx` |
-| `routes/services.$slug.tsx` → `createFileRoute("/services/$slug")` | `app/services/[slug]/page.tsx` |
-| `routes/api/public/contact.ts` | `app/api/public/contact/route.ts` (Next.js Route Handler) |
+| TanStack                                                           | Next.js                                                   |
+| ------------------------------------------------------------------ | --------------------------------------------------------- |
+| `routes/index.tsx` → `createFileRoute("/")`                        | `app/page.tsx`                                            |
+| `routes/about.tsx` → `createFileRoute("/about")`                   | `app/about/page.tsx`                                      |
+| `routes/services.$slug.tsx` → `createFileRoute("/services/$slug")` | `app/services/[slug]/page.tsx`                            |
+| `routes/api/public/contact.ts`                                     | `app/api/public/contact/route.ts` (Next.js Route Handler) |
 
 Key changes per route:
+
 - Remove `createFileRoute()` wrapper and `Route.export`
 - Replace `Route.useLoaderData()` → direct data imports (if static) or `use()` for dynamic params
 - Add `"use client"` to pages using Framer Motion, useState, useEffect, browser APIs
@@ -66,6 +68,7 @@ Key changes per route:
 ## Phase 6: Link & Navigation Replacement
 
 TanStack `Link` → Next.js `Link`:
+
 - `import { Link } from "@tanstack/react-router"` → `import Link from "next/link"`
 - `to="/path"` → `href="/path"`
 - `to="/services/$slug" params={{ slug }}` → `href={`/services/${slug}`}`
@@ -92,16 +95,18 @@ Audit ALL components (not just route files) for TanStack Router imports. Common 
 - **File name mismatches**: Vite may have tolerated hyphen/underscore differences. Verify actual filenames match imports.
 
 **Critical Lovable `.asset.json` discovery**: These sidecar files contain a `url` field pointing to `/__l5e/assets-v1/{uuid}/{filename}` — a Lovable dev-server path. The actual image files may **not exist on disk at all** — they were served from the Lovable platform. Before migrating:
-  1. Check if the actual image file (e.g., `alex-morgan.jpeg`) exists alongside the `.asset.json` sidecar
-  2. If only `.asset.json` exists without the actual file: you need to either create placeholder images or download the originals from the Lovable platform
-  3. Replace all `import x from '@/assets/foo.jpeg.asset.json'` + `x.url` usage with direct URL strings: `"/assets/foo.jpeg"`
-  4. Replace all `import x from '@/assets/foo.webp'` + `x.url` usage with `"/assets/foo.webp"` (drop both the import and the `.url` accessor)
+
+1. Check if the actual image file (e.g., `alex-morgan.jpeg`) exists alongside the `.asset.json` sidecar
+2. If only `.asset.json` exists without the actual file: you need to either create placeholder images or download the originals from the Lovable platform
+3. Replace all `import x from '@/assets/foo.jpeg.asset.json'` + `x.url` usage with direct URL strings: `"/assets/foo.jpeg"`
+4. Replace all `import x from '@/assets/foo.webp'` + `x.url` usage with `"/assets/foo.webp"` (drop both the import and the `.url` accessor)
 
 **Recommended approach**: Move all media assets to `public/assets/`, replace `import x from '@/assets/...'` with plain URL strings (`/assets/...`). Delete the `app/assets/` directory after migration.
 
 ## Phase 9: API Routes (if keeping)
 
 TanStack server functions → Next.js Route Handlers:
+
 - `createFileRoute("/api/...")({ server: { handlers: { POST } } })` → `export async function POST(request: Request)` in `app/api/.../route.ts`
 - Replace `request.json()` → same (standard Request API)
 - Replace Supabase server client → create Next.js-compatible server client
@@ -117,6 +122,7 @@ TanStack server functions → Next.js Route Handlers:
 ## Phase 11: Cleanup
 
 Delete:
+
 - `vite.config.ts`, `app/router.tsx`, `app/routeTree.gen.ts`, `app/start.ts`, `app/server.ts`
 - `app/routes/` directory (TanStack file-based routes)
 - `bunfig.toml`, `bun.lock` (if switching to npm)
@@ -140,6 +146,7 @@ Next.js enforces the server/client component boundary. Any file using client-onl
 **Important:** Shared utility modules (like `motion.tsx`, `decor.tsx`) that export components using hooks/motion are the **highest priority** — without `"use client"` on these root dependencies, all consumers break.
 
 **Exceptions (do NOT add `"use client"`):**
+
 - `app/layout.tsx` — must remain a server component (it exports `metadata`)
 - Pure static JSX components with no hooks, motion, or browser APIs (e.g., a simple `Footer.tsx` with only JSX)
 

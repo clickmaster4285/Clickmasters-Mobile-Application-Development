@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/app-development-on-mobile/",
       title_tag: "App Development On Mobile Complete 2026 Guide",
-      meta_description: "Expert guide to app development on mobile with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to app development on mobile with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "app development on mobile",
@@ -95,7 +96,8 @@ For a startup, app development on mobile is worth it when it removes a real, mea
     metadata: {
       url: "/crm-customer-management/",
       title_tag: "CRM Customer Management Complete 2026 Guide",
-      meta_description: "Expert guide to crm customer management with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to crm customer management with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "crm customer management",
@@ -181,7 +183,8 @@ For a startup, crm customer management is worth it when it removes a real, measu
     metadata: {
       url: "/crm-customer-relationship/",
       title_tag: "CRM Customer Relationship Complete 2026 Guide",
-      meta_description: "Expert guide to crm customer relationship with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to crm customer relationship with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "crm customer relationship",
@@ -267,7 +270,8 @@ For a startup, crm customer relationship is worth it when it removes a real, mea
     metadata: {
       url: "/crm-relationship-management/",
       title_tag: "CRM Relationship Management Complete 2026 Guide",
-      meta_description: "Expert guide to crm relationship management with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to crm relationship management with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "crm relationship management",
@@ -353,7 +357,8 @@ For a startup, crm relationship management is worth it when it removes a real, m
     metadata: {
       url: "/crm-s/",
       title_tag: "CRM's Complete 2026 Guide",
-      meta_description: "Expert guide to crm's with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to crm's with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "crm's",
@@ -439,7 +444,8 @@ For a startup, crm's is worth it when it removes a real, measurable bottleneck a
     metadata: {
       url: "/develop-mobile-application/",
       title_tag: "Develop Mobile Application Complete 2026 Guide",
-      meta_description: "Expert guide to develop mobile application with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to develop mobile application with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "develop mobile application",
@@ -525,7 +531,8 @@ For a startup, develop mobile application is worth it when it removes a real, me
     metadata: {
       url: "/mobile-app-dev/",
       title_tag: "Mobile App Dev Complete 2026 Guide",
-      meta_description: "Expert guide to mobile app dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to mobile app dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "mobile app dev",
@@ -608,15 +615,33 @@ For a startup, mobile app dev is worth it when it removes a real, measurable bot
 ];
 
 // Individual exports by slug
-export const app_development_on_mobile = data.find(d => d.slug === "app-development-on-mobile");
-export const crm_customer_management = data.find(d => d.slug === "crm-customer-management");
-export const crm_customer_relationship = data.find(d => d.slug === "crm-customer-relationship");
-export const crm_relationship_management = data.find(d => d.slug === "crm-relationship-management");
-export const crm_s = data.find(d => d.slug === "crm-s");
-export const develop_mobile_application = data.find(d => d.slug === "develop-mobile-application");
-export const mobile_app_dev = data.find(d => d.slug === "mobile-app-dev");
+export const app_development_on_mobile = data.find(
+  (d) => d.slug === "app-development-on-mobile",
+);
+export const crm_customer_management = data.find(
+  (d) => d.slug === "crm-customer-management",
+);
+export const crm_customer_relationship = data.find(
+  (d) => d.slug === "crm-customer-relationship",
+);
+export const crm_relationship_management = data.find(
+  (d) => d.slug === "crm-relationship-management",
+);
+export const crm_s = data.find((d) => d.slug === "crm-s");
+export const develop_mobile_application = data.find(
+  (d) => d.slug === "develop-mobile-application",
+);
+export const mobile_app_dev = data.find((d) => d.slug === "mobile-app-dev");
 
 // All slugs
-export const slugs = ["app-development-on-mobile", "crm-customer-management", "crm-customer-relationship", "crm-relationship-management", "crm-s", "develop-mobile-application", "mobile-app-dev"];
+export const slugs = [
+  "app-development-on-mobile",
+  "crm-customer-management",
+  "crm-customer-relationship",
+  "crm-relationship-management",
+  "crm-s",
+  "develop-mobile-application",
+  "mobile-app-dev",
+];
 
 export default data;

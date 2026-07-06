@@ -12,10 +12,36 @@ function Wordmark({ name }: { name: string }) {
   );
 }
 
-const rowA = ["Stripe", "Spotify", "Uber", "Airbnb", "Netflix", "Shopify", "Slack", "Notion"];
-const rowB = ["Microsoft", "Google", "Amazon", "Meta", "Salesforce", "Adobe", "Linear", "Figma"];
+const rowA = [
+  "Stripe",
+  "Spotify",
+  "Uber",
+  "Airbnb",
+  "Netflix",
+  "Shopify",
+  "Slack",
+  "Notion",
+];
+const rowB = [
+  "Microsoft",
+  "Google",
+  "Amazon",
+  "Meta",
+  "Salesforce",
+  "Adobe",
+  "Linear",
+  "Figma",
+];
 
-function Marquee({ items, reverse = false, duration = 32 }: { items: string[]; reverse?: boolean; duration?: number }) {
+function Marquee({
+  items,
+  reverse = false,
+  duration = 32,
+}: {
+  items: string[];
+  reverse?: boolean;
+  duration?: number;
+}) {
   return (
     <div className="group relative overflow-hidden">
       <div

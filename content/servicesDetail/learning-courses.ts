@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/course-online-platform/",
       title_tag: "Course Online Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of course online platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of course online platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "course online platform",
@@ -93,7 +94,9 @@ For a startup, course online platform is worth it when it removes a real, measur
 ];
 
 // Individual exports by slug
-export const course_online_platform = data.find(d => d.slug === "course-online-platform");
+export const course_online_platform = data.find(
+  (d) => d.slug === "course-online-platform",
+);
 
 // All slugs
 export const slugs = ["course-online-platform"];

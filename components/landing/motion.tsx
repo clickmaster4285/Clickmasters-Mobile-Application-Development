@@ -1,7 +1,19 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
-import { motion, useReducedMotion, useScroll, useTransform, type Variants } from "framer-motion";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+  type Variants,
+} from "framer-motion";
 import Lenis from "lenis";
 
 let lenisStarted = false;
@@ -83,13 +95,23 @@ export function useMagnetic(intensity = 0.22) {
   return ref;
 }
 
-export function RevealText({ children, className = "" }: { children: ReactNode; className?: string }) {
+export function RevealText({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start 0.85", "end 0.25"],
   });
-  const backgroundSize = useTransform(scrollYProgress, [0, 1], ["100% 0%", "100% 100%"]);
+  const backgroundSize = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["100% 0%", "100% 100%"],
+  );
   const opacity = useTransform(scrollYProgress, [0, 1], [0.25, 1]);
 
   return (
@@ -97,7 +119,8 @@ export function RevealText({ children, className = "" }: { children: ReactNode; 
       ref={ref}
       className={className}
       style={{
-        backgroundImage: "linear-gradient(180deg, var(--color-ink) 0%, var(--color-electric) 55%, var(--color-hot-pink) 100%)",
+        backgroundImage:
+          "linear-gradient(180deg, var(--color-ink) 0%, var(--color-electric) 55%, var(--color-hot-pink) 100%)",
         backgroundClip: "text",
         WebkitBackgroundClip: "text",
         color: "transparent",
@@ -215,7 +238,13 @@ export function StaggerContainer({
   );
 }
 
-export function StaggerItem({ children, className }: { children: ReactNode; className?: string }) {
+export function StaggerItem({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
     <motion.div className={className} variants={staggerItemVariants}>
       {children}

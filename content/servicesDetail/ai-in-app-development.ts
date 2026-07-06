@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/ai-agency/",
       title_tag: "AI Agency Complete 2026 Guide",
-      meta_description: "Expert guide to ai agency with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai agency with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai agency",
@@ -95,7 +96,8 @@ For a startup, ai agency is worth it when it removes a real, measurable bottlene
     metadata: {
       url: "/ai-agent/",
       title_tag: "AI Agent Complete 2026 Guide",
-      meta_description: "Expert guide to AI agents what they are, how they work, real app use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to AI agents what they are, how they work, real app use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar (informational)",
       primary_keyword: "ai agent",
@@ -192,7 +194,8 @@ Worth it when you have a repetitive, well-defined, multi-step task that consumes
     metadata: {
       url: "/ai-and-cloud/",
       title_tag: "AI And Cloud Complete 2026 Guide",
-      meta_description: "Expert guide to ai and cloud with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai and cloud with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai and cloud",
@@ -278,7 +281,8 @@ For a startup, ai and cloud is worth it when it removes a real, measurable bottl
     metadata: {
       url: "/ai-assist/",
       title_tag: "AI Assist Complete 2026 Guide",
-      meta_description: "Expert guide to AI assist features in apps what they are, how they work, real use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to AI assist features in apps what they are, how they work, real use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar (informational)",
       primary_keyword: "ai assist",
@@ -466,7 +470,8 @@ Usually yes for support and onboarding once you have real inbound volume — a $
     metadata: {
       url: "/ai-code/",
       title_tag: "AI Code Complete 2026 Guide",
-      meta_description: "Expert guide to ai code with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai code with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai code",
@@ -552,7 +557,8 @@ For a startup, ai code is worth it when it removes a real, measurable bottleneck
     metadata: {
       url: "/ai-coding/",
       title_tag: "AI Coding Complete 2026 Guide",
-      meta_description: "Expert guide to ai coding with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai coding with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai coding",
@@ -638,7 +644,8 @@ For a startup, ai coding is worth it when it removes a real, measurable bottlene
     metadata: {
       url: "/ai-company/",
       title_tag: "AI Company Complete 2026 Guide",
-      meta_description: "Expert guide to ai company with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai company with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai company",
@@ -724,7 +731,8 @@ For a startup, ai company is worth it when it removes a real, measurable bottlen
     metadata: {
       url: "/ai-engineer/",
       title_tag: "AI Engineer Complete 2026 Guide",
-      meta_description: "Expert guide to ai engineer with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai engineer with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai engineer",
@@ -810,7 +818,8 @@ For a startup, ai engineer is worth it when it removes a real, measurable bottle
     metadata: {
       url: "/ai-for-companies/",
       title_tag: "AI For Companies Complete 2026 Guide",
-      meta_description: "Expert guide to ai for companies with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai for companies with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai for companies",
@@ -896,7 +905,8 @@ For a startup, ai for companies is worth it when it removes a real, measurable b
     metadata: {
       url: "/ai-intelligence-companies/",
       title_tag: "AI Intelligence Companies Complete 2026 Guide",
-      meta_description: "Expert guide to ai intelligence companies with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai intelligence companies with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai intelligence companies",
@@ -982,7 +992,8 @@ For a startup, ai intelligence companies is worth it when it removes a real, mea
     metadata: {
       url: "/ai-learning/",
       title_tag: "AI Learning Complete 2026 Guide",
-      meta_description: "Expert guide to ai learning with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai learning with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai learning",
@@ -1068,7 +1079,8 @@ For a startup, ai learning is worth it when it removes a real, measurable bottle
     metadata: {
       url: "/ai-programming/",
       title_tag: "AI Programming Complete 2026 Guide",
-      meta_description: "Expert guide to ai programming with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai programming with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai programming",
@@ -1154,7 +1166,8 @@ For a startup, ai programming is worth it when it removes a real, measurable bot
     metadata: {
       url: "/ai-studio/",
       title_tag: "AI Studio Complete 2026 Guide",
-      meta_description: "Expert guide to ai studio with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ai studio with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ai studio",
@@ -1240,7 +1253,8 @@ For a startup, ai studio is worth it when it removes a real, measurable bottlene
     metadata: {
       url: "/artificial-ai/",
       title_tag: "Artificial AI Complete 2026 Guide",
-      meta_description: "Expert guide to artificial ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to artificial ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "artificial ai",
@@ -1326,7 +1340,8 @@ For a startup, artificial ai is worth it when it removes a real, measurable bott
     metadata: {
       url: "/artificial-intelligence-and-ai/",
       title_tag: "Artificial Intelligence And AI Complete 2026 Guide",
-      meta_description: "Expert guide to artificial intelligence and ai with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to artificial intelligence and ai with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "artificial intelligence and ai",
@@ -1412,7 +1427,8 @@ For a startup, artificial intelligence and ai is worth it when it removes a real
     metadata: {
       url: "/artificial-intelligence-engineering/",
       title_tag: "Artificial Intelligence Engineering Complete 2026 Guide",
-      meta_description: "Expert guide to artificial intelligence engineering with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to artificial intelligence engineering with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "artificial intelligence engineering",
@@ -1498,7 +1514,8 @@ For a startup, artificial intelligence engineering is worth it when it removes a
     metadata: {
       url: "/artificial-intelligence-program/",
       title_tag: "Artificial Intelligence Program Complete 2026 Guide",
-      meta_description: "Expert guide to artificial intelligence program with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to artificial intelligence program with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "artificial intelligence program",
@@ -1584,7 +1601,8 @@ For a startup, artificial intelligence program is worth it when it removes a rea
     metadata: {
       url: "/bolt-ai/",
       title_tag: "Bolt AI Complete 2026 Guide",
-      meta_description: "Expert guide to bolt ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to bolt ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "bolt ai",
@@ -1670,7 +1688,8 @@ For a startup, bolt ai is worth it when it removes a real, measurable bottleneck
     metadata: {
       url: "/conversational-ai-platform/",
       title_tag: "Conversational AI Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on comparison of conversational AI platforms what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on comparison of conversational AI platforms what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "conversational ai platform",
@@ -1753,7 +1772,8 @@ Worth it once you're deploying an assistant at enough volume that reliability, a
     metadata: {
       url: "/customer-service-ai/",
       title_tag: "Customer Service AI Complete 2026 Guide",
-      meta_description: "Expert guide to customer service ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to customer service ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "customer service ai",
@@ -1839,7 +1859,8 @@ For a startup, customer service ai is worth it when it removes a real, measurabl
     metadata: {
       url: "/deep-artificial-intelligence/",
       title_tag: "Deep Artificial Intelligence Complete 2026 Guide",
-      meta_description: "Expert guide to deep artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to deep artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "deep artificial intelligence",
@@ -1925,7 +1946,8 @@ For a startup, deep artificial intelligence is worth it when it removes a real, 
     metadata: {
       url: "/gen-ai/",
       title_tag: "Gen AI Complete 2026 Guide",
-      meta_description: "Expert guide to gen ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to gen ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "gen ai",
@@ -2011,7 +2033,8 @@ For a startup, gen ai is worth it when it removes a real, measurable bottleneck 
     metadata: {
       url: "/generative-ai/",
       title_tag: "Generative AI Complete 2026 Guide",
-      meta_description: "Expert guide to generative AI what it is, how it works, real app use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to generative AI what it is, how it works, real app use cases, costs, and honest limitations. Reviewed by working engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar (informational)",
       primary_keyword: "generative ai",
@@ -2108,7 +2131,8 @@ Worth it when creating or transforming content is a genuine bottleneck in your p
     metadata: {
       url: "/intelligence-ai/",
       title_tag: "Intelligence AI Complete 2026 Guide",
-      meta_description: "Expert guide to intelligence ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to intelligence ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "intelligence ai",
@@ -2194,7 +2218,8 @@ For a startup, intelligence ai is worth it when it removes a real, measurable bo
     metadata: {
       url: "/intelligent-agents-in-ai/",
       title_tag: "Intelligent Agents In AI Complete 2026 Guide",
-      meta_description: "Expert guide to intelligent agents in ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to intelligent agents in ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "intelligent agents in ai",
@@ -2280,7 +2305,8 @@ For a startup, intelligent agents in ai is worth it when it removes a real, meas
     metadata: {
       url: "/learn-artificial-intelligence/",
       title_tag: "Learn Artificial Intelligence Complete 2026 Guide",
-      meta_description: "Expert guide to learn artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to learn artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "learn artificial intelligence",
@@ -2366,7 +2392,8 @@ For a startup, learn artificial intelligence is worth it when it removes a real,
     metadata: {
       url: "/machine-learning-and/",
       title_tag: "Machine Learning And Complete 2026 Guide",
-      meta_description: "Expert guide to machine learning and with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to machine learning and with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "machine learning and",
@@ -2452,7 +2479,8 @@ For a startup, machine learning and is worth it when it removes a real, measurab
     metadata: {
       url: "/online-courses-on-artificial-intelligence/",
       title_tag: "Online Courses On Artificial Intelligence Complete 2026 Gui",
-      meta_description: "Expert guide to online courses on artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to online courses on artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "online courses on artificial intelligence",
@@ -2538,7 +2566,8 @@ For a startup, online courses on artificial intelligence is worth it when it rem
     metadata: {
       url: "/tool-ai/",
       title_tag: "Tool AI Tested & Ranked (2026)",
-      meta_description: "Hands-on review of tool ai what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of tool ai what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "tool ai",
@@ -2625,7 +2654,8 @@ For a startup, tool ai is worth it when it removes a real, measurable bottleneck
     metadata: {
       url: "/training-in-ai/",
       title_tag: "Training In AI Complete 2026 Guide",
-      meta_description: "Expert guide to training in ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to training in ai with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "training in ai",
@@ -2711,7 +2741,8 @@ For a startup, training in ai is worth it when it removes a real, measurable bot
     metadata: {
       url: "/whatis-artificial-intelligence/",
       title_tag: "Whatis Artificial Intelligence Complete 2026 Guide",
-      meta_description: "Expert guide to whatis artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to whatis artificial intelligence with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "whatis artificial intelligence",
@@ -2794,40 +2825,97 @@ For a startup, whatis artificial intelligence is worth it when it removes a real
 ];
 
 // Individual exports by slug
-export const ai_agency = data.find(d => d.slug === "ai-agency");
-export const ai_agent = data.find(d => d.slug === "ai-agent");
-export const ai_and_cloud = data.find(d => d.slug === "ai-and-cloud");
-export const ai_assist = data.find(d => d.slug === "ai-assist");
-export const ai_chatbot = data.find(d => d.slug === "ai-chatbot");
-export const ai_code = data.find(d => d.slug === "ai-code");
-export const ai_coding = data.find(d => d.slug === "ai-coding");
-export const ai_company = data.find(d => d.slug === "ai-company");
-export const ai_engineer = data.find(d => d.slug === "ai-engineer");
-export const ai_for_companies = data.find(d => d.slug === "ai-for-companies");
-export const ai_intelligence_companies = data.find(d => d.slug === "ai-intelligence-companies");
-export const ai_learning = data.find(d => d.slug === "ai-learning");
-export const ai_programming = data.find(d => d.slug === "ai-programming");
-export const ai_studio = data.find(d => d.slug === "ai-studio");
-export const artificial_ai = data.find(d => d.slug === "artificial-ai");
-export const artificial_intelligence_and_ai = data.find(d => d.slug === "artificial-intelligence-and-ai");
-export const artificial_intelligence_engineering = data.find(d => d.slug === "artificial-intelligence-engineering");
-export const artificial_intelligence_program = data.find(d => d.slug === "artificial-intelligence-program");
-export const bolt_ai = data.find(d => d.slug === "bolt-ai");
-export const conversational_ai_platform = data.find(d => d.slug === "conversational-ai-platform");
-export const customer_service_ai = data.find(d => d.slug === "customer-service-ai");
-export const deep_artificial_intelligence = data.find(d => d.slug === "deep-artificial-intelligence");
-export const gen_ai = data.find(d => d.slug === "gen-ai");
-export const generative_ai = data.find(d => d.slug === "generative-ai");
-export const intelligence_ai = data.find(d => d.slug === "intelligence-ai");
-export const intelligent_agents_in_ai = data.find(d => d.slug === "intelligent-agents-in-ai");
-export const learn_artificial_intelligence = data.find(d => d.slug === "learn-artificial-intelligence");
-export const machine_learning_and = data.find(d => d.slug === "machine-learning-and");
-export const online_courses_on_artificial_intelligence = data.find(d => d.slug === "online-courses-on-artificial-intelligence");
-export const tool_ai = data.find(d => d.slug === "tool-ai");
-export const training_in_ai = data.find(d => d.slug === "training-in-ai");
-export const whatis_artificial_intelligence = data.find(d => d.slug === "whatis-artificial-intelligence");
+export const ai_agency = data.find((d) => d.slug === "ai-agency");
+export const ai_agent = data.find((d) => d.slug === "ai-agent");
+export const ai_and_cloud = data.find((d) => d.slug === "ai-and-cloud");
+export const ai_assist = data.find((d) => d.slug === "ai-assist");
+export const ai_chatbot = data.find((d) => d.slug === "ai-chatbot");
+export const ai_code = data.find((d) => d.slug === "ai-code");
+export const ai_coding = data.find((d) => d.slug === "ai-coding");
+export const ai_company = data.find((d) => d.slug === "ai-company");
+export const ai_engineer = data.find((d) => d.slug === "ai-engineer");
+export const ai_for_companies = data.find((d) => d.slug === "ai-for-companies");
+export const ai_intelligence_companies = data.find(
+  (d) => d.slug === "ai-intelligence-companies",
+);
+export const ai_learning = data.find((d) => d.slug === "ai-learning");
+export const ai_programming = data.find((d) => d.slug === "ai-programming");
+export const ai_studio = data.find((d) => d.slug === "ai-studio");
+export const artificial_ai = data.find((d) => d.slug === "artificial-ai");
+export const artificial_intelligence_and_ai = data.find(
+  (d) => d.slug === "artificial-intelligence-and-ai",
+);
+export const artificial_intelligence_engineering = data.find(
+  (d) => d.slug === "artificial-intelligence-engineering",
+);
+export const artificial_intelligence_program = data.find(
+  (d) => d.slug === "artificial-intelligence-program",
+);
+export const bolt_ai = data.find((d) => d.slug === "bolt-ai");
+export const conversational_ai_platform = data.find(
+  (d) => d.slug === "conversational-ai-platform",
+);
+export const customer_service_ai = data.find(
+  (d) => d.slug === "customer-service-ai",
+);
+export const deep_artificial_intelligence = data.find(
+  (d) => d.slug === "deep-artificial-intelligence",
+);
+export const gen_ai = data.find((d) => d.slug === "gen-ai");
+export const generative_ai = data.find((d) => d.slug === "generative-ai");
+export const intelligence_ai = data.find((d) => d.slug === "intelligence-ai");
+export const intelligent_agents_in_ai = data.find(
+  (d) => d.slug === "intelligent-agents-in-ai",
+);
+export const learn_artificial_intelligence = data.find(
+  (d) => d.slug === "learn-artificial-intelligence",
+);
+export const machine_learning_and = data.find(
+  (d) => d.slug === "machine-learning-and",
+);
+export const online_courses_on_artificial_intelligence = data.find(
+  (d) => d.slug === "online-courses-on-artificial-intelligence",
+);
+export const tool_ai = data.find((d) => d.slug === "tool-ai");
+export const training_in_ai = data.find((d) => d.slug === "training-in-ai");
+export const whatis_artificial_intelligence = data.find(
+  (d) => d.slug === "whatis-artificial-intelligence",
+);
 
 // All slugs
-export const slugs = ["ai-agency", "ai-agent", "ai-and-cloud", "ai-assist", "ai-chatbot", "ai-code", "ai-coding", "ai-company", "ai-engineer", "ai-for-companies", "ai-intelligence-companies", "ai-learning", "ai-programming", "ai-studio", "artificial-ai", "artificial-intelligence-and-ai", "artificial-intelligence-engineering", "artificial-intelligence-program", "bolt-ai", "conversational-ai-platform", "customer-service-ai", "deep-artificial-intelligence", "gen-ai", "generative-ai", "intelligence-ai", "intelligent-agents-in-ai", "learn-artificial-intelligence", "machine-learning-and", "online-courses-on-artificial-intelligence", "tool-ai", "training-in-ai", "whatis-artificial-intelligence"];
+export const slugs = [
+  "ai-agency",
+  "ai-agent",
+  "ai-and-cloud",
+  "ai-assist",
+  "ai-chatbot",
+  "ai-code",
+  "ai-coding",
+  "ai-company",
+  "ai-engineer",
+  "ai-for-companies",
+  "ai-intelligence-companies",
+  "ai-learning",
+  "ai-programming",
+  "ai-studio",
+  "artificial-ai",
+  "artificial-intelligence-and-ai",
+  "artificial-intelligence-engineering",
+  "artificial-intelligence-program",
+  "bolt-ai",
+  "conversational-ai-platform",
+  "customer-service-ai",
+  "deep-artificial-intelligence",
+  "gen-ai",
+  "generative-ai",
+  "intelligence-ai",
+  "intelligent-agents-in-ai",
+  "learn-artificial-intelligence",
+  "machine-learning-and",
+  "online-courses-on-artificial-intelligence",
+  "tool-ai",
+  "training-in-ai",
+  "whatis-artificial-intelligence",
+];
 
 export default data;

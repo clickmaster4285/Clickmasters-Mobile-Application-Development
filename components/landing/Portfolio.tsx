@@ -3,7 +3,14 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { RevealText, ScrollFloat, useMagnetic } from "./motion";
-import { DoodleCircle, PaperAirplane, Sparkle, Squiggle, DottedTrail, Drift } from "./decor";
+import {
+  DoodleCircle,
+  PaperAirplane,
+  Sparkle,
+  Squiggle,
+  DottedTrail,
+  Drift,
+} from "./decor";
 
 const projects = [
   {
@@ -43,12 +50,17 @@ const projects = [
 
 function PhoneVideo({ src, rotate }: { src: string; rotate: string }) {
   return (
-    <ScrollFloat yRange={[40, -40]} className="relative aspect-[4/3] w-full grid place-items-center">
+    <ScrollFloat
+      yRange={[40, -40]}
+      className="relative aspect-[4/3] w-full grid place-items-center"
+    >
       <Drift className="absolute -top-2 -left-2 size-16 opacity-70">
         <DoodleCircle tone="ink" className="size-full" />
       </Drift>
       <Sparkle className="absolute top-6 right-8 size-5 animate-pulse" />
-      <div className={`relative w-56 h-[460px] rounded-[2.75rem] bg-ink p-2 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.45)] ${rotate} transition-transform duration-700 hover:rotate-0`}>
+      <div
+        className={`relative w-56 h-[460px] rounded-[2.75rem] bg-ink p-2 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.45)] ${rotate} transition-transform duration-700 hover:rotate-0`}
+      >
         <video
           src={src}
           autoPlay
@@ -65,7 +77,13 @@ function PhoneVideo({ src, rotate }: { src: string; rotate: string }) {
   );
 }
 
-function CaseButton({ className, children }: { className: string; children: React.ReactNode }) {
+function CaseButton({
+  className,
+  children,
+}: {
+  className: string;
+  children: React.ReactNode;
+}) {
   const ref = useMagnetic(0.3);
   return (
     <button
@@ -83,7 +101,10 @@ export function Portfolio() {
       <Drift className="absolute top-20 right-10 size-40 opacity-30 pointer-events-none">
         <PaperAirplane className="size-full" tone="electric" />
       </Drift>
-      <Drift delay={2} className="absolute bottom-32 left-6 size-28 opacity-40 pointer-events-none">
+      <Drift
+        delay={2}
+        className="absolute bottom-32 left-6 size-28 opacity-40 pointer-events-none"
+      >
         <DoodleCircle tone="pink" className="size-full" />
       </Drift>
 
@@ -97,8 +118,8 @@ export function Portfolio() {
             work
           </RevealText>
           <p className="mt-6 text-ink/70 text-lg max-w-2xl">
-            We specialize in premium mobile and web development across fintech, health, commerce,
-            and social — products real people use every day.
+            We specialize in premium mobile and web development across fintech,
+            health, commerce, and social — products real people use every day.
           </p>
         </div>
         <div className="space-y-12">
@@ -108,14 +129,24 @@ export function Portfolio() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-120px" }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.05 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1],
+                delay: i * 0.05,
+              }}
               className={`${p.bg} ${p.text} relative rounded-[2.5rem] overflow-hidden grid md:grid-cols-2 items-center shadow-[0_30px_80px_-30px_rgba(0,0,0,0.35)]`}
             >
               <Sparkle className="absolute top-6 left-6 size-4 opacity-60" />
               <div className={`p-10 md:p-16 ${p.flip ? "md:order-2" : ""}`}>
-                <p className="text-xs uppercase tracking-[0.3em] opacity-70">{p.tag}</p>
-                <h3 className="mt-3 font-display font-extrabold text-5xl md:text-6xl leading-[0.95]">{p.name}</h3>
-                <p className="mt-5 opacity-90 max-w-md text-lg leading-relaxed">{p.desc}</p>
+                <p className="text-xs uppercase tracking-[0.3em] opacity-70">
+                  {p.tag}
+                </p>
+                <h3 className="mt-3 font-display font-extrabold text-5xl md:text-6xl leading-[0.95]">
+                  {p.name}
+                </h3>
+                <p className="mt-5 opacity-90 max-w-md text-lg leading-relaxed">
+                  {p.desc}
+                </p>
                 <CaseButton className={p.btn}>
                   View Case Study <ArrowRight className="size-4" />
                 </CaseButton>

@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/fleet-maintenance-management-software/",
       title_tag: "Fleet Maintenance Management Software Tested & Ranked (2026",
-      meta_description: "Hands-on review of fleet maintenance management software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of fleet maintenance management software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "fleet maintenance management software",
@@ -96,7 +97,8 @@ For a startup, fleet maintenance management software is worth it when it removes
     metadata: {
       url: "/fleet-maintenance-software/",
       title_tag: "Fleet Maintenance Software Tested & Ranked (2026)",
-      meta_description: "Hands-on review of fleet maintenance software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of fleet maintenance software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "fleet maintenance software",
@@ -183,7 +185,8 @@ For a startup, fleet maintenance software is worth it when it removes a real, me
     metadata: {
       url: "/test-driven/",
       title_tag: "Test Driven Complete 2026 Guide",
-      meta_description: "Expert guide to test driven with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to test driven with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "test driven",
@@ -266,11 +269,19 @@ For a startup, test driven is worth it when it removes a real, measurable bottle
 ];
 
 // Individual exports by slug
-export const fleet_maintenance_management_software = data.find(d => d.slug === "fleet-maintenance-management-software");
-export const fleet_maintenance_software = data.find(d => d.slug === "fleet-maintenance-software");
-export const test_driven = data.find(d => d.slug === "test-driven");
+export const fleet_maintenance_management_software = data.find(
+  (d) => d.slug === "fleet-maintenance-management-software",
+);
+export const fleet_maintenance_software = data.find(
+  (d) => d.slug === "fleet-maintenance-software",
+);
+export const test_driven = data.find((d) => d.slug === "test-driven");
 
 // All slugs
-export const slugs = ["fleet-maintenance-management-software", "fleet-maintenance-software", "test-driven"];
+export const slugs = [
+  "fleet-maintenance-management-software",
+  "fleet-maintenance-software",
+  "test-driven",
+];
 
 export default data;

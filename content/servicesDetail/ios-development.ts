@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/advertise-on-app-store/",
       title_tag: "Advertise On App Store Complete 2026 Guide",
-      meta_description: "Expert guide to advertise on app store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to advertise on app store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "advertise on app store",
@@ -95,7 +96,8 @@ For a startup, advertise on app store is worth it when it removes a real, measur
     metadata: {
       url: "/app-store/",
       title_tag: "App Store Complete 2026 Guide",
-      meta_description: "Expert guide to app store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to app store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "app store",
@@ -181,7 +183,8 @@ For a startup, app store is worth it when it removes a real, measurable bottlene
     metadata: {
       url: "/iphone-12-0/",
       title_tag: "Iphone 12.0 Complete 2026 Guide",
-      meta_description: "Expert guide to iphone 12.0 with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to iphone 12.0 with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "iphone 12.0",
@@ -264,9 +267,11 @@ For a startup, iphone 12.0 is worth it when it removes a real, measurable bottle
 ];
 
 // Individual exports by slug
-export const advertise_on_app_store = data.find(d => d.slug === "advertise-on-app-store");
-export const app_store = data.find(d => d.slug === "app-store");
-export const iphone_12_0 = data.find(d => d.slug === "iphone-12-0");
+export const advertise_on_app_store = data.find(
+  (d) => d.slug === "advertise-on-app-store",
+);
+export const app_store = data.find((d) => d.slug === "app-store");
+export const iphone_12_0 = data.find((d) => d.slug === "iphone-12-0");
 
 // All slugs
 export const slugs = ["advertise-on-app-store", "app-store", "iphone-12-0"];

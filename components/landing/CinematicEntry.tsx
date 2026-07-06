@@ -36,7 +36,11 @@ function ParticleSystem() {
             x: [0, (p.x - 50) * 2],
             y: [0, (p.y - 50) * 2],
           }}
-          transition={{ duration: p.duration + 1.5, delay: p.delay, ease: "easeOut" }}
+          transition={{
+            duration: p.duration + 1.5,
+            delay: p.delay,
+            ease: "easeOut",
+          }}
         />
       ))}
     </div>
@@ -70,7 +74,9 @@ export function CinematicEntry({ onComplete }: { onComplete?: () => void }) {
   useEffect(() => {
     setReady(true);
     const seen = sessionStorage.getItem("clickmasters_entry_seen");
-    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    const reduce = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     if (seen || reduce) {
       onComplete?.();
       return;
@@ -103,7 +109,10 @@ export function CinematicEntry({ onComplete }: { onComplete?: () => void }) {
               "radial-gradient(ellipse at center, #0A0A0F 0%, #000000 70%)",
           }}
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+          exit={{
+            opacity: 0,
+            transition: { duration: 0.5, ease: "easeInOut" },
+          }}
         >
           <ParticleSystem />
           <GlowRings />
@@ -139,7 +148,10 @@ export function CinematicEntry({ onComplete }: { onComplete?: () => void }) {
           <div className="relative z-10 text-center px-6">
             <motion.p
               className="text-white/80 uppercase"
-              style={{ letterSpacing: "0.25em", fontSize: "clamp(14px, 2vw, 24px)" }}
+              style={{
+                letterSpacing: "0.25em",
+                fontSize: "clamp(14px, 2vw, 24px)",
+              }}
               initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
               animate={{ opacity: 0.8, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.6, delay: 0.3 }}

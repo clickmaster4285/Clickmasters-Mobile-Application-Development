@@ -16,16 +16,21 @@ export function Awesoop() {
         >
           <p className="font-script text-4xl text-hot-pink mb-4">Awesoop!</p>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">
-            An award-winning team of designers, engineers &amp; product thinkers.
+            An award-winning team of designers, engineers &amp; product
+            thinkers.
           </h2>
           <p className="mt-6 text-ink/70 leading-relaxed max-w-lg">
-            We don't just write code. We build partnerships. With ClickMasters, you'll discover a
-            strategic partner equipped with the expertise, skill, and dedication to bring your
-            vision to life.
+            We don't just write code. We build partnerships. With ClickMasters,
+            you'll discover a strategic partner equipped with the expertise,
+            skill, and dedication to bring your vision to life.
           </p>
           <div className="mt-10 inline-flex items-baseline gap-3 rounded-2xl border-2 border-ink px-6 py-4">
-            <span className="font-display font-extrabold text-5xl text-ink">250+</span>
-            <span className="text-sm text-ink/70">web &amp; mobile apps developed</span>
+            <span className="font-display font-extrabold text-5xl text-ink">
+              250+
+            </span>
+            <span className="text-sm text-ink/70">
+              web &amp; mobile apps developed
+            </span>
           </div>
         </motion.div>
         <motion.div
@@ -40,7 +45,9 @@ export function Awesoop() {
               key={l}
               className="aspect-[3/2] grid place-items-center rounded-xl border border-border bg-white grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all"
             >
-              <span className="font-display font-bold text-ink text-lg capitalize">{l}</span>
+              <span className="font-display font-bold text-ink text-lg capitalize">
+                {l}
+              </span>
             </div>
           ))}
         </motion.div>

@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/app-builder-no-coding/",
       title_tag: "App Builder No Coding Tested & Ranked (2026)",
-      meta_description: "Hands-on review of app builder no coding what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of app builder no coding what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "app builder no coding",
@@ -96,7 +97,8 @@ For a startup, app builder no coding is worth it when it removes a real, measura
     metadata: {
       url: "/build-app-no-code/",
       title_tag: "Build App No Code Step-by-Step Guide (2026)",
-      meta_description: "A practitioner's walkthrough of build app no code — real screenshots, code, timelines, and costs from shipped projects. No fluff. Updated 2026.",
+      meta_description:
+        "A practitioner's walkthrough of build app no code — real screenshots, code, timelines, and costs from shipped projects. No fluff. Updated 2026.",
       schema: "HowTo + Article + FAQPage",
       page_type: "Step-by-step guide",
       primary_keyword: "build app no code",
@@ -178,7 +180,8 @@ For a startup, build app no code is worth it when it removes a real, measurable 
     metadata: {
       url: "/low-code-app-development-platform/",
       title_tag: "Low Code App Development Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of low code app development platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of low code app development platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "low code app development platform",
@@ -265,7 +268,8 @@ For a startup, low code app development platform is worth it when it removes a r
     metadata: {
       url: "/low-code-automation-platform/",
       title_tag: "Low Code Automation Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of low code automation platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of low code automation platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "low code automation platform",
@@ -352,7 +356,8 @@ For a startup, low code automation platform is worth it when it removes a real, 
     metadata: {
       url: "/low-code-development-tools/",
       title_tag: "Low Code Development Tools Tested & Ranked (2026)",
-      meta_description: "Hands-on review of low code development tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of low code development tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "low code development tools",
@@ -439,7 +444,8 @@ For a startup, low code development tools is worth it when it removes a real, me
     metadata: {
       url: "/low-code/",
       title_tag: "Low Code Complete 2026 Guide",
-      meta_description: "Expert guide to low code with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to low code with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "low code",
@@ -525,7 +531,8 @@ For a startup, low code is worth it when it removes a real, measurable bottlenec
     metadata: {
       url: "/no-code-app-builder/",
       title_tag: "No Code App Builder Tested & Ranked (2026)",
-      meta_description: "Hands-on review of no code app builder what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of no code app builder what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "no code app builder",
@@ -612,7 +619,8 @@ For a startup, no code app builder is worth it when it removes a real, measurabl
     metadata: {
       url: "/no-code-app-creator/",
       title_tag: "No Code App Creator Complete 2026 Guide",
-      meta_description: "Expert guide to no code app creator with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to no code app creator with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "no code app creator",
@@ -695,16 +703,39 @@ For a startup, no code app creator is worth it when it removes a real, measurabl
 ];
 
 // Individual exports by slug
-export const app_builder_no_coding = data.find(d => d.slug === "app-builder-no-coding");
-export const build_app_no_code = data.find(d => d.slug === "build-app-no-code");
-export const low_code_app_development_platform = data.find(d => d.slug === "low-code-app-development-platform");
-export const low_code_automation_platform = data.find(d => d.slug === "low-code-automation-platform");
-export const low_code_development_tools = data.find(d => d.slug === "low-code-development-tools");
-export const low_code = data.find(d => d.slug === "low-code");
-export const no_code_app_builder = data.find(d => d.slug === "no-code-app-builder");
-export const no_code_app_creator = data.find(d => d.slug === "no-code-app-creator");
+export const app_builder_no_coding = data.find(
+  (d) => d.slug === "app-builder-no-coding",
+);
+export const build_app_no_code = data.find(
+  (d) => d.slug === "build-app-no-code",
+);
+export const low_code_app_development_platform = data.find(
+  (d) => d.slug === "low-code-app-development-platform",
+);
+export const low_code_automation_platform = data.find(
+  (d) => d.slug === "low-code-automation-platform",
+);
+export const low_code_development_tools = data.find(
+  (d) => d.slug === "low-code-development-tools",
+);
+export const low_code = data.find((d) => d.slug === "low-code");
+export const no_code_app_builder = data.find(
+  (d) => d.slug === "no-code-app-builder",
+);
+export const no_code_app_creator = data.find(
+  (d) => d.slug === "no-code-app-creator",
+);
 
 // All slugs
-export const slugs = ["app-builder-no-coding", "build-app-no-code", "low-code-app-development-platform", "low-code-automation-platform", "low-code-development-tools", "low-code", "no-code-app-builder", "no-code-app-creator"];
+export const slugs = [
+  "app-builder-no-coding",
+  "build-app-no-code",
+  "low-code-app-development-platform",
+  "low-code-automation-platform",
+  "low-code-development-tools",
+  "low-code",
+  "no-code-app-builder",
+  "no-code-app-creator",
+];
 
 export default data;

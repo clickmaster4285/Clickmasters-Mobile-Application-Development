@@ -1,9 +1,8 @@
 "use client";
-
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, type LucideIcon } from "lucide-react";
 import * as Icons from "lucide-react";
+import { ArrowRight, type LucideIcon } from "lucide-react";
 import { services } from "@/data/services";
 import { RevealText } from "./motion";
 
@@ -17,12 +16,15 @@ export function ServicesSection() {
     <section id="services" className="relative px-6 lg:px-10 py-28 bg-cream">
       <div className="max-w-[85vw] mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="font-script text-3xl text-hot-pink -rotate-2">what we build</p>
+          <p className="font-script text-3xl text-hot-pink -rotate-2">
+            what we build
+          </p>
           <RevealText className="mt-3 font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">
             Services that drive digital growth
           </RevealText>
           <p className="mt-5 text-ink/65 leading-relaxed">
-            End-to-end mobile development expertise — from concept to launch and beyond.
+            End-to-end mobile development expertise — from concept to launch and
+            beyond.
           </p>
         </div>
 
@@ -35,7 +37,11 @@ export function ServicesSection() {
                 initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.55, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  duration: 0.55,
+                  delay: i * 0.06,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
               >
                 <Link
                   href={`/services/${service.slug}`}
@@ -45,8 +51,12 @@ export function ServicesSection() {
                   <div className="size-14 rounded-2xl bg-gradient-to-br from-electric/10 to-hot-pink/10 grid place-items-center text-ink group-hover:from-electric group-hover:to-hot-pink group-hover:text-white transition-all duration-500">
                     <Icon className="size-7" />
                   </div>
-                  <h3 className="mt-5 font-display font-bold text-xl text-ink">{service.title}</h3>
-                  <p className="mt-2 text-sm text-ink/65 leading-relaxed">{service.shortDescription}</p>
+                  <h3 className="mt-5 font-display font-bold text-xl text-ink">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink/65 leading-relaxed">
+                    {service.shortDescription}
+                  </p>
 
                   <div className="mt-5 flex flex-wrap gap-1.5">
                     {service.technologies.slice(0, 3).map((t) => (

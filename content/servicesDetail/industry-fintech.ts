@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/binance-crypto-exchange/",
       title_tag: "Binance Crypto Exchange Complete 2026 Guide",
-      meta_description: "Expert guide to binance crypto exchange with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to binance crypto exchange with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "binance crypto exchange",
@@ -95,7 +96,8 @@ For a startup, binance crypto exchange is worth it when it removes a real, measu
     metadata: {
       url: "/crypto-wallet/",
       title_tag: "Crypto Wallet Complete 2026 Guide",
-      meta_description: "Expert guide to crypto wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to crypto wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "crypto wallet",
@@ -181,7 +183,8 @@ For a startup, crypto wallet is worth it when it removes a real, measurable bott
     metadata: {
       url: "/cryptocurrency-wallet/",
       title_tag: "Cryptocurrency Wallet Complete 2026 Guide",
-      meta_description: "Expert guide to cryptocurrency wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to cryptocurrency wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "cryptocurrency wallet",
@@ -267,7 +270,8 @@ For a startup, cryptocurrency wallet is worth it when it removes a real, measura
     metadata: {
       url: "/cyber-currency-wallet/",
       title_tag: "Cyber Currency Wallet Complete 2026 Guide",
-      meta_description: "Expert guide to cyber currency wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to cyber currency wallet with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "cyber currency wallet",
@@ -353,7 +357,8 @@ For a startup, cyber currency wallet is worth it when it removes a real, measura
     metadata: {
       url: "/e-trading-platforms/",
       title_tag: "E Trading Platforms Complete 2026 Guide",
-      meta_description: "Expert guide to e trading platforms with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to e trading platforms with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "e trading platforms",
@@ -439,7 +444,8 @@ For a startup, e trading platforms is worth it when it removes a real, measurabl
     metadata: {
       url: "/electronic-trading-platform/",
       title_tag: "Electronic Trading Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of electronic trading platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of electronic trading platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "electronic trading platform",
@@ -526,7 +532,8 @@ For a startup, electronic trading platform is worth it when it removes a real, m
     metadata: {
       url: "/exchanges-for-crypto/",
       title_tag: "Exchanges For Crypto Complete 2026 Guide",
-      meta_description: "Expert guide to exchanges for crypto with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to exchanges for crypto with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "exchanges for crypto",
@@ -612,7 +619,8 @@ For a startup, exchanges for crypto is worth it when it removes a real, measurab
     metadata: {
       url: "/finance-analyst/",
       title_tag: "Finance Analyst Complete 2026 Guide",
-      meta_description: "Expert guide to finance analyst with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to finance analyst with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "finance analyst",
@@ -698,7 +706,8 @@ For a startup, finance analyst is worth it when it removes a real, measurable bo
     metadata: {
       url: "/mobile-banking-apps/",
       title_tag: "Mobile Banking Apps Complete 2026 Guide",
-      meta_description: "Expert guide to mobile banking apps with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to mobile banking apps with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "mobile banking apps",
@@ -784,7 +793,8 @@ For a startup, mobile banking apps is worth it when it removes a real, measurabl
     metadata: {
       url: "/online-trading-platform/",
       title_tag: "Online Trading Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of online trading platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of online trading platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "online trading platform",
@@ -871,7 +881,8 @@ For a startup, online trading platform is worth it when it removes a real, measu
     metadata: {
       url: "/personal-finance-management-software/",
       title_tag: "Personal Finance Management Software Tested & Ranked (2026)",
-      meta_description: "Hands-on review of personal finance management software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of personal finance management software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "personal finance management software",
@@ -958,7 +969,8 @@ For a startup, personal finance management software is worth it when it removes 
     metadata: {
       url: "/software-for-personal-finance/",
       title_tag: "Software For Personal Finance Tested & Ranked (2026)",
-      meta_description: "Hands-on review of software for personal finance what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of software for personal finance what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "software for personal finance",
@@ -1042,20 +1054,53 @@ For a startup, software for personal finance is worth it when it removes a real,
 ];
 
 // Individual exports by slug
-export const binance_crypto_exchange = data.find(d => d.slug === "binance-crypto-exchange");
-export const crypto_wallet = data.find(d => d.slug === "crypto-wallet");
-export const cryptocurrency_wallet = data.find(d => d.slug === "cryptocurrency-wallet");
-export const cyber_currency_wallet = data.find(d => d.slug === "cyber-currency-wallet");
-export const e_trading_platforms = data.find(d => d.slug === "e-trading-platforms");
-export const electronic_trading_platform = data.find(d => d.slug === "electronic-trading-platform");
-export const exchanges_for_crypto = data.find(d => d.slug === "exchanges-for-crypto");
-export const finance_analyst = data.find(d => d.slug === "finance-analyst");
-export const mobile_banking_apps = data.find(d => d.slug === "mobile-banking-apps");
-export const online_trading_platform = data.find(d => d.slug === "online-trading-platform");
-export const personal_finance_management_software = data.find(d => d.slug === "personal-finance-management-software");
-export const software_for_personal_finance = data.find(d => d.slug === "software-for-personal-finance");
+export const binance_crypto_exchange = data.find(
+  (d) => d.slug === "binance-crypto-exchange",
+);
+export const crypto_wallet = data.find((d) => d.slug === "crypto-wallet");
+export const cryptocurrency_wallet = data.find(
+  (d) => d.slug === "cryptocurrency-wallet",
+);
+export const cyber_currency_wallet = data.find(
+  (d) => d.slug === "cyber-currency-wallet",
+);
+export const e_trading_platforms = data.find(
+  (d) => d.slug === "e-trading-platforms",
+);
+export const electronic_trading_platform = data.find(
+  (d) => d.slug === "electronic-trading-platform",
+);
+export const exchanges_for_crypto = data.find(
+  (d) => d.slug === "exchanges-for-crypto",
+);
+export const finance_analyst = data.find((d) => d.slug === "finance-analyst");
+export const mobile_banking_apps = data.find(
+  (d) => d.slug === "mobile-banking-apps",
+);
+export const online_trading_platform = data.find(
+  (d) => d.slug === "online-trading-platform",
+);
+export const personal_finance_management_software = data.find(
+  (d) => d.slug === "personal-finance-management-software",
+);
+export const software_for_personal_finance = data.find(
+  (d) => d.slug === "software-for-personal-finance",
+);
 
 // All slugs
-export const slugs = ["binance-crypto-exchange", "crypto-wallet", "cryptocurrency-wallet", "cyber-currency-wallet", "e-trading-platforms", "electronic-trading-platform", "exchanges-for-crypto", "finance-analyst", "mobile-banking-apps", "online-trading-platform", "personal-finance-management-software", "software-for-personal-finance"];
+export const slugs = [
+  "binance-crypto-exchange",
+  "crypto-wallet",
+  "cryptocurrency-wallet",
+  "cyber-currency-wallet",
+  "e-trading-platforms",
+  "electronic-trading-platform",
+  "exchanges-for-crypto",
+  "finance-analyst",
+  "mobile-banking-apps",
+  "online-trading-platform",
+  "personal-finance-management-software",
+  "software-for-personal-finance",
+];
 
 export default data;

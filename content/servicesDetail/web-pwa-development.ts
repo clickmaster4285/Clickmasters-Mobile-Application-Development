@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/app-web-app/",
       title_tag: "App Web App Complete 2026 Guide",
-      meta_description: "Expert guide to app web app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to app web app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "app web app",
@@ -95,7 +96,8 @@ For a startup, app web app is worth it when it removes a real, measurable bottle
     metadata: {
       url: "/web-dev/",
       title_tag: "Web Dev Complete 2026 Guide",
-      meta_description: "Expert guide to web dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to web dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "web dev",
@@ -181,7 +183,8 @@ For a startup, web dev is worth it when it removes a real, measurable bottleneck
     metadata: {
       url: "/website-app/",
       title_tag: "Website App Complete 2026 Guide",
-      meta_description: "Expert guide to website app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to website app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "website app",
@@ -267,7 +270,8 @@ For a startup, website app is worth it when it removes a real, measurable bottle
     metadata: {
       url: "/website-creation-website/",
       title_tag: "Website Creation Website Complete 2026 Guide",
-      meta_description: "Expert guide to website creation website with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to website creation website with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "website creation website",
@@ -353,7 +357,8 @@ For a startup, website creation website is worth it when it removes a real, meas
     metadata: {
       url: "/website-dev/",
       title_tag: "Website Dev Complete 2026 Guide",
-      meta_description: "Expert guide to website dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to website dev with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "website dev",
@@ -439,7 +444,8 @@ For a startup, website dev is worth it when it removes a real, measurable bottle
     metadata: {
       url: "/website-development/",
       title_tag: "Website Development Complete 2026 Guide",
-      meta_description: "Expert guide to website development with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to website development with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "website development",
@@ -522,14 +528,25 @@ For a startup, website development is worth it when it removes a real, measurabl
 ];
 
 // Individual exports by slug
-export const app_web_app = data.find(d => d.slug === "app-web-app");
-export const web_dev = data.find(d => d.slug === "web-dev");
-export const website_app = data.find(d => d.slug === "website-app");
-export const website_creation_website = data.find(d => d.slug === "website-creation-website");
-export const website_dev = data.find(d => d.slug === "website-dev");
-export const website_development = data.find(d => d.slug === "website-development");
+export const app_web_app = data.find((d) => d.slug === "app-web-app");
+export const web_dev = data.find((d) => d.slug === "web-dev");
+export const website_app = data.find((d) => d.slug === "website-app");
+export const website_creation_website = data.find(
+  (d) => d.slug === "website-creation-website",
+);
+export const website_dev = data.find((d) => d.slug === "website-dev");
+export const website_development = data.find(
+  (d) => d.slug === "website-development",
+);
 
 // All slugs
-export const slugs = ["app-web-app", "web-dev", "website-app", "website-creation-website", "website-dev", "website-development"];
+export const slugs = [
+  "app-web-app",
+  "web-dev",
+  "website-app",
+  "website-creation-website",
+  "website-dev",
+  "website-development",
+];
 
 export default data;

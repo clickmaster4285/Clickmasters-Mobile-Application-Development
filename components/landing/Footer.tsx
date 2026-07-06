@@ -27,17 +27,24 @@ export function Footer() {
           <div>
             <img src={logo} alt="ClickMasters" className="h-8 w-auto mb-5" />
             <p className="text-sm text-cream/60 max-w-xs leading-relaxed">
-              Premium mobile development agency engineering native iOS, Android, and cross-platform
-              apps for ambitious teams.
+              Premium mobile development agency engineering native iOS, Android,
+              and cross-platform apps for ambitious teams.
             </p>
-            <p className="mt-4 text-xs text-cream/40">Austin, TX · Since 2015</p>
+            <p className="mt-4 text-xs text-cream/40">
+              Austin, TX · Since 2015
+            </p>
           </div>
           {cols.map((c) => (
             <div key={c.title}>
-              <h3 className="font-display font-bold text-cream mb-4">{c.title}</h3>
+              <h3 className="font-display font-bold text-cream mb-4">
+                {c.title}
+              </h3>
               <ul className="space-y-2 text-sm text-cream/60">
                 {c.items.map((i) => (
-                  <li key={i} className="break-words hover:text-hot-pink transition-colors">
+                  <li
+                    key={i}
+                    className="break-words hover:text-hot-pink transition-colors"
+                  >
                     {i}
                   </li>
                 ))}

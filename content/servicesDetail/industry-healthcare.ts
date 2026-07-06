@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/electronic-health-care-systems/",
       title_tag: "Electronic Health Care Systems Complete 2026 Guide",
-      meta_description: "Expert guide to electronic health care systems with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to electronic health care systems with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "electronic health care systems",
@@ -95,7 +96,8 @@ For a startup, electronic health care systems is worth it when it removes a real
     metadata: {
       url: "/electronic-medical-records-emr-system/",
       title_tag: "Electronic Medical Records Emr System Complete 2026 Guide",
-      meta_description: "Expert guide to electronic medical records emr system with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to electronic medical records emr system with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "electronic medical records emr system",
@@ -181,7 +183,8 @@ For a startup, electronic medical records emr system is worth it when it removes
     metadata: {
       url: "/emr-medical-systems/",
       title_tag: "Emr Medical Systems Complete 2026 Guide",
-      meta_description: "Expert guide to emr medical systems with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to emr medical systems with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "emr medical systems",
@@ -264,11 +267,21 @@ For a startup, emr medical systems is worth it when it removes a real, measurabl
 ];
 
 // Individual exports by slug
-export const electronic_health_care_systems = data.find(d => d.slug === "electronic-health-care-systems");
-export const electronic_medical_records_emr_system = data.find(d => d.slug === "electronic-medical-records-emr-system");
-export const emr_medical_systems = data.find(d => d.slug === "emr-medical-systems");
+export const electronic_health_care_systems = data.find(
+  (d) => d.slug === "electronic-health-care-systems",
+);
+export const electronic_medical_records_emr_system = data.find(
+  (d) => d.slug === "electronic-medical-records-emr-system",
+);
+export const emr_medical_systems = data.find(
+  (d) => d.slug === "emr-medical-systems",
+);
 
 // All slugs
-export const slugs = ["electronic-health-care-systems", "electronic-medical-records-emr-system", "emr-medical-systems"];
+export const slugs = [
+  "electronic-health-care-systems",
+  "electronic-medical-records-emr-system",
+  "emr-medical-systems",
+];
 
 export default data;

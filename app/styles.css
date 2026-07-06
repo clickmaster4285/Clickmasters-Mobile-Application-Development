@@ -64,6 +64,8 @@
   --color-sun: var(--sun);
   --color-electric: var(--electric);
   --color-whatsapp: var(--whatsapp);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-pink-glow: var(--brand-pink-glow);
   --font-display: "Montserrat", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-script: "Caveat", "Pacifico", cursive;
@@ -77,8 +79,8 @@
   --card-foreground: oklch(0.12 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.12 0 0);
-  --primary: oklch(0.65 0.28 0);
-  --primary-foreground: oklch(1 0 0);
+  --primary: oklch(0.72 0.19 345);
+  --primary-foreground: oklch(0.98 0.01 345);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.12 0 0);
   --muted: oklch(0.968 0.007 247.896);
@@ -105,10 +107,17 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --ink: oklch(0.12 0 0);
   --cream: oklch(0.973 0.008 95);
-  --hot-pink: oklch(0.65 0.28 0);
+  --hot-pink: oklch(0.72 0.19 345);
   --sun: oklch(0.88 0.19 95);
   --electric: oklch(0.55 0.27 265);
   --whatsapp: oklch(0.7 0.18 145);
+  --brand-pink: oklch(0.72 0.19 345);
+  --brand-pink-glow: oklch(0.82 0.18 345);
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--brand-pink) 0%,
+    var(--electric) 100%
+  );
 }
 
 .dark {
@@ -118,8 +127,8 @@
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
+  --primary: oklch(0.78 0.2 345);
+  --primary-foreground: oklch(0.14 0.01 345);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
   --muted: oklch(0.279 0.041 260.031);
@@ -144,6 +153,13 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --brand-pink: oklch(0.78 0.2 345);
+  --brand-pink-glow: oklch(0.86 0.18 345);
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--brand-pink) 0%,
+    var(--electric) 100%
+  );
 }
 
 @layer base {
@@ -162,7 +178,10 @@
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
@@ -178,13 +197,21 @@
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-33.3333%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.3333%);
+  }
 }
 
 @keyframes marquee-reverse {
-  from { transform: translateX(-33.3333%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(-33.3333%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @utility animate-marquee {

@@ -38,7 +38,9 @@ export function TechStack() {
           transition={{ duration: 0.6 }}
         >
           <p className="font-script text-3xl text-hot-pink">our</p>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">studio path</h2>
+          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
+            studio path
+          </h2>
           <ul className="mt-8 space-y-4">
             {caps.map((c) => (
               <li

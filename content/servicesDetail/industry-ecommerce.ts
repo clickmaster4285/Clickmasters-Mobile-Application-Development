@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/apps-delivery-food/",
       title_tag: "Apps Delivery Food Complete 2026 Guide",
-      meta_description: "Expert guide to apps delivery food with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to apps delivery food with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "apps delivery food",
@@ -95,7 +96,8 @@ For a startup, apps delivery food is worth it when it removes a real, measurable
     metadata: {
       url: "/clover-marketplace/",
       title_tag: "Clover Marketplace Complete 2026 Guide",
-      meta_description: "Expert guide to clover marketplace with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to clover marketplace with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "clover marketplace",
@@ -181,7 +183,8 @@ For a startup, clover marketplace is worth it when it removes a real, measurable
     metadata: {
       url: "/ecommerce-platform/",
       title_tag: "Ecommerce Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of ecommerce platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of ecommerce platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "ecommerce platform",
@@ -268,7 +271,8 @@ For a startup, ecommerce platform is worth it when it removes a real, measurable
     metadata: {
       url: "/food-delivery-platform/",
       title_tag: "Food Delivery Platform Tested & Ranked (2026)",
-      meta_description: "Hands-on review of food delivery platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of food delivery platform what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "food delivery platform",
@@ -355,7 +359,8 @@ For a startup, food delivery platform is worth it when it removes a real, measur
     metadata: {
       url: "/uber-eats-food-delivery/",
       title_tag: "Uber Eats Food Delivery Complete 2026 Guide",
-      meta_description: "Expert guide to uber eats food delivery with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to uber eats food delivery with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "uber eats food delivery",
@@ -438,13 +443,29 @@ For a startup, uber eats food delivery is worth it when it removes a real, measu
 ];
 
 // Individual exports by slug
-export const apps_delivery_food = data.find(d => d.slug === "apps-delivery-food");
-export const clover_marketplace = data.find(d => d.slug === "clover-marketplace");
-export const ecommerce_platform = data.find(d => d.slug === "ecommerce-platform");
-export const food_delivery_platform = data.find(d => d.slug === "food-delivery-platform");
-export const uber_eats_food_delivery = data.find(d => d.slug === "uber-eats-food-delivery");
+export const apps_delivery_food = data.find(
+  (d) => d.slug === "apps-delivery-food",
+);
+export const clover_marketplace = data.find(
+  (d) => d.slug === "clover-marketplace",
+);
+export const ecommerce_platform = data.find(
+  (d) => d.slug === "ecommerce-platform",
+);
+export const food_delivery_platform = data.find(
+  (d) => d.slug === "food-delivery-platform",
+);
+export const uber_eats_food_delivery = data.find(
+  (d) => d.slug === "uber-eats-food-delivery",
+);
 
 // All slugs
-export const slugs = ["apps-delivery-food", "clover-marketplace", "ecommerce-platform", "food-delivery-platform", "uber-eats-food-delivery"];
+export const slugs = [
+  "apps-delivery-food",
+  "clover-marketplace",
+  "ecommerce-platform",
+  "food-delivery-platform",
+  "uber-eats-food-delivery",
+];
 
 export default data;

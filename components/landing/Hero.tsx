@@ -7,10 +7,22 @@ import { useMagnetic } from "@/components/landing/motion";
 
 const digitalCity = "/assets/marketing/digital_city.jpeg";
 
-function MagneticLink({ href, children, className }: { href: string; children: ReactNode; className: string }) {
+function MagneticLink({
+  href,
+  children,
+  className,
+}: {
+  href: string;
+  children: ReactNode;
+  className: string;
+}) {
   const ref = useMagnetic();
   return (
-    <a href={href} ref={ref as RefObject<HTMLAnchorElement>} className={className}>
+    <a
+      href={href}
+      ref={ref as RefObject<HTMLAnchorElement>}
+      className={className}
+    >
       {children}
     </a>
   );
@@ -50,24 +62,41 @@ function ReviewBadge({
 function GoogleG() {
   return (
     <svg viewBox="0 0 24 24" className="size-5" aria-hidden>
-      <path fill="#4285F4" d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.75h3.57c2.08-1.92 3.22-4.74 3.22-8.3z" />
-      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.75c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.15-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-      <path fill="#FBBC05" d="M5.85 14.12A6.6 6.6 0 015.5 12c0-.74.13-1.46.35-2.12V7.04H2.18A11 11 0 001 12c0 1.78.43 3.46 1.18 4.96l3.67-2.84z" />
-      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.04l3.67 2.84C6.71 7.31 9.14 5.38 12 5.38z" />
+      <path
+        fill="#4285F4"
+        d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.75h3.57c2.08-1.92 3.22-4.74 3.22-8.3z"
+      />
+      <path
+        fill="#34A853"
+        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.75c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.15-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+      />
+      <path
+        fill="#FBBC05"
+        d="M5.85 14.12A6.6 6.6 0 015.5 12c0-.74.13-1.46.35-2.12V7.04H2.18A11 11 0 001 12c0 1.78.43 3.46 1.18 4.96l3.67-2.84z"
+      />
+      <path
+        fill="#EA4335"
+        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.04l3.67 2.84C6.71 7.31 9.14 5.38 12 5.38z"
+      />
     </svg>
   );
 }
 
 function ClutchC() {
   return (
-    <span className="font-display font-extrabold text-base text-[#FF3D2E]">C</span>
+    <span className="font-display font-extrabold text-base text-[#FF3D2E]">
+      C
+    </span>
   );
 }
 
 function TrustpilotStar() {
   return (
     <svg viewBox="0 0 24 24" className="size-5" aria-hidden>
-      <path fill="#00B67A" d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7.3L12 17.8 5.8 21.5l1.6-7.3L2 9.5l7.1-.6L12 2z" />
+      <path
+        fill="#00B67A"
+        d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7.3L12 17.8 5.8 21.5l1.6-7.3L2 9.5l7.1-.6L12 2z"
+      />
     </svg>
   );
 }
@@ -84,12 +113,16 @@ function PhoneMockup() {
         <div className="h-full w-full rounded-[2rem] bg-gradient-to-br from-electric via-hot-pink to-sun overflow-hidden relative">
           <div className="absolute inset-0 bg-ink/10" />
           <div className="relative p-5 pt-8 text-white h-full flex flex-col">
-            <p className="text-[10px] uppercase tracking-widest opacity-80">Today</p>
+            <p className="text-[10px] uppercase tracking-widest opacity-80">
+              Today
+            </p>
             <h3 className="font-display font-extrabold text-2xl leading-tight mt-1">
               Good morning, Alex
             </h3>
             <div className="mt-5 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 p-3">
-              <p className="text-[10px] opacity-80 uppercase tracking-wider">Active users</p>
+              <p className="text-[10px] opacity-80 uppercase tracking-wider">
+                Active users
+              </p>
               <p className="font-display font-extrabold text-3xl">3.2M</p>
               <div className="mt-2 h-1.5 rounded-full bg-white/20 overflow-hidden">
                 <motion.div
@@ -102,11 +135,15 @@ function PhoneMockup() {
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2">
               <div className="rounded-xl bg-white/15 backdrop-blur-sm p-2.5 border border-white/20">
-                <p className="text-[9px] opacity-80 uppercase tracking-wider">Rating</p>
+                <p className="text-[9px] opacity-80 uppercase tracking-wider">
+                  Rating
+                </p>
                 <p className="font-display font-bold text-lg">4.9★</p>
               </div>
               <div className="rounded-xl bg-white/15 backdrop-blur-sm p-2.5 border border-white/20">
-                <p className="text-[9px] opacity-80 uppercase tracking-wider">Uptime</p>
+                <p className="text-[9px] opacity-80 uppercase tracking-wider">
+                  Uptime
+                </p>
                 <p className="font-display font-bold text-lg">99.9%</p>
               </div>
             </div>
@@ -130,12 +167,27 @@ function PhoneMockupBack() {
     >
       <div className="relative ml-auto mr-[6%] h-[88%] mt-[6%] w-[55%] rounded-[2.2rem] bg-ink/90 p-2 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.4)] border-[5px] border-ink/80">
         <div className="h-full w-full rounded-[1.8rem] bg-gradient-to-br from-ink via-electric/60 to-ink overflow-hidden p-4 text-white">
-          <p className="text-[9px] uppercase tracking-widest opacity-60">Analytics</p>
+          <p className="text-[9px] uppercase tracking-widest opacity-60">
+            Analytics
+          </p>
           <p className="font-display font-bold text-base mt-1">+248%</p>
           <p className="text-[9px] opacity-60">retention vs. baseline</p>
-          <svg viewBox="0 0 100 50" className="mt-4 w-full text-sun" fill="none">
-            <path d="M0 40 L20 32 L35 36 L55 18 L75 22 L100 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-            <path d="M0 40 L20 32 L35 36 L55 18 L75 22 L100 6 L100 50 L0 50 Z" fill="url(#g1)" opacity="0.35" />
+          <svg
+            viewBox="0 0 100 50"
+            className="mt-4 w-full text-sun"
+            fill="none"
+          >
+            <path
+              d="M0 40 L20 32 L35 36 L55 18 L75 22 L100 6"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 40 L20 32 L35 36 L55 18 L75 22 L100 6 L100 50 L0 50 Z"
+              fill="url(#g1)"
+              opacity="0.35"
+            />
             <defs>
               <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
                 <stop offset="0" stopColor="currentColor" />
@@ -151,7 +203,10 @@ function PhoneMockupBack() {
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden px-6 pt-36 pb-24 lg:px-10">
+    <section
+      id="top"
+      className="relative overflow-hidden px-6 pt-36 pb-24 lg:px-10"
+    >
       <div className="max-w-[85vw] mx-auto grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center relative">
         <div>
           <motion.p
@@ -160,7 +215,8 @@ export function Hero() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-ink/65 backdrop-blur-sm"
           >
-            <span className="h-2 w-2 rounded-full bg-hot-pink" /> Mobile products that move markets
+            <span className="h-2 w-2 rounded-full bg-hot-pink" /> Mobile
+            products that move markets
           </motion.p>
 
           <motion.h1
@@ -185,8 +241,9 @@ export function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="mt-8 text-lg text-ink/70 max-w-xl leading-relaxed"
           >
-            We engineer high-performance iOS and Android apps with a more cinematic, strategic, and
-            conversion-focused product journey from idea to launch.
+            We engineer high-performance iOS and Android apps with a more
+            cinematic, strategic, and conversion-focused product journey from
+            idea to launch.
           </motion.p>
 
           <motion.div
@@ -216,9 +273,24 @@ export function Hero() {
             transition={{ delay: 0.55, duration: 0.6 }}
             className="mt-10 flex flex-wrap items-center gap-3"
           >
-            <ReviewBadge rating="4.9" source="Google" count="1,247 reviews" logo={<GoogleG />} />
-            <ReviewBadge rating="4.8" source="Clutch" count="89 reviews" logo={<ClutchC />} />
-            <ReviewBadge rating="4.9" source="Trustpilot" count="342 reviews" logo={<TrustpilotStar />} />
+            <ReviewBadge
+              rating="4.9"
+              source="Google"
+              count="1,247 reviews"
+              logo={<GoogleG />}
+            />
+            <ReviewBadge
+              rating="4.8"
+              source="Clutch"
+              count="89 reviews"
+              logo={<ClutchC />}
+            />
+            <ReviewBadge
+              rating="4.9"
+              source="Trustpilot"
+              count="342 reviews"
+              logo={<TrustpilotStar />}
+            />
           </motion.div>
         </div>
 
@@ -244,8 +316,12 @@ export function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
             <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">
-              <p className="text-[10px] uppercase tracking-[0.25em] opacity-90">Connected ecosystem</p>
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/15 backdrop-blur">LIVE</span>
+              <p className="text-[10px] uppercase tracking-[0.25em] opacity-90">
+                Connected ecosystem
+              </p>
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white/15 backdrop-blur">
+                LIVE
+              </span>
             </div>
           </motion.div>
 

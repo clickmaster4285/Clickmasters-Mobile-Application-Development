@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/basics-of-ux-design/",
       title_tag: "Basics Of UX Design Complete 2026 Guide",
-      meta_description: "Expert guide to basics of ux design with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to basics of ux design with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "basics of ux design",
@@ -95,7 +96,8 @@ For a startup, basics of ux design is worth it when it removes a real, measurabl
     metadata: {
       url: "/user-experience-design-basics/",
       title_tag: "User Experience Design Basics Complete 2026 Guide",
-      meta_description: "Expert guide to user experience design basics with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
+      meta_description:
+        "Expert guide to user experience design basics with original data, examples from shipped apps, costs, and FAQs. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "user experience design basics",
@@ -181,7 +183,8 @@ For a startup, user experience design basics is worth it when it removes a real,
     metadata: {
       url: "/ux-basics/",
       title_tag: "UX Basics Complete 2026 Guide",
-      meta_description: "Expert guide to ux basics with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to ux basics with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "ux basics",
@@ -267,7 +270,8 @@ For a startup, ux basics is worth it when it removes a real, measurable bottlene
     metadata: {
       url: "/web-design-a/",
       title_tag: "Web Design A Complete 2026 Guide",
-      meta_description: "Expert guide to web design a with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to web design a with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "web design a",
@@ -353,7 +357,8 @@ For a startup, web design a is worth it when it removes a real, measurable bottl
     metadata: {
       url: "/web-design-websites/",
       title_tag: "Web Design Websites Complete 2026 Guide",
-      meta_description: "Expert guide to web design websites with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to web design websites with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "web design websites",
@@ -439,7 +444,8 @@ For a startup, web design websites is worth it when it removes a real, measurabl
     metadata: {
       url: "/web-wireframe-tool/",
       title_tag: "Web Wireframe Tool Tested & Ranked (2026)",
-      meta_description: "Hands-on review of web wireframe tool what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of web wireframe tool what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "web wireframe tool",
@@ -526,7 +532,8 @@ For a startup, web wireframe tool is worth it when it removes a real, measurable
     metadata: {
       url: "/website-design-website/",
       title_tag: "Website Design Website Complete 2026 Guide",
-      meta_description: "Expert guide to website design website with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to website design website with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "website design website",
@@ -612,7 +619,8 @@ For a startup, website design website is worth it when it removes a real, measur
     metadata: {
       url: "/website-wireframe-tools/",
       title_tag: "Website Wireframe Tools Tested & Ranked (2026)",
-      meta_description: "Hands-on review of website wireframe tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of website wireframe tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "website wireframe tools",
@@ -699,7 +707,8 @@ For a startup, website wireframe tools is worth it when it removes a real, measu
     metadata: {
       url: "/wireframe-software/",
       title_tag: "Wireframe Software Tested & Ranked (2026)",
-      meta_description: "Hands-on review of wireframe software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of wireframe software what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "wireframe software",
@@ -786,7 +795,8 @@ For a startup, wireframe software is worth it when it removes a real, measurable
     metadata: {
       url: "/wireframe-tools/",
       title_tag: "Wireframe Tools Tested & Ranked (2026)",
-      meta_description: "Hands-on review of wireframe tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
+      meta_description:
+        "Hands-on review of wireframe tools what we tested, benchmarks, real pricing, limitations, and best-fit use cases. Updated 2026.",
       schema: "SoftwareApplication + Review + FAQPage",
       page_type: "Tool review / roundup",
       primary_keyword: "wireframe tools",
@@ -870,18 +880,43 @@ For a startup, wireframe tools is worth it when it removes a real, measurable bo
 ];
 
 // Individual exports by slug
-export const basics_of_ux_design = data.find(d => d.slug === "basics-of-ux-design");
-export const user_experience_design_basics = data.find(d => d.slug === "user-experience-design-basics");
-export const ux_basics = data.find(d => d.slug === "ux-basics");
-export const web_design_a = data.find(d => d.slug === "web-design-a");
-export const web_design_websites = data.find(d => d.slug === "web-design-websites");
-export const web_wireframe_tool = data.find(d => d.slug === "web-wireframe-tool");
-export const website_design_website = data.find(d => d.slug === "website-design-website");
-export const website_wireframe_tools = data.find(d => d.slug === "website-wireframe-tools");
-export const wireframe_software = data.find(d => d.slug === "wireframe-software");
-export const wireframe_tools = data.find(d => d.slug === "wireframe-tools");
+export const basics_of_ux_design = data.find(
+  (d) => d.slug === "basics-of-ux-design",
+);
+export const user_experience_design_basics = data.find(
+  (d) => d.slug === "user-experience-design-basics",
+);
+export const ux_basics = data.find((d) => d.slug === "ux-basics");
+export const web_design_a = data.find((d) => d.slug === "web-design-a");
+export const web_design_websites = data.find(
+  (d) => d.slug === "web-design-websites",
+);
+export const web_wireframe_tool = data.find(
+  (d) => d.slug === "web-wireframe-tool",
+);
+export const website_design_website = data.find(
+  (d) => d.slug === "website-design-website",
+);
+export const website_wireframe_tools = data.find(
+  (d) => d.slug === "website-wireframe-tools",
+);
+export const wireframe_software = data.find(
+  (d) => d.slug === "wireframe-software",
+);
+export const wireframe_tools = data.find((d) => d.slug === "wireframe-tools");
 
 // All slugs
-export const slugs = ["basics-of-ux-design", "user-experience-design-basics", "ux-basics", "web-design-a", "web-design-websites", "web-wireframe-tool", "website-design-website", "website-wireframe-tools", "wireframe-software", "wireframe-tools"];
+export const slugs = [
+  "basics-of-ux-design",
+  "user-experience-design-basics",
+  "ux-basics",
+  "web-design-a",
+  "web-design-websites",
+  "web-wireframe-tool",
+  "website-design-website",
+  "website-wireframe-tools",
+  "wireframe-software",
+  "wireframe-tools",
+];
 
 export default data;

@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/software-engineer-pay-rate/",
       title_tag: "Software Engineer Pay Rate 2026 Benchmarks by Region",
-      meta_description: "What software engineers actually cost in 2026 hourly and salary rates by region, seniority, and engagement model, with a benchmark table and honest caveats. Updated 2026.",
+      meta_description:
+        "What software engineers actually cost in 2026 hourly and salary rates by region, seniority, and engagement model, with a benchmark table and honest caveats. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Cost/pricing pillar (data-driven)",
       primary_keyword: "software engineer pay rate",
@@ -98,7 +99,9 @@ Selectively. One senior engineer for architecture and code review is usually wor
 ];
 
 // Individual exports by slug
-export const software_engineer_pay_rate = data.find(d => d.slug === "software-engineer-pay-rate");
+export const software_engineer_pay_rate = data.find(
+  (d) => d.slug === "software-engineer-pay-rate",
+);
 
 // All slugs
 export const slugs = ["software-engineer-pay-rate"];

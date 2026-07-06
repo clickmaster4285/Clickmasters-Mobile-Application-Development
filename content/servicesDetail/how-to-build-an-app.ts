@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/app-how-to-make/",
       title_tag: "App How To Make Step-by-Step Guide (2026)",
-      meta_description: "A practitioner's walkthrough of app how to make — real screenshots, code, timelines, and costs from shipped projects. No fluff. Updated 2026.",
+      meta_description:
+        "A practitioner's walkthrough of app how to make — real screenshots, code, timelines, and costs from shipped projects. No fluff. Updated 2026.",
       schema: "HowTo + Article + FAQPage",
       page_type: "Step-by-step guide",
       primary_keyword: "app how to make",
@@ -88,7 +89,7 @@ For a startup, app how to make is worth it when it removes a real, measurable bo
 ];
 
 // Individual exports by slug
-export const app_how_to_make = data.find(d => d.slug === "app-how-to-make");
+export const app_how_to_make = data.find((d) => d.slug === "app-how-to-make");
 
 // All slugs
 export const slugs = ["app-how-to-make"];

@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/job-in-app/",
       title_tag: "Job In App 2026 Data & Trends",
-      meta_description: "Expert guide to job in app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to job in app with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage + Dataset",
       page_type: "Career / data page",
       primary_keyword: "job in app",
@@ -88,7 +89,8 @@ Start with job in app by learning the core skills through real projects, buildin
     metadata: {
       url: "/jobs-at-remote/",
       title_tag: "Jobs At Remote 2026 Data & Trends",
-      meta_description: "Expert guide to jobs at remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to jobs at remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage + Dataset",
       page_type: "Career / data page",
       primary_keyword: "jobs at remote",
@@ -167,7 +169,8 @@ Start with jobs at remote by learning the core skills through real projects, bui
     metadata: {
       url: "/jobs-on-remote/",
       title_tag: "Jobs On Remote 2026 Data & Trends",
-      meta_description: "Expert guide to jobs on remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to jobs on remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage + Dataset",
       page_type: "Career / data page",
       primary_keyword: "jobs on remote",
@@ -246,7 +249,8 @@ Start with jobs on remote by learning the core skills through real projects, bui
     metadata: {
       url: "/jobs-that-are-remote/",
       title_tag: "Jobs That Are Remote 2026 Data & Trends",
-      meta_description: "Expert guide to jobs that are remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to jobs that are remote with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage + Dataset",
       page_type: "Career / data page",
       primary_keyword: "jobs that are remote",
@@ -322,12 +326,19 @@ Start with jobs that are remote by learning the core skills through real project
 ];
 
 // Individual exports by slug
-export const job_in_app = data.find(d => d.slug === "job-in-app");
-export const jobs_at_remote = data.find(d => d.slug === "jobs-at-remote");
-export const jobs_on_remote = data.find(d => d.slug === "jobs-on-remote");
-export const jobs_that_are_remote = data.find(d => d.slug === "jobs-that-are-remote");
+export const job_in_app = data.find((d) => d.slug === "job-in-app");
+export const jobs_at_remote = data.find((d) => d.slug === "jobs-at-remote");
+export const jobs_on_remote = data.find((d) => d.slug === "jobs-on-remote");
+export const jobs_that_are_remote = data.find(
+  (d) => d.slug === "jobs-that-are-remote",
+);
 
 // All slugs
-export const slugs = ["job-in-app", "jobs-at-remote", "jobs-on-remote", "jobs-that-are-remote"];
+export const slugs = [
+  "job-in-app",
+  "jobs-at-remote",
+  "jobs-on-remote",
+  "jobs-that-are-remote",
+];
 
 export default data;

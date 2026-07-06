@@ -2,10 +2,22 @@
 
 import { motion } from "framer-motion";
 import { RevealText, ScrollFloat } from "./motion";
-import { Search, Layers, Smartphone, Globe, ShieldCheck, GitBranch, type LucideIcon } from "lucide-react";
+import {
+  Search,
+  Layers,
+  Smartphone,
+  Globe,
+  ShieldCheck,
+  GitBranch,
+  type LucideIcon,
+} from "lucide-react";
 const agencyReel = "/assets/marketing/agency_reel.jpeg";
 
-const cols: { name: string; color: string; items: { label: string; icon: LucideIcon }[] }[] = [
+const cols: {
+  name: string;
+  color: string;
+  items: { label: string; icon: LucideIcon }[];
+}[] = [
   {
     name: "Understand",
     color: "text-hot-pink",
@@ -46,7 +58,10 @@ const cols: { name: string; color: string; items: { label: string; icon: LucideI
 
 export function Process() {
   return (
-    <section id="process" className="relative px-6 lg:px-10 py-24 border-t border-border overflow-hidden">
+    <section
+      id="process"
+      className="relative px-6 lg:px-10 py-24 border-t border-border overflow-hidden"
+    >
       <div className="max-w-[85vw] mx-auto relative">
         <div className="mb-16 max-w-2xl">
           <p className="font-script text-3xl text-hot-pink">our studio path</p>
@@ -54,8 +69,8 @@ export function Process() {
             powerful process
           </RevealText>
           <p className="mt-6 text-ink/70 text-lg">
-            A proven, transparent workflow that turns ambitious ideas into shipped products — on
-            time, in scope, and built to scale.
+            A proven, transparent workflow that turns ambitious ideas into
+            shipped products — on time, in scope, and built to scale.
           </p>
         </div>
 
@@ -75,20 +90,30 @@ export function Process() {
           <div className="absolute inset-0 bg-gradient-to-r from-ink/35 via-transparent to-ink/20" />
         </motion.div>
 
-
-        <ScrollFloat yRange={[20, -20]} className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 relative">
+        <ScrollFloat
+          yRange={[20, -20]}
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-0 relative"
+        >
           {cols.map((c, i) => (
             <motion.div
               key={c.name}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.22, 1, 0.36, 1],
+                delay: i * 0.1,
+              }}
               className={`relative lg:px-8 ${i < cols.length - 1 ? "lg:border-r lg:border-dashed lg:border-ink/15" : ""}`}
             >
               <div className="flex items-baseline gap-3">
-                <span className="font-script text-xl text-ink/30">0{i + 1}</span>
-                <h3 className={`font-display font-extrabold text-3xl md:text-4xl ${c.color}`}>
+                <span className="font-script text-xl text-ink/30">
+                  0{i + 1}
+                </span>
+                <h3
+                  className={`font-display font-extrabold text-3xl md:text-4xl ${c.color}`}
+                >
                   {c.name}
                 </h3>
               </div>

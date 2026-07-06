@@ -102,7 +102,8 @@ Yes. Flutter remains actively developed by Google with a stable release cadence,
     metadata: {
       url: "/flutter/",
       title_tag: "Flutter+ Complete 2026 Guide",
-      meta_description: "Expert guide to flutter+ with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to flutter+ with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "flutter+",
@@ -188,7 +189,8 @@ For a startup, flutter+ is worth it when it removes a real, measurable bottlenec
     metadata: {
       url: "/js-react-native/",
       title_tag: "Js React Native Complete 2026 Guide",
-      meta_description: "Expert guide to js react native with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to js react native with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "js react native",
@@ -274,7 +276,8 @@ For a startup, js react native is worth it when it removes a real, measurable bo
     metadata: {
       url: "/react-react-native/",
       title_tag: "React & React Native Complete 2026 Guide",
-      meta_description: "Expert guide to react & react native with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to react & react native with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "react & react native",
@@ -357,12 +360,21 @@ For a startup, react & react native is worth it when it removes a real, measurab
 ];
 
 // Individual exports by slug
-export const flutter_mobile_app_development = data.find(d => d.slug === "flutter-mobile-app-development");
-export const flutter = data.find(d => d.slug === "flutter");
-export const js_react_native = data.find(d => d.slug === "js-react-native");
-export const react_react_native = data.find(d => d.slug === "react-react-native");
+export const flutter_mobile_app_development = data.find(
+  (d) => d.slug === "flutter-mobile-app-development",
+);
+export const flutter = data.find((d) => d.slug === "flutter");
+export const js_react_native = data.find((d) => d.slug === "js-react-native");
+export const react_react_native = data.find(
+  (d) => d.slug === "react-react-native",
+);
 
 // All slugs
-export const slugs = ["flutter-mobile-app-development", "flutter", "js-react-native", "react-react-native"];
+export const slugs = [
+  "flutter-mobile-app-development",
+  "flutter",
+  "js-react-native",
+  "react-react-native",
+];
 
 export default data;

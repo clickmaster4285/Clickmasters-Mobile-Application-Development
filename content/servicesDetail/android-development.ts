@@ -9,7 +9,8 @@ export const data = [
     metadata: {
       url: "/android-apps-store/",
       title_tag: "Android Apps Store Complete 2026 Guide",
-      meta_description: "Expert guide to android apps store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to android apps store with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "android apps store",
@@ -95,7 +96,8 @@ For a startup, android apps store is worth it when it removes a real, measurable
     metadata: {
       url: "/android-studio-android/",
       title_tag: "Android Studio Android Complete 2026 Guide",
-      meta_description: "Expert guide to android studio android with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
+      meta_description:
+        "Expert guide to android studio android with original data, examples from shipped apps, costs, and FAQs. Written and reviewed by working mobile engineers. Updated 2026.",
       schema: "Article + FAQPage",
       page_type: "Pillar or supporting article",
       primary_keyword: "android studio android",
@@ -178,8 +180,12 @@ For a startup, android studio android is worth it when it removes a real, measur
 ];
 
 // Individual exports by slug
-export const android_apps_store = data.find(d => d.slug === "android-apps-store");
-export const android_studio_android = data.find(d => d.slug === "android-studio-android");
+export const android_apps_store = data.find(
+  (d) => d.slug === "android-apps-store",
+);
+export const android_studio_android = data.find(
+  (d) => d.slug === "android-studio-android",
+);
 
 // All slugs
 export const slugs = ["android-apps-store", "android-studio-android"];

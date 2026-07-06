@@ -2,24 +2,56 @@
 
 // This file exports all content from all folders
 
-import ai_in_app_development, { slugs as ai_in_app_development_slugs } from "./ai-in-app-development";
-import android_development, { slugs as android_development_slugs } from "./android-development";
-import careers_salaries, { slugs as careers_salaries_slugs } from "./careers-salaries";
+import ai_in_app_development, {
+  slugs as ai_in_app_development_slugs,
+} from "./ai-in-app-development";
+import android_development, {
+  slugs as android_development_slugs,
+} from "./android-development";
+import careers_salaries, {
+  slugs as careers_salaries_slugs,
+} from "./careers-salaries";
 import cost_pricing, { slugs as cost_pricing_slugs } from "./cost-pricing";
-import cross_platform_flutter_rn, { slugs as cross_platform_flutter_rn_slugs } from "./cross-platform-flutter-rn";
-import general_mobile_app_development, { slugs as general_mobile_app_development_slugs } from "./general-mobile-app-development";
-import hiring_agencies_money_pages, { slugs as hiring_agencies_money_pages_slugs } from "./hiring-agencies-money-pages";
-import how_to_build_an_app, { slugs as how_to_build_an_app_slugs } from "./how-to-build-an-app";
-import industry_ecommerce, { slugs as industry_ecommerce_slugs } from "./industry-ecommerce";
-import industry_fintech, { slugs as industry_fintech_slugs } from "./industry-fintech";
-import industry_healthcare, { slugs as industry_healthcare_slugs } from "./industry-healthcare";
-import ios_development, { slugs as ios_development_slugs } from "./ios-development";
-import learning_courses, { slugs as learning_courses_slugs } from "./learning-courses";
-import no_code_app_builders, { slugs as no_code_app_builders_slugs } from "./no-code-app-builders";
-import testing_qa_maintenance, { slugs as testing_qa_maintenance_slugs } from "./testing-qa-maintenance";
-import tools_frameworks_software, { slugs as tools_frameworks_software_slugs } from "./tools-frameworks-software";
+import cross_platform_flutter_rn, {
+  slugs as cross_platform_flutter_rn_slugs,
+} from "./cross-platform-flutter-rn";
+import general_mobile_app_development, {
+  slugs as general_mobile_app_development_slugs,
+} from "./general-mobile-app-development";
+import hiring_agencies_money_pages, {
+  slugs as hiring_agencies_money_pages_slugs,
+} from "./hiring-agencies-money-pages";
+import how_to_build_an_app, {
+  slugs as how_to_build_an_app_slugs,
+} from "./how-to-build-an-app";
+import industry_ecommerce, {
+  slugs as industry_ecommerce_slugs,
+} from "./industry-ecommerce";
+import industry_fintech, {
+  slugs as industry_fintech_slugs,
+} from "./industry-fintech";
+import industry_healthcare, {
+  slugs as industry_healthcare_slugs,
+} from "./industry-healthcare";
+import ios_development, {
+  slugs as ios_development_slugs,
+} from "./ios-development";
+import learning_courses, {
+  slugs as learning_courses_slugs,
+} from "./learning-courses";
+import no_code_app_builders, {
+  slugs as no_code_app_builders_slugs,
+} from "./no-code-app-builders";
+import testing_qa_maintenance, {
+  slugs as testing_qa_maintenance_slugs,
+} from "./testing-qa-maintenance";
+import tools_frameworks_software, {
+  slugs as tools_frameworks_software_slugs,
+} from "./tools-frameworks-software";
 import ui_ux_design, { slugs as ui_ux_design_slugs } from "./ui-ux-design";
-import web_pwa_development, { slugs as web_pwa_development_slugs } from "./web-pwa-development";
+import web_pwa_development, {
+  slugs as web_pwa_development_slugs,
+} from "./web-pwa-development";
 
 // Export everything as named exports
 export { default as ai_in_app_development } from "./ai-in-app-development";

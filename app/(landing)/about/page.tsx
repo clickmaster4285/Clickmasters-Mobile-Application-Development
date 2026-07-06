@@ -9,10 +9,26 @@ import { useLenisScroll } from "@/components/landing/motion";
 import type { Metadata } from "next";
 
 const values = [
-  { icon: Target, title: "Outcome-driven", desc: "We measure success by the impact your app has on real users and revenue." },
-  { icon: Heart, title: "Crafted with care", desc: "Every pixel and interaction is considered. We sweat the details so users feel it." },
-  { icon: Zap, title: "Fast & focused", desc: "Lean teams, tight loops, and rapid iteration get you to market sooner." },
-  { icon: Users, title: "True partners", desc: "We work as an extension of your team — transparent, honest, and invested." },
+  {
+    icon: Target,
+    title: "Outcome-driven",
+    desc: "We measure success by the impact your app has on real users and revenue.",
+  },
+  {
+    icon: Heart,
+    title: "Crafted with care",
+    desc: "Every pixel and interaction is considered. We sweat the details so users feel it.",
+  },
+  {
+    icon: Zap,
+    title: "Fast & focused",
+    desc: "Lean teams, tight loops, and rapid iteration get you to market sooner.",
+  },
+  {
+    icon: Users,
+    title: "True partners",
+    desc: "We work as an extension of your team — transparent, honest, and invested.",
+  },
 ];
 
 export default function AboutPage() {
@@ -42,9 +58,10 @@ export default function AboutPage() {
               We turn bold ideas into apps people love.
             </motion.h1>
             <p className="mt-6 text-lg text-ink/70 max-w-2xl leading-relaxed">
-              Since 2015, ClickMasters has been a tight-knit studio of designers, engineers, and
-              strategists. We&apos;ve shipped 250+ mobile products for startups and enterprises — each
-              one built to scale, delight, and perform.
+              Since 2015, ClickMasters has been a tight-knit studio of
+              designers, engineers, and strategists. We&apos;ve shipped 250+
+              mobile products for startups and enterprises — each one built to
+              scale, delight, and perform.
             </p>
           </div>
         </section>
@@ -52,11 +69,13 @@ export default function AboutPage() {
         {/* Mission */}
         <section className="px-6 lg:px-10 py-20 bg-ink text-cream">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-display font-extrabold text-3xl md:text-5xl">Our mission</h2>
+            <h2 className="font-display font-extrabold text-3xl md:text-5xl">
+              Our mission
+            </h2>
             <p className="mt-6 text-lg md:text-xl text-cream/75 leading-relaxed">
-              To be the most trusted partner for ambitious teams building on mobile — combining
-              world-class craft with relentless focus on outcomes, so every app we ship moves the
-              business forward.
+              To be the most trusted partner for ambitious teams building on
+              mobile — combining world-class craft with relentless focus on
+              outcomes, so every app we ship moves the business forward.
             </p>
           </div>
         </section>
@@ -80,8 +99,12 @@ export default function AboutPage() {
                   <div className="size-12 rounded-xl bg-gradient-to-br from-electric to-hot-pink grid place-items-center text-white">
                     <v.icon className="size-6" />
                   </div>
-                  <h3 className="mt-4 font-display font-bold text-lg text-ink">{v.title}</h3>
-                  <p className="mt-2 text-sm text-ink/65 leading-relaxed">{v.desc}</p>
+                  <h3 className="mt-4 font-display font-bold text-lg text-ink">
+                    {v.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink/65 leading-relaxed">
+                    {v.desc}
+                  </p>
                 </motion.div>
               ))}
             </div>
