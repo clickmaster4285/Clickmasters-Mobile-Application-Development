@@ -2,10 +2,13 @@
 import { data as services } from "./servicesContent";
 
 // Create a keyed object for easy lookup
-const servicesByKey = services.reduce((acc, item) => {
-  acc[item.services] = [item]; // Wrap in array since your page expects an array
-  return acc;
-}, {} as Record<string, typeof services>);
+const servicesByKey = services.reduce(
+  (acc, item) => {
+    acc[item.services] = [item]; // Wrap in array since your page expects an array
+    return acc;
+  },
+  {} as Record<string, typeof services>,
+);
 
 // Keep the original array for other uses
 export const allData = servicesByKey;

@@ -187,35 +187,31 @@ export function Navbar() {
                               CATEGORIES
                             </p>
                             <div className="space-y-1 pr-2">
-                              {categories.map((category) => {
-                                const isActive =
-                                  category.key === selectedCategory?.key;
-                                return (
-                                  <button
-                                    key={category.key}
-                                    type="button"
-                                    onClick={() =>
-                                      setActiveCategory(category.key)
-                                    }
-                                    onMouseEnter={() =>
-                                      setActiveCategory(category.key)
-                                    }
-                                    className={`w-full rounded-2xl border px-4 py-3 text-left transition-all duration-200 ${
-                                      isActive
-                                        ? "border-hot-pink/40 bg-hot-pink/10 text-cream shadow-sm"
-                                        : "border-transparent text-cream/70 hover:border-white/10 hover:bg-white/5 hover:text-cream"
-                                    }`}
-                                  >
-                                    <div className="text-sm font-medium">
-                                      {category.label}
-                                    </div>
-                                    <div className="text-[10px] text-cream/40 mt-0.5">
-                                      {category.items.length} guides
-                                    </div>
-                                  </button>
-                                );
-                              })}
-                            </div>
+  {categories.map((category) => {
+    const isActive = category.key === selectedCategory?.key;
+
+    return (
+      <Link
+        key={category.key}
+        href={`/${category.key}`}
+        onMouseEnter={() => setActiveCategory(category.key)}
+        onClick={() => setActiveCategory(category.key)}
+        className={`block w-full rounded-2xl border px-4 py-3 text-left transition-all duration-200 ${
+          isActive
+            ? "border-hot-pink/40 bg-hot-pink/10 text-cream shadow-sm"
+            : "border-transparent text-cream/70 hover:border-white/10 hover:bg-white/5 hover:text-cream"
+        }`}
+      >
+        <div className="text-sm font-medium">
+          {category.label}
+        </div>
+        <div className="mt-0.5 text-[10px] text-cream/40">
+          {category.items.length} guides
+        </div>
+      </Link>
+    );
+  })}
+</div>
                           </aside>
 
                           {/* Guides List */}
