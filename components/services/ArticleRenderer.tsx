@@ -441,10 +441,10 @@ function SectionBlock({
         </div>
 
         {/* Bottom Accent */}
-        <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-hot-pink">
+        {/* <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-hot-pink">
           <span>Section {String(index + 1).padStart(2, "0")}</span>
           <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-        </div>
+        </div> */}
 
         {/* Hover Glow */}
         <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-500 group-hover:ring-hot-pink/10" />
