@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     description:
       "Premium Mobile development. Native iOS, Android, and cross-platform apps engineered for scale.",
   },
+  verification: {
+    google: "8Q2IR2BEPc-qizdU0b-FRF6r3OLYynSSTTK-4h-HZIU",
+  },
 };
 
 export default function RootLayout({

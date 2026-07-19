@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /api/
+
+Sitemap: https://clickmastersmobiledevelopmentcompany.com/sitemap_index.xml
