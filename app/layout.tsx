@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./styles.css";
 import { Providers } from "./providers";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "ClickMasters — Powerful Mobile Apps, Start to End",
@@ -22,6 +26,9 @@ export const metadata: Metadata = {
     description:
       "Premium Mobile development. Native iOS, Android, and cross-platform apps engineered for scale.",
   },
+  verification: {
+    google: "8Q2IR2BEPc-qizdU0b-FRF6r3OLYynSSTTK-4h-HZIU",
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +37,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" >
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={cn("font-sans", geist.variable)}
+    >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

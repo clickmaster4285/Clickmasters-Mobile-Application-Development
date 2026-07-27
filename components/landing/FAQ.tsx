@@ -58,7 +58,9 @@ export function FAQ() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-ink/[0.02] transition-colors"
                 >
-                  <span className="font-display font-bold text-lg text-ink pr-4">{f.q}</span>
+                  <span className="font-display font-bold text-lg text-ink pr-4">
+                    {f.q}
+                  </span>
                   <Plus
                     className={`size-5 text-hot-pink shrink-0 transition-transform duration-300 ${
                       isOpen ? "rotate-45" : ""
@@ -67,11 +69,15 @@ export function FAQ() {
                 </button>
                 <div
                   className={`grid transition-all duration-300 ease-out ${
-                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-6 pb-6 text-ink/70 leading-relaxed">{f.a}</p>
+                    <p className="px-6 pb-6 text-ink/70 leading-relaxed">
+                      {f.a}
+                    </p>
                   </div>
                 </div>
               </motion.div>

@@ -2,16 +2,44 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MessageCircle, Send, MapPin, Loader2, AlertCircle } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MessageCircle,
+  Send,
+  MapPin,
+  Loader2,
+  AlertCircle,
+} from "lucide-react";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { useLenisScroll } from "@/components/landing/motion";
 
 const channels = [
-  { icon: Mail, label: "Email", value: "sale@clickmastersmobiledevelopmentcompany.com", href: "mailto:sale@clickmastersmobiledevelopmentcompany.com" },
-  { icon: Phone, label: "Phone", value: "+1 (555) 012-3456", href: "tel:+15550123456" },
-  { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/15550123456" },
-  { icon: MapPin, label: "Studio", value: "Remote-first · Worldwide", href: undefined },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "sale@clickmastersmobiledevelopmentcompany.com",
+    href: "mailto:sale@clickmastersmobiledevelopmentcompany.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+1 (555) 012-3456",
+    href: "tel:+15550123456",
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    value: "Chat with us",
+    href: "https://wa.me/15550123456",
+  },
+  {
+    icon: MapPin,
+    label: "Studio",
+    value: "Remote-first · Worldwide",
+    href: undefined,
+  },
 ];
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -61,8 +89,8 @@ export default function ContactPage() {
                 Let&apos;s build something great.
               </h1>
               <p className="mt-6 text-lg text-ink/70 max-w-md leading-relaxed">
-                Tell us about your project and we&apos;ll get back within one business day with next
-                steps and a free consultation.
+                Tell us about your project and we&apos;ll get back within one
+                business day with next steps and a free consultation.
               </p>
 
               <div className="mt-10 space-y-4">
@@ -73,13 +101,21 @@ export default function ContactPage() {
                         <c.icon className="size-5" />
                       </div>
                       <div>
-                        <p className="text-xs uppercase tracking-[0.2em] text-ink/45">{c.label}</p>
-                        <p className="font-semibold text-ink break-all">{c.value}</p>
+                        <p className="text-xs uppercase tracking-[0.2em] text-ink/45">
+                          {c.label}
+                        </p>
+                        <p className="font-semibold text-ink break-all">
+                          {c.value}
+                        </p>
                       </div>
                     </div>
                   );
                   return c.href ? (
-                    <a key={c.label} href={c.href} className="block hover:-translate-y-0.5 transition-transform">
+                    <a
+                      key={c.label}
+                      href={c.href}
+                      className="block hover:-translate-y-0.5 transition-transform"
+                    >
                       {Inner}
                     </a>
                   ) : (
@@ -101,10 +137,12 @@ export default function ContactPage() {
                     <div className="mx-auto size-14 rounded-full bg-hot-pink text-white grid place-items-center">
                       <Send className="size-6" />
                     </div>
-                    <h2 className="mt-4 font-display font-extrabold text-2xl text-ink">Message sent!</h2>
+                    <h2 className="mt-4 font-display font-extrabold text-2xl text-ink">
+                      Message sent!
+                    </h2>
                     <p className="mt-2 text-ink/60">
-                      Thanks for reaching out — we&apos;ve received your enquiry and will reply within one
-                      business day.
+                      Thanks for reaching out — we&apos;ve received your enquiry
+                      and will reply within one business day.
                     </p>
                     <button
                       type="button"
@@ -124,13 +162,34 @@ export default function ContactPage() {
                     </div>
                   )}
                   <div className="grid sm:grid-cols-2 gap-5">
-                    <Field label="Name" name="name" placeholder="Jane Doe" required />
-                    <Field label="Email" name="email" type="email" placeholder="jane@company.com" required />
+                    <Field
+                      label="Name"
+                      name="name"
+                      placeholder="Jane Doe"
+                      required
+                    />
+                    <Field
+                      label="Email"
+                      name="email"
+                      type="email"
+                      placeholder="jane@company.com"
+                      required
+                    />
                   </div>
-                  <Field label="Project type" name="project" placeholder="Mobile app, redesign…" />
-                  <Field label="Budget" name="budget" placeholder="$10k – $50k" />
+                  <Field
+                    label="Project type"
+                    name="project"
+                    placeholder="Mobile app, redesign…"
+                  />
+                  <Field
+                    label="Budget"
+                    name="budget"
+                    placeholder="$10k – $50k"
+                  />
                   <div>
-                    <label className="block text-sm font-semibold text-ink mb-1.5">Message</label>
+                    <label className="block text-sm font-semibold text-ink mb-1.5">
+                      Message
+                    </label>
                     <textarea
                       name="message"
                       rows={4}
@@ -183,7 +242,9 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-sm font-semibold text-ink mb-1.5">{label}</label>
+      <label className="block text-sm font-semibold text-ink mb-1.5">
+        {label}
+      </label>
       <input
         type={type}
         name={name}

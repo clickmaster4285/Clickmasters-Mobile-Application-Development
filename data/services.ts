@@ -21,14 +21,28 @@ export const services: Service[] = [
     fullDescription:
       "We build high-performance mobile applications that users love. From concept to launch, our end-to-end mobile app development services cover strategy, design, engineering, and deployment — scalable, secure, and intuitive mobile experiences.",
     icon: "Smartphone",
-    technologies: ["Swift", "Kotlin", "React Native", "Flutter", "Firebase", "Node.js"],
+    technologies: [
+      "Swift",
+      "Kotlin",
+      "React Native",
+      "Flutter",
+      "Firebase",
+      "Node.js",
+    ],
     benefits: [
       "Single codebase options for faster delivery",
       "Native performance when needed",
       "Scalable architecture for millions of users",
       "Continuous support and maintenance",
     ],
-    process: ["Discovery", "Design", "Development", "Testing", "Launch", "Optimize"],
+    process: [
+      "Discovery",
+      "Design",
+      "Development",
+      "Testing",
+      "Launch",
+      "Optimize",
+    ],
     featured: true,
     stats: [
       { label: "Apps Launched", value: "150+" },
@@ -51,7 +65,13 @@ export const services: Service[] = [
       "Play Store optimization",
       "Background task optimization",
     ],
-    process: ["Requirements", "Architecture", "Development", "Testing", "Deployment"],
+    process: [
+      "Requirements",
+      "Architecture",
+      "Development",
+      "Testing",
+      "Deployment",
+    ],
     featured: true,
   },
   {
@@ -80,14 +100,26 @@ export const services: Service[] = [
     fullDescription:
       "Reach both iOS and Android with a single codebase. We use React Native and Flutter to deliver consistent experiences while reducing development time and cost by up to 40%.",
     icon: "RefreshCw",
-    technologies: ["React Native", "Flutter", "TypeScript", "Redux", "Firebase"],
+    technologies: [
+      "React Native",
+      "Flutter",
+      "TypeScript",
+      "Redux",
+      "Firebase",
+    ],
     benefits: [
       "Write once, run anywhere",
       "Faster time-to-market",
       "Consistent UI across platforms",
       "Lower development costs",
     ],
-    process: ["Strategy", "Design System", "Development", "Testing", "Dual Launch"],
+    process: [
+      "Strategy",
+      "Design System",
+      "Development",
+      "Testing",
+      "Dual Launch",
+    ],
     featured: true,
   },
   {
@@ -105,7 +137,13 @@ export const services: Service[] = [
       "Excellent performance",
       "Growing ecosystem",
     ],
-    process: ["Setup", "UI Development", "Logic Integration", "Testing", "Release"],
+    process: [
+      "Setup",
+      "UI Development",
+      "Logic Integration",
+      "Testing",
+      "Release",
+    ],
     featured: false,
   },
   {
@@ -116,14 +154,26 @@ export const services: Service[] = [
     fullDescription:
       "Leverage your React skills for mobile. We build React Native apps that feel native, share up to 90% code between platforms, and integrate seamlessly with existing web applications.",
     icon: "Hexagon",
-    technologies: ["React Native", "TypeScript", "Redux", "Native Modules", "Expo"],
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Redux",
+      "Native Modules",
+      "Expo",
+    ],
     benefits: [
       "React ecosystem reuse",
       "Fast refresh development",
       "Large community support",
       "Easy web integration",
     ],
-    process: ["Planning", "Component Design", "Integration", "QA", "Deployment"],
+    process: [
+      "Planning",
+      "Component Design",
+      "Integration",
+      "QA",
+      "Deployment",
+    ],
     featured: false,
   },
 ];

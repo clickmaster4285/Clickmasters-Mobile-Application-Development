@@ -10,7 +10,13 @@ function strokeColor(tone: "electric" | "pink" | "sun" | "ink" = "electric") {
   return "var(--color-electric)";
 }
 
-export function DoodleCircle({ className = "", tone = "electric" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function DoodleCircle({
+  className = "",
+  tone = "electric" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 120 120" className={className} fill="none" aria-hidden>
       <path
@@ -30,7 +36,13 @@ export function DoodleCircle({ className = "", tone = "electric" as const }: { c
   );
 }
 
-export function PaperAirplane({ className = "", tone = "pink" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function PaperAirplane({
+  className = "",
+  tone = "pink" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 120 120" className={className} fill="none" aria-hidden>
       <path
@@ -39,13 +51,30 @@ export function PaperAirplane({ className = "", tone = "pink" as const }: { clas
         strokeWidth="2.5"
         strokeLinejoin="round"
       />
-      <path d="M41 67 L81 64" stroke="var(--color-sun)" strokeWidth="2" strokeDasharray="5 6" />
-      <path d="M8 89 C22 95, 38 95, 51 87" stroke={strokeColor(tone)} strokeWidth="2" strokeDasharray="2 7" strokeLinecap="round" />
+      <path
+        d="M41 67 L81 64"
+        stroke="var(--color-sun)"
+        strokeWidth="2"
+        strokeDasharray="5 6"
+      />
+      <path
+        d="M8 89 C22 95, 38 95, 51 87"
+        stroke={strokeColor(tone)}
+        strokeWidth="2"
+        strokeDasharray="2 7"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
-export function Squiggle({ className = "", tone = "electric" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function Squiggle({
+  className = "",
+  tone = "electric" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 220 40" className={className} fill="none" aria-hidden>
       <path
@@ -58,15 +87,30 @@ export function Squiggle({ className = "", tone = "electric" as const }: { class
   );
 }
 
-export function Sparkle({ className = "", tone = "sun" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function Sparkle({
+  className = "",
+  tone = "sun" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 40 40" className={className} fill="none" aria-hidden>
-      <path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill={strokeColor(tone)} />
+      <path
+        d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z"
+        fill={strokeColor(tone)}
+      />
     </svg>
   );
 }
 
-export function ZigZag({ className = "", tone = "pink" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function ZigZag({
+  className = "",
+  tone = "pink" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 160 32" className={className} fill="none" aria-hidden>
       <path
@@ -80,37 +124,95 @@ export function ZigZag({ className = "", tone = "pink" as const }: { className?:
   );
 }
 
-export function RocketSketch({ className = "", tone = "electric" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function RocketSketch({
+  className = "",
+  tone = "electric" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 72 72" className={className} fill="none" aria-hidden>
-      <path d="M37 8 C49 16, 57 28, 60 42 L45 39 L29 54 L26 69 C18 60, 12 48, 12 35 C12 20, 22 11, 37 8Z" stroke={strokeColor(tone)} strokeWidth="2.5" strokeLinejoin="round" />
-      <circle cx="40" cy="31" r="6.5" stroke="var(--color-sun)" strokeWidth="2" />
-      <path d="M22 44 L12 53" stroke={strokeColor(tone)} strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M28 50 L19 60" stroke={strokeColor(tone)} strokeWidth="2.5" strokeLinecap="round" />
+      <path
+        d="M37 8 C49 16, 57 28, 60 42 L45 39 L29 54 L26 69 C18 60, 12 48, 12 35 C12 20, 22 11, 37 8Z"
+        stroke={strokeColor(tone)}
+        strokeWidth="2.5"
+        strokeLinejoin="round"
+      />
+      <circle
+        cx="40"
+        cy="31"
+        r="6.5"
+        stroke="var(--color-sun)"
+        strokeWidth="2"
+      />
+      <path
+        d="M22 44 L12 53"
+        stroke={strokeColor(tone)}
+        strokeWidth="2.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M28 50 L19 60"
+        stroke={strokeColor(tone)}
+        strokeWidth="2.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
-export function DottedTrail({ className = "", tone = "electric" as const }: { className?: string; tone?: "electric" | "pink" | "sun" | "ink" }) {
+export function DottedTrail({
+  className = "",
+  tone = "electric" as const,
+}: {
+  className?: string;
+  tone?: "electric" | "pink" | "sun" | "ink";
+}) {
   return (
     <svg viewBox="0 0 140 24" className={className} fill="none" aria-hidden>
       {Array.from({ length: 8 }).map((_, index) => (
-        <circle key={index} cx={12 + index * 16} cy={12 + (index % 2 === 0 ? 0 : 2)} r="3" fill={strokeColor(tone)} opacity={1 - index * 0.08} />
+        <circle
+          key={index}
+          cx={12 + index * 16}
+          cy={12 + (index % 2 === 0 ? 0 : 2)}
+          r="3"
+          fill={strokeColor(tone)}
+          opacity={1 - index * 0.08}
+        />
       ))}
     </svg>
   );
 }
 
 export function DecorativeLayer({ children }: { children: ReactNode }) {
-  return <div className="pointer-events-none absolute inset-0 overflow-hidden">{children}</div>;
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      {children}
+    </div>
+  );
 }
 
-export function Drift({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
+export function Drift({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+}) {
   return (
     <motion.div
       className={className}
       animate={{ y: [0, -12, 0], rotate: [0, 2, -2, 0] }}
-      transition={{ duration: 8, repeat: Infinity, repeatType: "mirror", ease: "easeInOut", delay }}
+      transition={{
+        duration: 8,
+        repeat: Infinity,
+        repeatType: "mirror",
+        ease: "easeInOut",
+        delay,
+      }}
     >
       {children}
     </motion.div>

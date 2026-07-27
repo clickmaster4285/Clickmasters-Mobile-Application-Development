@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Calendar } from "lucide-react";
+import { Menu, X, Calendar, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useMagnetic } from "./motion";
+import { allData, getCategoryForSlug } from "@/content/servicesDetail/index";
 
 const logo = "/assets/logo_white.webp";
 
@@ -17,10 +18,68 @@ const links: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
+function getCategoryLabel(key: string) {
+  const names: Record<string, string> = {
+    "ai-in-app-development": "AI Development",
+    "android-development": "Android Development",
+    "careers-salaries": "Careers & Salaries",
+    "cost-pricing": "Cost & Pricing",
+    "cross-platform-flutter-rn": "Cross-Platform (Flutter/RN)",
+    "general-mobile-app-development": "Mobile Development",
+    "hiring-agencies-money-pages": "Hiring & Agencies",
+    "how-to-build-an-app": "How to Build an App",
+    "industry-ecommerce": "E-Commerce",
+    "industry-fintech": "FinTech",
+    "industry-healthcare": "Healthcare",
+    "ios-development": "iOS Development",
+    "learning-courses": "Learning & Courses",
+    "no-code-app-builders": "No-Code App Builders",
+    "testing-qa-maintenance": "Testing & QA",
+    "tools-frameworks-software": "Tools & Frameworks",
+    "ui-ux-design": "UI/UX Design",
+    "web-pwa-development": "Web & PWA Development",
+  };
+
+  return (
+    names[key] ||
+    key.replace(/[_-]/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())
+  );
+}
+
+function formatTitle(title: string) {
+  return title.replace(/ Complete 2026 Guide$/, "").replace(/:\s*/, ": ");
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<string>("");
   const ctaRef = useMagnetic(0.3);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const servicesButtonRef = useRef<HTMLDivElement>(null);
+
+  // Get categories with their items for dropdown
+  const categories = useRef(
+    Object.entries(allData).map(([key, items]) => ({
+      key,
+      fileName: key.replace(/_/g, "-"),
+      label: getCategoryLabel(key),
+      items: (items as { slug: string; metadata: any }[]).map((item) => ({
+        slug: item.slug,
+        title: formatTitle(item.metadata.title_tag || item.slug),
+        description: item.metadata.meta_description || "",
+        category: getCategoryForSlug(item.slug),
+      })),
+    })),
+  ).current;
+
+  // Set first category as active when dropdown opens
+  useEffect(() => {
+    if (servicesDropdownOpen && categories.length > 0 && !activeCategory) {
+      setActiveCategory(categories[0].key);
+    }
+  }, [servicesDropdownOpen, categories, activeCategory]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -28,6 +87,31 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node) &&
+        servicesButtonRef.current &&
+        !servicesButtonRef.current.contains(event.target as Node)
+      ) {
+        setServicesDropdownOpen(false);
+        setActiveCategory("");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const selectedCategory =
+    categories.find((category) => category.key === activeCategory) ||
+    categories[0];
+
+  // Determine dropdown background based on scroll state (solid, not transparent)
+  const dropdownBg = scrolled ? "bg-[#0a0a0a]" : "bg-[#0a0a0a]";
 
   return (
     <motion.header
@@ -44,19 +128,154 @@ export function Navbar() {
         } px-3 py-2 md:pl-6 md:pr-3 md:py-3`}
       >
         <Link href="/" className="flex items-center pl-1 pr-2 md:pr-4">
-          <img src={logo} alt="ClickMasters" className="h-6 md:h-7 w-auto" />
+          <img src={logo} alt="ClickMasters" className="h-4 md:h-5 w-auto" />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-1 text-sm font-medium text-cream/80 md:ml-auto">
+        <ul className="hidden md:flex items-center justify-center flex-1 gap-12 text-md font-medium text-cream/80">
           {links.map((l) => (
             <li key={l.label}>
-              <Link
-                href={l.href}
-                className="relative px-3 py-1.5 rounded-full transition-colors hover:text-cream group"
-              >
-                <span className="relative z-10">{l.label}</span>
-                <span className="absolute inset-0 rounded-full bg-white/0 group-hover:bg-white/10 transition-colors" />
-              </Link>
+              {l.label === "Services" ? (
+                <div
+                  ref={servicesButtonRef}
+                  className="relative"
+                  onMouseEnter={() => setServicesDropdownOpen(true)}
+                  onMouseLeave={() => {
+                    // Small delay to allow mouse to enter dropdown
+                    setTimeout(() => {
+                      if (!dropdownRef.current?.matches(":hover")) {
+                        setServicesDropdownOpen(false);
+                        setActiveCategory("");
+                      }
+                    }, 100);
+                  }}
+                >
+                  <button
+                    onClick={() =>
+                      setServicesDropdownOpen(!servicesDropdownOpen)
+                    }
+                    className="relative px-3 py-1.5 rounded-full transition-colors hover:text-cream group flex items-center gap-1"
+                  >
+                    <span className="relative z-10">{l.label}</span>
+                    <ChevronDown
+                      className={`size-3 transition-transform duration-200 ${
+                        servicesDropdownOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                    <span className="absolute inset-0 rounded-full bg-white/0 group-hover:bg-white/10 transition-colors" />
+                  </button>
+
+                  {/* Inside the Services button div */}
+                  <AnimatePresence>
+                    {servicesDropdownOpen && categories.length > 0 && (
+                      <motion.div
+                        ref={dropdownRef}
+                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                        transition={{ duration: 0.15 }}
+                        className={`absolute left-1/2 -translate-x-1/2 top-full mt-3 
+                 w-[720px] max-w-[92vw] h-[520px] 
+                 ${dropdownBg} border border-white/10 
+                 rounded-3xl shadow-2xl overflow-hidden z-50`}
+                        onMouseEnter={() => setServicesDropdownOpen(true)}
+                        onMouseLeave={() => {
+                          setServicesDropdownOpen(false);
+                          setActiveCategory("");
+                        }}
+                      >
+                        <div className="grid h-full grid-cols-[minmax(220px,260px)_1fr] gap-4 p-5">
+                          {/* Categories Sidebar */}
+                          <aside className="rounded-2xl border border-white/10 bg-white/5 p-3 overflow-y-auto custom-scrollbar">
+                            <p className="text-[10px] font-semibold uppercase tracking-[0.5px] text-cream/40 px-2 pb-3">
+                              CATEGORIES
+                            </p>
+                            <div className="space-y-1 pr-2">
+                              {categories.map((category) => {
+                                const isActive =
+                                  category.key === selectedCategory?.key;
+
+                                return (
+                                  <Link
+                                    key={category.key}
+                                    href={`/${category.key}`}
+                                    onMouseEnter={() =>
+                                      setActiveCategory(category.key)
+                                    }
+                                    onClick={() =>
+                                      setActiveCategory(category.key)
+                                    }
+                                    className={`block w-full rounded-2xl border px-4 py-3 text-left transition-all duration-200 ${
+                                      isActive
+                                        ? "border-hot-pink/40 bg-hot-pink/10 text-cream shadow-sm"
+                                        : "border-transparent text-cream/70 hover:border-white/10 hover:bg-white/5 hover:text-cream"
+                                    }`}
+                                  >
+                                    <div className="text-sm font-medium">
+                                      {category.label}
+                                    </div>
+                                    <div className="mt-0.5 text-[10px] text-cream/40">
+                                      {category.items.length} guides
+                                    </div>
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          </aside>
+
+                          {/* Guides List */}
+                          <div className="flex flex-col rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+                            <div className="flex items-center justify-between px-4 pt-4 pb-3 border-b border-white/10">
+                              <p className="text-sm font-semibold text-cream">
+                                {selectedCategory?.label || "Guides"}
+                              </p>
+                              <p className="text-xs text-cream/40">
+                                {selectedCategory?.items.length || 0} articles
+                              </p>
+                            </div>
+
+                            <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-1">
+                              {selectedCategory?.items.map((item) => (
+                                <Link
+                                  key={item.slug}
+                                  href={`/${item.category}/${item.slug}`}
+                                  onClick={() => {
+                                    setServicesDropdownOpen(false);
+                                    setActiveCategory("");
+                                  }}
+                                  className="block group rounded-2xl px-4 py-3.5 hover:bg-white/5 border border-transparent hover:border-white/10 transition-all duration-200"
+                                >
+                                  <p className="text-sm font-medium text-cream/90 group-hover:text-white transition-colors">
+                                    {item.title}
+                                  </p>
+                                  {item.description && (
+                                    <p className="mt-1.5 text-xs text-cream/50 line-clamp-2 leading-snug">
+                                      {item.description}
+                                    </p>
+                                  )}
+                                </Link>
+                              ))}
+
+                              {selectedCategory?.items.length === 0 && (
+                                <div className="p-8 text-center text-cream/40">
+                                  No guides available in this category
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ) : (
+                <Link
+                  href={l.href}
+                  className="relative px-3 py-1.5 rounded-full transition-colors hover:text-cream group"
+                >
+                  <span className="relative z-10">{l.label}</span>
+                  <span className="absolute inset-0 rounded-full bg-white/0 group-hover:bg-white/10 transition-colors" />
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -113,6 +332,22 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <style jsx>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.25);
+          border-radius: 20px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(255, 255, 255, 0.4);
+        }
+      `}</style>
     </motion.header>
   );
 }
