@@ -24,6 +24,22 @@ const links: NavLink[] = [
   { label: "Contact", href: "/contact" },
 ];
 
+// Define types for dropdown items
+interface DropdownItem {
+  id: string | number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+}
+
+interface DropdownContentProps {
+  items: DropdownItem[];
+  basePath: string;
+  viewAllLink: string;
+  icon?: React.ElementType;
+}
+
 function getCategoryLabel(key: string) {
   const names: Record<string, string> = {
     "ai-in-app-development": "AI Development",
@@ -56,6 +72,21 @@ function formatTitle(title: string) {
   return title.replace(/ Complete 2026 Guide$/, "").replace(/:\s*/, ": ");
 }
 
+// Define types for service items
+interface ServiceItem {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+}
+
+interface CategoryItem {
+  key: string;
+  fileName: string;
+  label: string;
+  items: ServiceItem[];
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -72,7 +103,7 @@ export function Navbar() {
   const ebooksButtonRef = useRef<HTMLDivElement>(null);
 
   // Get categories with their items for dropdown
-  const categories = useRef(
+  const categories = useRef<CategoryItem[]>(
     Object.entries(allData).map(([key, items]) => ({
       key,
       fileName: key.replace(/_/g, "-"),
@@ -130,18 +161,13 @@ export function Navbar() {
   // Determine dropdown background based on scroll state (solid, not transparent)
   const dropdownBg = scrolled ? "bg-[#0a0a0a]" : "bg-[#0a0a0a]";
 
-  // Generic dropdown component
+  // Generic dropdown component with proper typing
   const DropdownContent = ({ 
     items, 
     basePath, 
     viewAllLink,
     icon: Icon 
-  }: { 
-    items: any[], 
-    basePath: string,
-    viewAllLink: string,
-    icon?: any
-  }) => (
+  }: DropdownContentProps) => (
     <div className={`w-[380px] max-w-[92vw] ${dropdownBg} border border-white/10 rounded-3xl shadow-2xl overflow-hidden`}>
       <div className="p-4">
         <div className="flex items-center justify-between px-2 pb-3 border-b border-white/10">
@@ -388,11 +414,11 @@ export function Navbar() {
                     onMouseLeave={() => setCaseStudiesDropdownOpen(false)}
                   >
                     <DropdownContent
-                      items={featuredCaseStudies.map(cs => ({
+                      items={featuredCaseStudies.map((cs): DropdownItem => ({
                         id: cs.id,
                         slug: cs.slug,
                         title: cs.title,
-                        excerpt: cs.excerpt || cs.challenge?.slice(0, 120) + "...",
+                        excerpt: cs.industry || "Case Study",
                         category: cs.industry
                       }))}
                       basePath="/case-studies"
@@ -444,11 +470,11 @@ export function Navbar() {
                     onMouseLeave={() => setBlogDropdownOpen(false)}
                   >
                     <DropdownContent
-                      items={recentBlogs.map(blog => ({
+                      items={recentBlogs.map((blog): DropdownItem => ({
                         id: blog.id,
                         slug: blog.slug,
                         title: blog.title,
-                        excerpt: blog.excerpt || blog.description?.slice(0, 120) + "...",
+                        excerpt: blog.category || "Blog Post",
                         category: blog.category || "Blog"
                       }))}
                       basePath="/blog"
@@ -500,11 +526,11 @@ export function Navbar() {
                     onMouseLeave={() => setEbooksDropdownOpen(false)}
                   >
                     <DropdownContent
-                      items={featuredEbooks.map(ebook => ({
+                      items={featuredEbooks.map((ebook): DropdownItem => ({
                         id: ebook.id,
                         slug: ebook.slug,
                         title: ebook.title,
-                        excerpt: ebook.excerpt,
+                        excerpt: ebook.category || "Ebook",
                         category: ebook.category
                       }))}
                       basePath="/ebooks"
@@ -588,4 +614,6 @@ export function Navbar() {
       `}</style>
     </motion.header>
   );
+
+  
 }
