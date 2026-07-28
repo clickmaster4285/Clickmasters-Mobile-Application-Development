@@ -5,11 +5,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { RevealText } from "@/components/landing/motion";
-import {
-  getEbookBySlug,
-  getRelatedEbooks,
-  ebookSlugs,
-} from "@/content/ebooks";
+import { getEbookBySlug, getRelatedEbooks, ebookSlugs } from "@/content/ebooks";
 import {
   ArrowRight,
   Calendar,
@@ -32,7 +28,11 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata - MUST be async and await params
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const ebook = getEbookBySlug(slug);
 
@@ -64,7 +64,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // Page component - MUST be async and await params
-export default async function EbookPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function EbookPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const ebook = getEbookBySlug(slug);
 
@@ -363,7 +367,11 @@ export default async function EbookPage({ params }: { params: Promise<{ slug: st
                         href={href}
                         className="text-brand-pink hover:underline"
                         target={href?.startsWith("http") ? "_blank" : undefined}
-                        rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+                        rel={
+                          href?.startsWith("http")
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                       >
                         {children}
                       </a>

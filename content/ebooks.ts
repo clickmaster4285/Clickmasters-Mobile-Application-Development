@@ -48,7 +48,6 @@ export const ebooks: Ebook[] = [
       bio: "Alex has 12+ years of experience in mobile app development, having built over 150 apps for startups and enterprises across various industries.",
     },
 
-
     publishedDate: "2026-01-20",
     readTime: "4 hours",
     coverImage: "/assets/services/Flutter_development_smartphone.jpeg",
