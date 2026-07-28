@@ -146,13 +146,6 @@ export function Navbar() {
       <div className="p-4">
         <div className="flex items-center justify-between px-2 pb-3 border-b border-white/10">
           <p className="text-sm font-semibold text-cream">Featured</p>
-          {/* <Link 
-            href={viewAllLink}
-            className="text-xs text-hot-pink hover:text-hot-pink/80 transition-colors flex items-center gap-1"
-          >
-            View All
-            <ArrowRight className="size-3" />
-          </Link> */}
         </div>
         <div className="mt-2 space-y-1 max-h-[340px] overflow-y-auto custom-scrollbar">
           {items.map((item) => (
@@ -450,18 +443,18 @@ export function Navbar() {
                     onMouseEnter={() => setBlogDropdownOpen(true)}
                     onMouseLeave={() => setBlogDropdownOpen(false)}
                   >
-                 <DropdownContent
-  items={featuredCaseStudies.map(cs => ({
-    id: cs.id,
-    slug: cs.slug,
-    title: cs.title,
-    excerpt: cs.challenge?.slice(0, 120) + "..." || cs.description?.slice(0, 120) + "..." || "", 
-    category: cs.industry
-  }))}
-  basePath="/case-studies"
-  viewAllLink="/case-studies"
-  icon={Briefcase}
-/>
+                    <DropdownContent
+                      items={recentBlogs.map(blog => ({
+                        id: blog.id,
+                        slug: blog.slug,
+                        title: blog.title,
+                        excerpt: blog.excerpt || blog.description?.slice(0, 120) + "...",
+                        category: blog.category || "Blog"
+                      }))}
+                      basePath="/blog"
+                      viewAllLink="/blog"
+                      icon={BookOpen}
+                    />
                   </motion.div>
                 )}
               </AnimatePresence>
