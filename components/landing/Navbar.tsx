@@ -450,18 +450,18 @@ export function Navbar() {
                     onMouseEnter={() => setBlogDropdownOpen(true)}
                     onMouseLeave={() => setBlogDropdownOpen(false)}
                   >
-                    <DropdownContent
-                      items={recentBlogs.map(blog => ({
-                        id: blog.id,
-                        slug: blog.slug,
-                        title: blog.title,
-                        excerpt: blog.excerpt,
-                        category: blog.category
-                      }))}
-                      basePath="/blogs"
-                      viewAllLink="/blogs"
-                      icon={BookOpen}
-                    />
+                 <DropdownContent
+  items={featuredCaseStudies.map(cs => ({
+    id: cs.id,
+    slug: cs.slug,
+    title: cs.title,
+    excerpt: cs.challenge?.slice(0, 120) + "..." || cs.description?.slice(0, 120) + "..." || "", 
+    category: cs.industry
+  }))}
+  basePath="/case-studies"
+  viewAllLink="/case-studies"
+  icon={Briefcase}
+/>
                   </motion.div>
                 )}
               </AnimatePresence>
