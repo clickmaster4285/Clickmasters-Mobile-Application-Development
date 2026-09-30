@@ -30,9 +30,9 @@ export function Testimonials() {
     <section className="px-6 lg:px-10 py-24 bg-ink text-cream">
       <div className="max-w-[85vw] mx-auto">
         <p className="font-script text-3xl text-hot-pink">what</p>
-        <h2 className="font-display font-extrabold text-4xl md:text-5xl">
+        <h3 className="font-display font-extrabold text-4xl md:text-5xl">
           our partners say
-        </h2>
+        </h3>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

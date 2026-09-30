@@ -116,9 +116,9 @@ function PhoneMockup() {
             <p className="text-[10px] uppercase tracking-widest opacity-80">
               Today
             </p>
-            <h3 className="font-display font-extrabold text-2xl leading-tight mt-1">
+            <p className="font-display font-extrabold text-2xl leading-tight mt-1">
               Good morning, Alex
-            </h3>
+            </p>
             <div className="mt-5 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 p-3">
               <p className="text-[10px] opacity-80 uppercase tracking-wider">
                 Active users

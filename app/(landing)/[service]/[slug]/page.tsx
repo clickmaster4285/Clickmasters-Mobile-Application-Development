@@ -23,7 +23,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ service: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { service, slug } = await params;
   const content = getContentBySlug(slug);
 
   if (!content) {
@@ -36,6 +36,7 @@ export async function generateMetadata({
   return {
     title: m.title_tag,
     description: m.meta_description,
+    alternates: { canonical: `/${service}/${slug}` },
     openGraph: {
       title: m.title_tag,
       description: m.meta_description,

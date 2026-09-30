@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://clickmastersmobiledevelopmentcompany.com"),
   title: "ClickMasters — Powerful Mobile Apps, Start to End",
   description:
     "ClickMasters engineers high-performance iOS & Android apps for startups and enterprise. 250+ products shipped since 2015.",

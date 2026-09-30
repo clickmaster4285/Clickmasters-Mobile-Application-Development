@@ -45,6 +45,7 @@ export async function generateMetadata({
   return {
     title: ebook.metadata.title_tag,
     description: ebook.metadata.meta_description,
+    alternates: { canonical: `/ebooks/${slug}` },
     openGraph: {
       title: ebook.metadata.title_tag,
       description: ebook.metadata.meta_description,

@@ -159,7 +159,7 @@ export function CinematicEntry({ onComplete }: { onComplete?: () => void }) {
               WELCOME TO
             </motion.p>
 
-            <motion.h1
+            <motion.p
               className="relative font-display font-extrabold text-white mt-4"
               style={{
                 fontSize: "clamp(44px, 8vw, 72px)",
@@ -184,7 +184,7 @@ export function CinematicEntry({ onComplete }: { onComplete?: () => void }) {
               }}
             >
               CLICKMASTERS
-            </motion.h1>
+            </motion.p>
 
             <motion.div
               className="mt-6 inline-block relative"

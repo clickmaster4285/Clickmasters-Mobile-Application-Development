@@ -29,12 +29,12 @@ export function MeetPartner() {
         transition={{ duration: 0.7 }}
         className="max-w-4xl mx-auto text-center relative"
       >
-        <h2 className="font-display font-extrabold text-4xl md:text-6xl leading-tight">
+        <h3 className="font-display font-extrabold text-4xl md:text-6xl leading-tight">
           Meet your new{" "}
           <span className="font-script text-hot-pink italic font-normal">
             tech partner
           </span>
-        </h2>
+        </h3>
         <p className="mt-8 text-lg md:text-xl text-cream/70 leading-relaxed max-w-3xl mx-auto">
           With us, you&apos;ll discover a strategic partner equipped with the
           expertise, skill, and dedication to bring your vision to life. We

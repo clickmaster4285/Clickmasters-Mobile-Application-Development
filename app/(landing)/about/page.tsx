@@ -6,7 +6,6 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { Team } from "@/components/landing/Team";
 import { useLenisScroll } from "@/components/landing/motion";
-import type { Metadata } from "next";
 
 const values = [
   {
@@ -83,9 +82,9 @@ export default function AboutPage() {
         {/* Values */}
         <section className="px-6 lg:px-10 py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-display font-extrabold text-3xl md:text-4xl text-ink">
+            <h3 className="font-display font-extrabold text-3xl md:text-4xl text-ink">
               What we stand for
-            </h2>
+            </h3>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {values.map((v, idx) => (
                 <motion.div

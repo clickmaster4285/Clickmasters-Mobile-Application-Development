@@ -38,9 +38,9 @@ export function FAQ() {
       <div className="max-w-4xl mx-auto">
         <div className="mb-14 text-center">
           <p className="font-script text-3xl text-hot-pink">questions?</p>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
+          <h3 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
             we have answers
-          </h2>
+          </h3>
         </div>
         <div className="space-y-3">
           {faqs.map((f, i) => {

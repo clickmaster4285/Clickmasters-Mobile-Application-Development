@@ -155,6 +155,9 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                  <h2 className="font-display font-extrabold text-2xl text-ink">
+                    Send a message
+                  </h2>
                   {status === "error" && (
                     <div className="flex items-start gap-3 rounded-2xl border border-red-300 bg-red-50 p-4 text-red-700">
                       <AlertCircle className="size-5 flex-shrink-0 mt-0.5" />

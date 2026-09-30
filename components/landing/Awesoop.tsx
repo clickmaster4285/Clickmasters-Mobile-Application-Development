@@ -15,10 +15,10 @@ export function Awesoop() {
           transition={{ duration: 0.6 }}
         >
           <p className="font-script text-4xl text-hot-pink mb-4">Awesoop!</p>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">
+          <h3 className="font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">
             An award-winning team of designers, engineers &amp; product
             thinkers.
-          </h2>
+          </h3>
           <p className="mt-6 text-ink/70 leading-relaxed max-w-lg">
             We don't just write code. We build partnerships. With ClickMasters,
             you'll discover a strategic partner equipped with the expertise,

@@ -54,9 +54,9 @@ export function Awards() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <p className="font-script text-3xl text-hot-pink">a little</p>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
+          <h3 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
             recognition
-          </h2>
+          </h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {awards.map((a, i) => (

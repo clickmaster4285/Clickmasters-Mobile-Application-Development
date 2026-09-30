@@ -45,9 +45,9 @@ export function Industries() {
       <div className="max-w-[85vw] mx-auto">
         <div className="mb-14 max-w-2xl">
           <p className="font-script text-3xl text-hot-pink">industries</p>
-          <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
+          <h3 className="font-display font-extrabold text-4xl md:text-5xl text-ink">
             we serve
-          </h2>
+          </h3>
           <p className="mt-4 text-ink/70">
             Deep domain experience means we ship faster, ask sharper questions,
             and avoid the traps generalists fall into.

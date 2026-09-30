@@ -96,7 +96,11 @@ export default function SolutionsPage() {
         </section>
 
         <section className="px-6 lg:px-10 pb-32">
-          <div className="max-w-[85vw] mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="max-w-[85vw] mx-auto">
+            <h2 className="font-display font-extrabold text-3xl md:text-4xl text-ink text-center">
+              Industries we build for
+            </h2>
+            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {solutions.map((s, i) => (
               <motion.div
                 key={s.title}
@@ -128,14 +132,15 @@ export default function SolutionsPage() {
                 </ul>
               </motion.div>
             ))}
+            </div>
           </div>
         </section>
 
         <section className="px-6 lg:px-10 py-24 bg-ink text-cream text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-display font-extrabold text-4xl md:text-5xl">
+            <h3 className="font-display font-extrabold text-4xl md:text-5xl">
               Don&apos;t see your industry?
-            </h2>
+            </h3>
             <p className="mt-4 text-cream/70">
               We build custom solutions for ambitious teams across every
               vertical. Let&apos;s talk about yours.
