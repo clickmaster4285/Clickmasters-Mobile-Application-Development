@@ -168,7 +168,7 @@ The mobile app landscape is evolving rapidly, and staying ahead requires the rig
     },
     publishedDate: "2026-01-10",
     readTime: "12 min read",
-    image: "/images/blogs/flutter-vs-react-native.jpg",
+    image: "/assets/marketing/image.jpg",
     tags: ["Flutter", "React Native", "Comparison", "Cross-Platform"],
     featured: true,
     metadata: {
@@ -307,7 +307,7 @@ To make the right choice, consider:
     },
     publishedDate: "2026-01-05",
     readTime: "10 min read",
-    image: "/images/blogs/ai-mobile-development.jpg",
+    image: "/assets/marketing/mobile.jpg",
     tags: ["AI", "Machine Learning", "Development", "Future Tech"],
     featured: true,
     metadata: {

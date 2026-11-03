@@ -1,7 +1,10 @@
 // app/sitemap.ts
 import { allData } from "@/content/services";
 import { allSlugs as directUrlSlugs } from "@/content/services/index";
-import { allSlugs as detailSlugs, getCategoryForSlug } from "@/content/servicesDetail/index";
+import {
+  allSlugs as detailSlugs,
+  getCategoryForSlug,
+} from "@/content/servicesDetail/index";
 
 const siteUrl = "https://clickmastersmobiledevelopmentcompany.com";
 

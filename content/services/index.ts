@@ -40,7 +40,10 @@ const servicesByKey = services.reduce(
 export const allData = servicesByKey;
 
 // Also export the array if needed elsewhere
-export const allServices = services;
+export const allServices = services.map((item) => ({
+  ...item,
+  slug: item.services,
+}));
 
 // All slugs across all folders
 export const allSlugs = Array.from(
