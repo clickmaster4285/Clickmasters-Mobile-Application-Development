@@ -2,7 +2,16 @@
 
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Calendar, ChevronDown, BookOpen, Briefcase, FileText, ArrowRight } from "lucide-react";
+import {
+  Menu,
+  X,
+  Calendar,
+  ChevronDown,
+  BookOpen,
+  Briefcase,
+  FileText,
+  ArrowRight,
+} from "lucide-react";
 import Link from "next/link";
 import { useMagnetic } from "./motion";
 import { allData, getCategoryForSlug } from "@/content/servicesDetail/index";
@@ -18,7 +27,7 @@ const links: NavLink[] = [
   { label: "Solutions", href: "/solutions" },
   { label: "Services", href: "/services" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "/blogs" },
   { label: "Ebooks", href: "/ebooks" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -118,9 +127,11 @@ export function Navbar() {
   ).current;
 
   // Get featured case studies for dropdown
-  const featuredCaseStudies = caseStudies.filter(cs => cs.featured).slice(0, 4);
+  const featuredCaseStudies = caseStudies
+    .filter((cs) => cs.featured)
+    .slice(0, 4);
   const recentBlogs = blogs.slice(0, 4);
-  const featuredEbooks = ebooks.filter(eb => eb.featured).slice(0, 4);
+  const featuredEbooks = ebooks.filter((eb) => eb.featured).slice(0, 4);
 
   // Set first category as active when dropdown opens
   useEffect(() => {
@@ -162,13 +173,15 @@ export function Navbar() {
   const dropdownBg = scrolled ? "bg-[#0a0a0a]" : "bg-[#0a0a0a]";
 
   // Generic dropdown component with proper typing
-  const DropdownContent = ({ 
-    items, 
-    basePath, 
+  const DropdownContent = ({
+    items,
+    basePath,
     viewAllLink,
-    icon: Icon 
+    icon: Icon,
   }: DropdownContentProps) => (
-    <div className={`w-[380px] max-w-[92vw] ${dropdownBg} border border-white/10 rounded-3xl shadow-2xl overflow-hidden`}>
+    <div
+      className={`w-[380px] max-w-[92vw] ${dropdownBg} border border-white/10 rounded-3xl shadow-2xl overflow-hidden`}
+    >
       <div className="p-4">
         <div className="flex items-center justify-between px-2 pb-3 border-b border-white/10">
           <p className="text-sm font-semibold text-cream">Featured</p>
@@ -230,8 +243,14 @@ export function Navbar() {
         <ul className="hidden md:flex items-center justify-center flex-1 gap-6 text-md font-medium text-cream/80">
           {links.map((l) => {
             // Skip rendering links that have dropdowns
-            if (l.label === "Services" || l.label === "Case Studies" || l.label === "Blog" || l.label === "Ebooks") return null;
-            
+            if (
+              l.label === "Services" ||
+              l.label === "Case Studies" ||
+              l.label === "Blog" ||
+              l.label === "Ebooks"
+            )
+              return null;
+
             return (
               <li key={l.label}>
                 <Link
@@ -244,7 +263,7 @@ export function Navbar() {
               </li>
             );
           })}
-          
+
           {/* Services Dropdown */}
           <li>
             <div
@@ -419,7 +438,7 @@ export function Navbar() {
                         slug: cs.slug,
                         title: cs.title,
                         excerpt: cs.industry || "Case Study",
-                        category: cs.industry
+                        category: cs.industry,
                       }))}
                       basePath="/case-studies"
                       viewAllLink="/case-studies"
@@ -446,7 +465,7 @@ export function Navbar() {
               }}
             >
               <Link
-                href="/blog"
+                href="/blogs"
                 className="relative px-3 py-1.5 rounded-full transition-colors hover:text-cream group flex items-center gap-1.5"
               >
                 <span className="relative z-10">Blog</span>
@@ -475,10 +494,10 @@ export function Navbar() {
                         slug: blog.slug,
                         title: blog.title,
                         excerpt: blog.category || "Blog Post",
-                        category: blog.category || "Blog"
+                        category: blog.category || "Blog",
                       }))}
-                      basePath="/blog"
-                      viewAllLink="/blog"
+                      basePath="/blogs"
+                      viewAllLink="/blogs"
                       icon={BookOpen}
                     />
                   </motion.div>
@@ -531,7 +550,7 @@ export function Navbar() {
                         slug: ebook.slug,
                         title: ebook.title,
                         excerpt: ebook.category || "Ebook",
-                        category: ebook.category
+                        category: ebook.category,
                       }))}
                       basePath="/ebooks"
                       viewAllLink="/ebooks"
@@ -614,6 +633,4 @@ export function Navbar() {
       `}</style>
     </motion.header>
   );
-
-  
 }

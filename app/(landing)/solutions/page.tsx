@@ -101,37 +101,37 @@ export default function SolutionsPage() {
               Industries we build for
             </h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {solutions.map((s, i) => (
-              <motion.div
-                key={s.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="group relative block h-full rounded-3xl border border-ink/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-ink/20 hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.35)]"
-              >
-                <div className="size-14 rounded-2xl bg-gradient-to-br from-electric/10 to-hot-pink/10 grid place-items-center text-ink group-hover:from-electric group-hover:to-hot-pink group-hover:text-white transition-all duration-500">
-                  <s.icon className="size-7" />
-                </div>
-                <h3 className="mt-5 font-display font-bold text-xl text-ink">
-                  {s.title}
-                </h3>
-                <p className="mt-2 text-sm text-ink/65 leading-relaxed">
-                  {s.description}
-                </p>
-                <ul className="mt-5 space-y-2">
-                  {s.outcomes.map((o) => (
-                    <li
-                      key={o}
-                      className="flex items-center gap-2 text-sm text-ink/70"
-                    >
-                      <span className="size-1.5 rounded-full bg-hot-pink" />
-                      {o}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+              {solutions.map((s, i) => (
+                <motion.div
+                  key={s.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
+                  className="group relative block h-full rounded-3xl border border-ink/10 bg-white p-7 transition-all duration-500 hover:-translate-y-1 hover:border-ink/20 hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.35)]"
+                >
+                  <div className="size-14 rounded-2xl bg-gradient-to-br from-electric/10 to-hot-pink/10 grid place-items-center text-ink group-hover:from-electric group-hover:to-hot-pink group-hover:text-white transition-all duration-500">
+                    <s.icon className="size-7" />
+                  </div>
+                  <h3 className="mt-5 font-display font-bold text-xl text-ink">
+                    {s.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink/65 leading-relaxed">
+                    {s.description}
+                  </p>
+                  <ul className="mt-5 space-y-2">
+                    {s.outcomes.map((o) => (
+                      <li
+                        key={o}
+                        className="flex items-center gap-2 text-sm text-ink/70"
+                      >
+                        <span className="size-1.5 rounded-full bg-hot-pink" />
+                        {o}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
