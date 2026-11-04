@@ -25,12 +25,12 @@ import { RevealText } from "../landing/motion";
 gsap.registerPlugin(ScrollTrigger);
 const sectionIcons = [Briefcase, Lightbulb, Cpu, ShieldCheck, Rocket, BookOpen];
 /* -------------------------------------------------------------------------- */
-/*  Inline text renderer — **bold**, *italic*, `code`, and [text → `/path/`]  */
+/*  Inline text renderer — emphasis, code, and Markdown links                 */
 /* -------------------------------------------------------------------------- */
 
 function renderInline(text: string, keyPrefix = "i"): ReactNode[] {
-  // Custom link syntax: [label → `/path/`]
-  const linkRe = /\[([^\]]+?)\s*→\s*`([^`]+)`\]/g;
+  const linkRe =
+    /\[([^\]]+?)\s*→\s*`([^`]+)`\]|\[([^\]]+?)\]\(([^)]+)\)/g;
   const parts: ReactNode[] = [];
   let last = 0;
   let m: RegExpExecArray | null;
@@ -40,10 +40,10 @@ function renderInline(text: string, keyPrefix = "i"): ReactNode[] {
     parts.push(
       <a
         key={`${keyPrefix}-l-${k++}`}
-        href={m[2]}
+        href={m[2] ?? m[4]}
         className="inline-flex items-center gap-1 rounded-full   px-2.5 py-0.5 text-[0.85em] font-semibold text-brand-pink hover:bg-brand-pink/10"
       >
-        {m[1]}
+        {m[1] ?? m[3]}
         <ArrowRight className="h-3 w-3" />
       </a>,
     );
@@ -250,10 +250,14 @@ function parseArticle(md: string): Block[] {
       commitSection();
       commitFaqs();
       const links: { label: string; href: string }[] = [];
-      const re = /\[([^\]]+?)\s*→\s*`([^`]+)`\]/g;
+      const re =
+        /\[([^\]]+?)\s*→\s*`([^`]+)`\]|\[([^\]]+?)\]\(([^)]+)\)/g;
       let m: RegExpExecArray | null;
       while ((m = re.exec(b)) !== null) {
-        links.push({ label: m[1], href: m[2] });
+        links.push({
+          label: m[1] ?? m[3],
+          href: m[2] ?? m[4],
+        });
       }
       out.push({ kind: "related", links });
       continue;
@@ -401,22 +405,7 @@ function SectionBlock({
   return (
     <>
       <div
-        className="
-        group
-        relative
-        h-full
-        overflow-hidden
-        rounded-3xl
-        border
-        border-ink/10
-        bg-white
-        p-8
-        transition-all
-        duration-500
-        hover:-translate-y-1
-        hover:border-ink/20
-        hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.35)]
-      "
+        className="group relative h-full overflow-hidden rounded-3xl border border-ink/10 bg-white p-8 transition-all duration-500 hover:-translate-y-1 hover:border-ink/20 hover:shadow-[0_30px_70px_-30px_rgba(0,0,0,0.35)]"
       >
         {/* Icon */}
         <div className="size-14 rounded-2xl bg-gradient-to-br from-electric/10 to-hot-pink/10 grid place-items-center text-ink transition-all duration-500 group-hover:from-electric group-hover:to-hot-pink group-hover:text-white">
