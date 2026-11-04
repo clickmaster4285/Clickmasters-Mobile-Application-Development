@@ -39,7 +39,7 @@ Fleet maintenance management software earns its place when it solves a real, rep
 
 > 💡 **Key insight:** The biggest driver of a good outcome with fleet maintenance management software is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Performance & Benchmarks
 
@@ -86,7 +86,7 @@ For a startup, fleet maintenance management software is worth it when it removes
 
 **Related reading:** · · [fleet maintenance software → \`/fleet-maintenance-software/\`] · [web app security testing tools → \`/web-app-security-testing-tools/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -127,7 +127,7 @@ Fleet maintenance software earns its place when it solves a real, repeated probl
 
 > 💡 **Key insight:** The biggest driver of a good outcome with fleet maintenance software is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Performance & Benchmarks
 
@@ -174,7 +174,7 @@ For a startup, fleet maintenance software is worth it when it removes a real, me
 
 **Related reading:** · · [fleet maintenance management software → \`/fleet-maintenance-management-software/\`] · [web app security testing tools → \`/web-app-security-testing-tools/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -215,7 +215,7 @@ At a high level, test driven works by taking your inputs and requirements and tu
 
 > 💡 **Key insight:** The biggest driver of a good outcome with test driven is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -261,7 +261,7 @@ For a startup, test driven is worth it when it removes a real, measurable bottle
 
 **Related reading:** [fleet maintenance management software → \`/fleet-maintenance-management-software/\`] · [fleet maintenance software → \`/fleet-maintenance-software/\`] · [web app security testing tools → \`/web-app-security-testing-tools/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

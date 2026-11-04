@@ -39,7 +39,7 @@ At a high level, app web app works by taking your inputs and requirements and tu
 
 > 💡 **Key insight:** The biggest driver of a good outcome with app web app is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -85,7 +85,7 @@ For a startup, app web app is worth it when it removes a real, measurable bottle
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -126,7 +126,7 @@ At a high level, web dev works by taking your inputs and requirements and turnin
 
 > 💡 **Key insight:** The biggest driver of a good outcome with web dev is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -172,7 +172,7 @@ For a startup, web dev is worth it when it removes a real, measurable bottleneck
 
 **Related reading:** · · [website development → \`/website-development/\`] · [website creation website → \`/website-creation-website/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -213,7 +213,7 @@ At a high level, website app works by taking your inputs and requirements and tu
 
 > 💡 **Key insight:** The biggest driver of a good outcome with website app is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -259,7 +259,7 @@ For a startup, website app is worth it when it removes a real, measurable bottle
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -300,7 +300,7 @@ At a high level, website creation website works by taking your inputs and requir
 
 > 💡 **Key insight:** The biggest driver of a good outcome with website creation website is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -346,7 +346,7 @@ For a startup, website creation website is worth it when it removes a real, meas
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -387,7 +387,7 @@ At a high level, website dev works by taking your inputs and requirements and tu
 
 > 💡 **Key insight:** The biggest driver of a good outcome with website dev is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -433,7 +433,7 @@ For a startup, website dev is worth it when it removes a real, measurable bottle
 
 **Related reading:** · [website development → \`/website-development/\`] · [website creation website → \`/website-creation-website/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -474,7 +474,7 @@ At a high level, website development works by taking your inputs and requirement
 
 > 💡 **Key insight:** The biggest driver of a good outcome with website development is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -520,7 +520,7 @@ For a startup, website development is worth it when it removes a real, measurabl
 
 **Related reading:** · · · [website creation website → \`/website-creation-website/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

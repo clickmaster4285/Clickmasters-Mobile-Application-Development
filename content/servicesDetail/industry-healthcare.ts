@@ -39,7 +39,7 @@ At a high level, electronic health care systems works by taking your inputs and 
 
 > 💡 **Key insight:** The biggest driver of a good outcome with electronic health care systems is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -85,7 +85,7 @@ For a startup, electronic health care systems is worth it when it removes a real
 
 **Related reading:** [emr medical systems → \`/emr-medical-systems/\`] · [electronic medical records emr system → \`/electronic-medical-records-emr-system/\`] · [medical mobile app development → \`/medical-mobile-app-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -126,7 +126,7 @@ At a high level, electronic medical records emr system works by taking your inpu
 
 > 💡 **Key insight:** The biggest driver of a good outcome with electronic medical records emr system is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -172,7 +172,7 @@ For a startup, electronic medical records emr system is worth it when it removes
 
 **Related reading:** [electronic health care systems → \`/electronic-health-care-systems/\`] · [electronic health care systems → \`/electronic-health-care-systems/\`] · [emr medical systems → \`/emr-medical-systems/\`] · [medical mobile app development → \`/medical-mobile-app-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -213,7 +213,7 @@ At a high level, emr medical systems works by taking your inputs and requirement
 
 > 💡 **Key insight:** The biggest driver of a good outcome with emr medical systems is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -259,7 +259,7 @@ For a startup, emr medical systems is worth it when it removes a real, measurabl
 
 **Related reading:** [electronic health care systems → \`/electronic-health-care-systems/\`] · [electronic health care systems → \`/electronic-health-care-systems/\`] · [electronic medical records emr system → \`/electronic-medical-records-emr-system/\`] · [medical mobile app development → \`/medical-mobile-app-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

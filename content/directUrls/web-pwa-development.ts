@@ -39,7 +39,7 @@ At a high level, dating web app works by taking your inputs and requirements and
 
 > 💡 **Key insight:** The biggest driver of a good outcome with dating web app is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -85,7 +85,7 @@ For a startup, dating web app is worth it when it removes a real, measurable bot
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -126,7 +126,7 @@ At a high level, dating website apps works by taking your inputs and requirement
 
 > 💡 **Key insight:** The biggest driver of a good outcome with dating website apps is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -172,7 +172,7 @@ For a startup, dating website apps is worth it when it removes a real, measurabl
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -213,7 +213,7 @@ At a high level, tinder dating website works by taking your inputs and requireme
 
 > 💡 **Key insight:** The biggest driver of a good outcome with tinder dating website is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -259,7 +259,7 @@ For a startup, tinder dating website is worth it when it removes a real, measura
 
 **Related reading:** · · · [website development → \`/website-development/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

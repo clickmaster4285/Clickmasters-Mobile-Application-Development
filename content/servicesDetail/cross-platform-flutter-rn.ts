@@ -41,8 +41,7 @@ A Flutter app has three layers. Your **Dart code** describes the UI as a tree of
 
 For development workflow, Flutter's headline feature is **hot reload**: code changes appear in the running app in under a second while preserving app state. On real projects this is not a gimmick — it materially compresses UI iteration time, and it's the feature engineers most often cite when they resist moving back to native.
 
-> **Scoping a Flutter project?** Our [app cost calculator → /app-development-cost/] gives you an itemized estimate in two minutes, or [see our vetted Flutter teams → /mobile-app-development-services/].
-
+> **Scoping an AI-assist feature?** Our app cost calculator helps you estimate build and running costs, or see our vetted AI development teams.
 ## Real-World Use Cases: Where Flutter Wins
 
 Flutter's sweet spot is the standard business app — the category that covers most of what gets built: marketplaces, fintech and banking front-ends, e-commerce, health and fitness, internal enterprise tools, and MVPs that need to hit both stores on a startup budget. It is especially strong when brand-consistent custom UI matters more than platform-native chrome, because Flutter renders your design identically on both platforms instead of translating it through each platform's components.
@@ -132,7 +131,7 @@ At a high level, flutter+ works by taking your inputs and requirements and turni
 
 > 💡 **Key insight:** The biggest driver of a good outcome with flutter+ is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -178,7 +177,7 @@ For a startup, flutter+ is worth it when it removes a real, measurable bottlenec
 
 **Related reading:** [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile application development → \`/flutter-mobile-application-development/\`] · [react to react native → \`/react-to-react-native/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -219,7 +218,7 @@ At a high level, js react native works by taking your inputs and requirements an
 
 > 💡 **Key insight:** The biggest driver of a good outcome with js react native is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -265,7 +264,7 @@ For a startup, js react native is worth it when it removes a real, measurable bo
 
 **Related reading:** [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile application development → \`/flutter-mobile-application-development/\`] · [react to react native → \`/react-to-react-native/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -306,7 +305,7 @@ At a high level, react & react native works by taking your inputs and requiremen
 
 > 💡 **Key insight:** The biggest driver of a good outcome with react & react native is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -352,7 +351,7 @@ For a startup, react & react native is worth it when it removes a real, measurab
 
 **Related reading:** [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile app development → \`/flutter-mobile-app-development/\`] · [flutter mobile application development → \`/flutter-mobile-application-development/\`] · [react to react native → \`/react-to-react-native/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

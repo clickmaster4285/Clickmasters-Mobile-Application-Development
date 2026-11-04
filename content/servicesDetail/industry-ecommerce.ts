@@ -39,7 +39,7 @@ At a high level, apps delivery food works by taking your inputs and requirements
 
 > 💡 **Key insight:** The biggest driver of a good outcome with apps delivery food is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -85,7 +85,7 @@ For a startup, apps delivery food is worth it when it removes a real, measurable
 
 **Related reading:** [food delivery application → \`/food-delivery-application/\`] · [uber eats food delivery → \`/uber-eats-food-delivery/\`] · [clover marketplace → \`/clover-marketplace/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -126,7 +126,7 @@ At a high level, clover marketplace works by taking your inputs and requirements
 
 > 💡 **Key insight:** The biggest driver of a good outcome with clover marketplace is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -172,7 +172,7 @@ For a startup, clover marketplace is worth it when it removes a real, measurable
 
 **Related reading:** [apps delivery food → \`/apps-delivery-food/\`] · [apps delivery food → \`/apps-delivery-food/\`] · [food delivery application → \`/food-delivery-application/\`] · [uber eats food delivery → \`/uber-eats-food-delivery/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -213,7 +213,7 @@ Ecommerce platform earns its place when it solves a real, repeated problem — n
 
 > 💡 **Key insight:** The biggest driver of a good outcome with ecommerce platform is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Performance & Benchmarks
 
@@ -260,7 +260,7 @@ For a startup, ecommerce platform is worth it when it removes a real, measurable
 
 **Related reading:** [apps delivery food → \`/apps-delivery-food/\`] · [apps delivery food → \`/apps-delivery-food/\`] · [food delivery application → \`/food-delivery-application/\`] · [uber eats food delivery → \`/uber-eats-food-delivery/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -301,7 +301,7 @@ Food delivery platform earns its place when it solves a real, repeated problem �
 
 > 💡 **Key insight:** The biggest driver of a good outcome with food delivery platform is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Performance & Benchmarks
 
@@ -348,7 +348,7 @@ For a startup, food delivery platform is worth it when it removes a real, measur
 
 **Related reading:** [apps delivery food → \`/apps-delivery-food/\`] · [apps delivery food → \`/apps-delivery-food/\`] · [food delivery application → \`/food-delivery-application/\`] · [uber eats food delivery → \`/uber-eats-food-delivery/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -389,7 +389,7 @@ At a high level, uber eats food delivery works by taking your inputs and require
 
 > 💡 **Key insight:** The biggest driver of a good outcome with uber eats food delivery is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Real-World Use Cases & Examples
 
@@ -435,7 +435,7 @@ For a startup, uber eats food delivery is worth it when it removes a real, measu
 
 **Related reading:** [apps delivery food → \`/apps-delivery-food/\`] · [apps delivery food → \`/apps-delivery-food/\`] · [food delivery application → \`/food-delivery-application/\`] · [clover marketplace → \`/clover-marketplace/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
