@@ -108,10 +108,13 @@ export default async function ServiceDetailPage({
                 team. No pay-to-play, no fluff.
               </p>
 
-              <button className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30">
-                Request a tailored quote
-                <span className="text-xl leading-none">→</span>
-              </button>
+            <Link
+  href="/contact"
+  className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
+>
+  Request a tailored quote
+  <span className="text-xl leading-none">→</span>
+</Link>
             </div>
           </div>
 

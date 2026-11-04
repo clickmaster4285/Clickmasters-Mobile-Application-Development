@@ -39,7 +39,7 @@ App builder no coding earns its place when it solves a real, repeated problem �
 
 > 💡 **Key insight:** The biggest driver of a good outcome with app builder no coding is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -86,7 +86,7 @@ For a startup, app builder no coding is worth it when it removes a real, measura
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builders no code → \`/app-builders-no-code/\`] · [no code app creator → \`/no-code-app-creator/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -127,7 +127,7 @@ Here is the process for build app no code, in order. **Step 1 — Plan:** define
 
 > 💡 **Key insight:** The biggest driver of a good outcome with build app no code is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Timeline & Cost Expectations at Each Step
 
@@ -169,7 +169,7 @@ For a startup, build app no code is worth it when it removes a real, measurable 
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -210,7 +210,7 @@ Low code app development platform earns its place when it solves a real, repeate
 
 > 💡 **Key insight:** The biggest driver of a good outcome with low code app development platform is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -257,7 +257,7 @@ For a startup, low code app development platform is worth it when it removes a r
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -298,7 +298,7 @@ Low code automation platform earns its place when it solves a real, repeated pro
 
 > 💡 **Key insight:** The biggest driver of a good outcome with low code automation platform is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -345,7 +345,7 @@ For a startup, low code automation platform is worth it when it removes a real, 
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -386,7 +386,7 @@ Low code development tools earns its place when it solves a real, repeated probl
 
 > 💡 **Key insight:** The biggest driver of a good outcome with low code development tools is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -433,7 +433,7 @@ For a startup, low code development tools is worth it when it removes a real, me
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -474,7 +474,7 @@ At a high level, low code works by taking your inputs and requirements and turni
 
 > 💡 **Key insight:** The biggest driver of a good outcome with low code is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Real-World Use Cases & Examples
 
@@ -520,7 +520,7 @@ For a startup, low code is worth it when it removes a real, measurable bottlenec
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -561,7 +561,7 @@ No code app builder earns its place when it solves a real, repeated problem — 
 
 > 💡 **Key insight:** The biggest driver of a good outcome with no code app builder is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -608,7 +608,7 @@ For a startup, no code app builder is worth it when it removes a real, measurabl
 
 **Related reading:** [no code app creator → \`/no-code-app-creator/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`] · [no code app creator → \`/no-code-app-creator/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -649,7 +649,7 @@ At a high level, no code app creator works by taking your inputs and requirement
 
 > 💡 **Key insight:** The biggest driver of a good outcome with no code app creator is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Real-World Use Cases & Examples
 
@@ -695,7 +695,7 @@ For a startup, no code app creator is worth it when it removes a real, measurabl
 
 **Related reading:** [no code app builder → \`/no-code-app-builder/\`] · [app builder no coding → \`/app-builder-no-coding/\`] · [app builders no code → \`/app-builders-no-code/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

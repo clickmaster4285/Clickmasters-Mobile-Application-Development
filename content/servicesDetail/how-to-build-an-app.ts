@@ -39,7 +39,7 @@ Here is the process for app how to make, in order. **Step 1 — Plan:** define t
 
 > 💡 **Key insight:** The biggest driver of a good outcome with app how to make is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Want a number for your project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate in two minutes.
+> **Want a number for your project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate in two minutes.
 
 ## Timeline & Cost Expectations at Each Step
 
@@ -81,7 +81,7 @@ For a startup, app how to make is worth it when it removes a real, measurable bo
 
 **Related reading:** [make money from apps → \`/make-money-from-apps/\`] · [applications to make money → \`/applications-to-make-money/\`] · [make money with apps → \`/make-money-with-apps/\`]
 
-> **Get a detailed estimate.** Use our [cost calculator → \`/software-engineer-pay-rate/\`] for an itemized breakdown, or [talk to our team → \`/dedicated-software-developers/\`] about building it.
+> > **Get a detailed estimate.** Use our cost & pricing guide for an itemized breakdown, or talk to our team about building it.
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,

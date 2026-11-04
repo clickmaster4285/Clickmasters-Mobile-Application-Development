@@ -7,7 +7,7 @@ export const data = [
     slug: "software-engineer-pay-rate",
     filename: "software-engineer-pay-rate.md",
     metadata: {
-      url: "/software-engineer-pay-rate/",
+      url: "/cost-pricing/software-engineer-pay-rate/",
       title_tag: "Software Engineer Pay Rate 2026 Benchmarks by Region",
       meta_description:
         "What software engineers actually cost in 2026 hourly and salary rates by region, seniority, and engagement model, with a benchmark table and honest caveats. Updated 2026.",

@@ -39,7 +39,7 @@ At a high level, live streaming platforms works by taking your inputs and requir
 
 > 💡 **Key insight:** The biggest driver of a good outcome with live streaming platforms is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Real-World Use Cases & Examples
 
@@ -85,7 +85,7 @@ For a startup, live streaming platforms is worth it when it removes a real, meas
 
 **Related reading:** [project management software → \`/project-management-software/\`] · [project tracker software → \`/project-tracker-software/\`] · [project management software → \`/project-management-software/\`] · [customer retention management software → \`/customer-retention-management-software/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -126,7 +126,7 @@ Manufacturing ERP software earns its place when it solves a real, repeated probl
 
 > 💡 **Key insight:** The biggest driver of a good outcome with manufacturing erp software is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -173,7 +173,7 @@ For a startup, manufacturing erp software is worth it when it removes a real, me
 
 **Related reading:** [project management software → \`/project-management-software/\`] · [project tracker software → \`/project-tracker-software/\`] · [project management software → \`/project-management-software/\`] · [customer retention management software → \`/customer-retention-management-software/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
@@ -214,7 +214,7 @@ Sharepoint to sharepoint migration tool earns its place when it solves a real, r
 
 > 💡 **Key insight:** The biggest driver of a good outcome with sharepoint to sharepoint migration tool is clear scope and realistic expectations. Teams that define success criteria up front — and choose the right partner or approach rather than the cheapest — consistently get better results.
 
-> **Scoping a project?** Our [cost calculator → \`/software-engineer-pay-rate/\`] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
+> **Scoping a project?** Our [cost & pricing guide → \`/cost-pricing/software-engineer-pay-rate/\`]] gives you an itemized estimate, or [see our vetted teams → \`/dedicated-software-developers/\`].
 
 ## Performance & Benchmarks
 
@@ -261,7 +261,7 @@ For a startup, sharepoint to sharepoint migration tool is worth it when it remov
 
 **Related reading:** [project management software → \`/project-management-software/\`] · [project tracker software → \`/project-tracker-software/\`] · [project management software → \`/project-management-software/\`] · [customer retention management software → \`/customer-retention-management-software/\`]
 
-> **Ready to build?** [Estimate your cost → \`/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
+> **Ready to build?** [Estimate your cost → \`/cost-pricing/software-engineer-pay-rate/\`] or [see our vetted development teams → \`/dedicated-software-developers/\`].
 
 ---
 *Sources: Clickmasters 2026 benchmarks and surveys (methodology to be published) ·. Every figure marked is an orientation range pending first-party verification by Amjad Khan before publish. Report an error:.*`,
