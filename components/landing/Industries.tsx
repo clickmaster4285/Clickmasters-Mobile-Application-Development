@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Landmark,
@@ -12,28 +13,38 @@ import {
 
 const industries = [
   {
-    name: "Fintech & Banking",
+    name: "Banking apps",
+    href: "/industry-fintech/mobile-banking-apps",
     icon: Landmark,
     color: "bg-hot-pink text-cream",
   },
   {
-    name: "HealthTech & Wellness",
+    name: "Medical apps",
+    href: "/industry-healthcare/medical-mobile-app-development",
     icon: HeartPulse,
     color: "bg-electric text-cream",
   },
-  { name: "Social & Entertainment", icon: Users, color: "bg-sun text-ink" },
   {
-    name: "E-commerce & Retail",
+    name: "How to build",
+    href: "/how-to-build-an-app",
+    icon: Users,
+    color: "bg-sun text-ink",
+  },
+  {
+    name: "Grocery delivery",
+    href: "/industry-ecommerce/grocery-delivery-app",
     icon: ShoppingBag,
     color: "bg-ink text-cream",
   },
   {
-    name: "Logistics & Supply Chain",
+    name: "Local delivery",
+    href: "/industry-ecommerce/delivery-app",
     icon: Truck,
     color: "bg-cream text-ink border-2 border-ink",
   },
   {
-    name: "Real Estate & PropTech",
+    name: "All solutions",
+    href: "/solutions",
     icon: Building2,
     color: "bg-hot-pink/10 text-ink border-2 border-hot-pink",
   },
@@ -49,8 +60,8 @@ export function Industries() {
             we serve
           </h3>
           <p className="mt-4 text-ink/70">
-            Deep domain experience means we ship faster, ask sharper questions,
-            and avoid the traps generalists fall into.
+            These links go to mobile-app guides. They describe the product
+            decisions for that industry. They are not case studies.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -61,12 +72,16 @@ export function Industries() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
-              className={`${it.color} rounded-2xl p-8 hover:-translate-y-1 transition-transform cursor-default`}
             >
-              <it.icon className="size-8" />
-              <h3 className="mt-6 font-display font-extrabold text-2xl">
-                {it.name}
-              </h3>
+              <Link
+                href={it.href}
+                className={`${it.color} block rounded-2xl p-8 hover:-translate-y-1 transition-transform`}
+              >
+                <it.icon className="size-8" />
+                <h3 className="mt-6 font-display font-extrabold text-2xl">
+                  {it.name}
+                </h3>
+              </Link>
             </motion.div>
           ))}
         </div>

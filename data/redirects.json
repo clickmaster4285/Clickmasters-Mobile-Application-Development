@@ -1,0 +1,17 @@
+{
+  "/android-software-development": "/android-development/android-software-development",
+  "/android-tv-app-development": "/android-development/android-tv-app-development",
+  "/publish-to-google-play": "/android-development/publish-to-google-play",
+  "/app-build-cost": "/cost-pricing/app-build-cost",
+  "/cost-to-develop-an-app": "/cost-pricing/cost-to-develop-an-app",
+  "/react-native-apps": "/cross-platform-flutter-rn/react-native-apps",
+  "/build-an-app-for-my-business": "/how-to-build-an-app/build-an-app-for-my-business",
+  "/delivery-app": "/industry-ecommerce/delivery-app",
+  "/grocery-delivery-app": "/industry-ecommerce/grocery-delivery-app",
+  "/medical-mobile-app-development": "/industry-healthcare/medical-mobile-app-development",
+  "/app-store-optimization": "/ios-development/app-store-optimization",
+  "/develop-ios-app": "/ios-development/develop-ios-app",
+  "/swift-app-development": "/ios-development/swift-app-development",
+  "/flutter-mobile-app-development": "/cross-platform-flutter-rn/flutter-mobile-app-development",
+  "/mobile-banking-apps": "/industry-fintech/mobile-banking-apps"
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { RevealText, ScrollFloat } from "./motion";
 import {
   Search,
@@ -11,7 +12,7 @@ import {
   GitBranch,
   type LucideIcon,
 } from "lucide-react";
-const agencyReel = "/assets/marketing/agency_reel.jpeg";
+const agencyReel = "/assets/marketing/agency-reel.webp";
 
 const cols: {
   name: string;
@@ -81,9 +82,11 @@ export function Process() {
           transition={{ duration: 0.7 }}
           className="mb-16 relative rounded-3xl overflow-hidden border border-ink/10 shadow-[0_24px_60px_-25px_rgba(0,0,0,0.35)]"
         >
-          <img
+          <Image
             src={agencyReel}
-            alt="Design. Code. Collaborate. Launch. Analyze. Optimize."
+            alt="Studio wall with the words design, code, collaborate, launch, analyze, and optimize"
+            width={1600}
+            height={900}
             className="w-full h-auto block"
             loading="lazy"
           />

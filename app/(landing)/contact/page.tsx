@@ -14,25 +14,26 @@ import {
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { useLenisScroll } from "@/components/landing/motion";
+import { site } from "@/lib/site";
 
 const channels = [
   {
     icon: Mail,
     label: "Email",
-    value: "sale@clickmastersmobiledevelopmentcompany.com",
-    href: "mailto:sale@clickmastersmobiledevelopmentcompany.com",
+    value: site.email,
+    href: `mailto:${site.email}`,
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 012-3456",
-    href: "tel:+15550123456",
+    value: site.phoneDisplay,
+    href: `tel:${site.phoneTel}`,
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "Chat with us",
-    href: "https://wa.me/15550123456",
+    value: site.phoneDisplay,
+    href: site.whatsapp,
   },
   {
     icon: MapPin,
@@ -71,6 +72,15 @@ export default function ContactPage() {
       return;
     }
 
+    const body = [
+      `Name: ${payload.name}`,
+      `Email: ${payload.email}`,
+      `Project: ${payload.project || "n/a"}`,
+      `Budget: ${payload.budget || "n/a"}`,
+      "",
+      payload.message,
+    ].join("\n");
+    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent("App project")}&body=${encodeURIComponent(body)}`;
     form.reset();
     setStatus("success");
   }
@@ -141,8 +151,9 @@ export default function ContactPage() {
                       Message sent!
                     </h2>
                     <p className="mt-2 text-ink/60">
-                      Thanks for reaching out — we&apos;ve received your enquiry
-                      and will reply within one business day.
+                      Your email app should be open with the message addressed
+                      to {site.email}. Send it there so it actually reaches us.
+                      The form on this page does not store the message itself.
                     </p>
                     <button
                       type="button"
@@ -222,6 +233,73 @@ export default function ContactPage() {
                 </form>
               )}
             </motion.div>
+          </div>
+        </section>
+
+        <section className="px-6 lg:px-10 pb-24">
+          <div className="max-w-3xl mx-auto space-y-5 text-ink/75 leading-8">
+            <h2 className="font-display font-extrabold text-3xl text-ink">
+              What to send
+            </h2>
+            <p>
+              A useful note names the person who will use the app, the one job
+              the first release must finish, and the platforms. iOS only,
+              Android only, or both. If both, say whether you already prefer
+              Swift and Kotlin, Flutter, or React Native. If you do not have a
+              preference, say that. The stack guides exist so you can read the
+              tradeoff before the call, not so you have to arrive with a
+              decision.
+            </p>
+            <p>
+              List the systems the app must call. A booking tool, a till, a
+              bank core, a clinical sandbox, or nothing yet. &quot;Nothing
+              yet&quot; is a valid answer and it changes the estimate, because
+              the app then needs somewhere to keep accounts and records. Also
+              say which countries you will ship to. Store rules and tax on
+              digital goods are not the same everywhere.
+            </p>
+            <p>
+              Separate what is in the first release from what can wait. A
+              customer flow and a staff console are often two releases. Payments,
+              offline use, and chat are line items, not adjectives. If you have
+              a deadline, say what the deadline is for: a TestFlight build, a
+              closed Play test, or a public listing. Those are different dates.
+            </p>
+            <p>
+              You can reach the studio at {site.email} or {site.phoneDisplay}.
+              WhatsApp uses the same phone number as the call button. We reply
+              with questions when the note is missing a platform or a job, and
+              with a scoped plan when the note has both. We do not send a price
+              from a slogan, and we do not attach review scores or awards to
+              the reply.
+            </p>
+            <p>
+              If you are still choosing a topic, start with the{" "}
+              <a href="/services" className="font-semibold text-hot-pink">
+                services index
+              </a>
+              , the{" "}
+              <a href="/cost-pricing" className="font-semibold text-hot-pink">
+                cost guide
+              </a>
+              , or{" "}
+              <a href="/solutions" className="font-semibold text-hot-pink">
+                solutions
+              </a>
+              . Those pages are the ones this site still publishes. Removed
+              keyword pages should not be used as a brief. If you found one in
+              an old search result, it now explains that it has been removed.
+            </p>
+            <p>
+              Include your name, a return email, and whether you need a
+              discovery conversation or a build. If a vendor already holds the
+              store accounts, say who can invite a developer. If the app handles
+              health or financial data, say who owns the policy. You do not
+              need a visual design. You do need the job the first version must
+              complete. We would rather delay a quote by a day than price a
+              product nobody has described. The phone number and the WhatsApp
+              link are the same line, {site.phoneDisplay}.
+            </p>
           </div>
         </section>
       </main>

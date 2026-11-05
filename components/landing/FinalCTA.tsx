@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Mail, Phone, MessageCircle } from "lucide-react";
+import { site } from "@/lib/site";
 import { RevealText, useMagnetic, MouseParallax } from "./motion";
 import {
   DoodleCircle,
@@ -12,7 +14,7 @@ import {
   Drift,
   DottedTrail,
 } from "./decor";
-const growthEngine = "/assets/marketing/growth_Engine.jpeg";
+const growthEngine = "/assets/marketing/growth-engine.webp";
 
 function MagneticCard({
   href,
@@ -112,9 +114,11 @@ export function FinalCTA() {
           transition={{ duration: 0.7 }}
           className="mt-16 relative rounded-3xl overflow-hidden border border-ink/10 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.3)]"
         >
-          <img
+          <Image
             src={growthEngine}
-            alt="Digital growth engine: Strategy → Design → Development → Marketing → Growth"
+            alt="Diagram of a product path from strategy and design through development"
+            width={1600}
+            height={900}
             className="w-full h-auto block"
             loading="lazy"
           />
@@ -125,7 +129,7 @@ export function FinalCTA() {
 
         <div className="mt-16 grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           <MagneticCard
-            href="mailto:sale@clickmastersmobiledevelopmentcompany.com"
+            href={`mailto:${site.email}`}
             className="bg-hot-pink text-cream shadow-[0_20px_50px_-20px_rgba(255,71,127,0.7)]"
           >
             <Mail className="size-6 mb-3 mx-auto transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-8deg]" />
@@ -133,12 +137,12 @@ export function FinalCTA() {
               Email
             </p>
             <p className="mt-1 font-semibold text-sm break-all">
-              sale@clickmasters…
+              sales@clickmasters…
             </p>
             <DottedTrail className="absolute -bottom-1 left-4 w-24 text-cream/40" />
           </MagneticCard>
           <MagneticCard
-            href="tel:+13252024074"
+            href={`tel:${site.phoneTel}`}
             className="border-2 border-ink text-ink bg-cream hover:bg-ink hover:text-cream transition-colors duration-500"
           >
             <Phone className="size-6 mb-3 mx-auto transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[8deg]" />
@@ -148,7 +152,7 @@ export function FinalCTA() {
             <p className="mt-1 font-semibold">+1 325 202 4074</p>
           </MagneticCard>
           <MagneticCard
-            href="https://wa.me/13252024074"
+            href={site.whatsapp}
             className="bg-whatsapp text-white shadow-[0_20px_50px_-20px_rgba(37,211,102,0.7)]"
           >
             <MessageCircle className="size-6 mb-3 mx-auto transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-8deg]" />

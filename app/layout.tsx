@@ -3,29 +3,28 @@ import "./styles.css";
 import { Providers } from "./providers";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { SiteJsonLd } from "@/components/seo/SiteJsonLd";
+import { site } from "@/lib/site";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://clickmastersmobiledevelopmentcompany.com"),
-  title: "ClickMasters — Powerful Mobile Apps, Start to End",
-  description:
-    "ClickMasters engineers high-performance iOS & Android apps for startups and enterprise. 250+ products shipped since 2015.",
+  metadataBase: new URL(site.url),
+  title: {
+    default: "ClickMasters | iOS and Android App Development",
+    template: "%s",
+  },
+  description: site.description,
   openGraph: {
-    title: "ClickMasters — Powerful Mobile Apps, Start to End",
-    description:
-      "Premium Mobile development. Native iOS, Android, and cross-platform apps engineered for scale.",
+    title: "ClickMasters | iOS and Android App Development",
+    description: site.description,
     type: "website",
-    images: [
-      "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/08f601b3-37e0-4eb5-b988-438588cc8dbc/id-preview-53ce0115--b4cf6b60-8572-48f9-b32b-7ba09ae29899.lovable.app-1780744720067.png",
-    ],
+    url: site.url,
   },
   twitter: {
     card: "summary",
-    site: "@Lovable",
-    title: "ClickMasters — Powerful Mobile Apps, Start to End",
-    description:
-      "Premium Mobile development. Native iOS, Android, and cross-platform apps engineered for scale.",
+    title: "ClickMasters | iOS and Android App Development",
+    description: site.description,
   },
   verification: {
     google: "8Q2IR2BEPc-qizdU0b-FRF6r3OLYynSSTTK-4h-HZIU",
@@ -56,6 +55,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <SiteJsonLd />
         <Providers>{children}</Providers>
       </body>
     </html>
