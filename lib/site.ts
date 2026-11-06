@@ -6,6 +6,7 @@ export const site = {
   phoneTel: "+13252024074",
   phoneSchema: "+1-325-202-4074",
   whatsapp: "https://wa.me/13252024074",
+  whatsappRel: "noopener noreferrer nofollow",
   description:
     "ClickMasters builds iOS, Android, Flutter, and React Native apps and publishes practical guides on cost, store listings, and industry apps.",
 };

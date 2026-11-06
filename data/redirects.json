@@ -13,5 +13,11 @@
   "/develop-ios-app": "/ios-development/develop-ios-app",
   "/swift-app-development": "/ios-development/swift-app-development",
   "/flutter-mobile-app-development": "/cross-platform-flutter-rn/flutter-mobile-app-development",
-  "/mobile-banking-apps": "/industry-fintech/mobile-banking-apps"
+  "/mobile-banking-apps": "/industry-fintech/mobile-banking-apps",
+  "/general-mobile-app-development/mobile-app-development": "/services",
+  "/general-mobile-app-development/android-app-development": "/android-development",
+  "/general-mobile-app-development/ios-app-development": "/ios-development",
+  "/general-mobile-app-development/cross-platform-app-development": "/cross-platform-flutter-rn",
+  "/general-mobile-app-development/flutter-app-development": "/cross-platform-flutter-rn/flutter-mobile-app-development",
+  "/general-mobile-app-development/react-native-development": "/cross-platform-flutter-rn/react-native-apps"
 }

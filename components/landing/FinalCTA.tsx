@@ -20,16 +20,19 @@ function MagneticCard({
   href,
   className,
   children,
+  rel,
 }: {
   href: string;
   className: string;
   children: React.ReactNode;
+  rel?: string;
 }) {
   const ref = useMagnetic(0.18);
   return (
     <a
       ref={ref as React.RefObject<HTMLAnchorElement>}
       href={href}
+      rel={rel}
       className={`group relative rounded-3xl p-7 will-change-transform overflow-hidden ${className}`}
     >
       {children}
@@ -153,6 +156,7 @@ export function FinalCTA() {
           </MagneticCard>
           <MagneticCard
             href={site.whatsapp}
+            rel={site.whatsappRel}
             className="bg-whatsapp text-white shadow-[0_20px_50px_-20px_rgba(37,211,102,0.7)]"
           >
             <MessageCircle className="size-6 mb-3 mx-auto transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-8deg]" />

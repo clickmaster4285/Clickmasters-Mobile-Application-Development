@@ -70,7 +70,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href={site.whatsapp} className="hover:text-hot-pink">
+                <a
+                  href={site.whatsapp}
+                  rel={site.whatsappRel}
+                  className="hover:text-hot-pink"
+                >
                   WhatsApp
                 </a>
               </li>

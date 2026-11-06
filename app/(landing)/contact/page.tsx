@@ -124,6 +124,9 @@ export default function ContactPage() {
                     <a
                       key={c.label}
                       href={c.href}
+                      rel={
+                        c.href.startsWith("https://") ? site.whatsappRel : undefined
+                      }
                       className="block hover:-translate-y-0.5 transition-transform"
                     >
                       {Inner}
