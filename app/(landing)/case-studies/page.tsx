@@ -3,12 +3,19 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { caseStudies } from "@/content/case-study";
 import { ArrowRight, Calendar, Briefcase } from "lucide-react";
+import type { Metadata } from "next";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata = {
+const baseMetadata: Metadata = {
   title: "Case Studies | Mobile App Development Portfolio",
   description:
     "Explore our portfolio of successful mobile app development projects across healthcare, fintech, e-commerce, and more.",
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedSeo("/case-studies", baseMetadata);
+}
 
 export default function CaseStudiesPage() {
   return (

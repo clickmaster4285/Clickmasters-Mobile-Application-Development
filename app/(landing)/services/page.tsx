@@ -10,8 +10,9 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { RevealText } from "@/components/landing/motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Services | Mobile App Development Guides & Deep Dives",
   description:
     "Browse all our in-depth service guides covering mobile app development, AI integration, cross-platform frameworks, UI/UX design, and more.",
@@ -23,6 +24,11 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedSeo("/services", baseMetadata);
+}
 
 function formatTitle(title: string) {
   return title.replace(/ Complete 2026 Guide$/, "").trim();
@@ -171,13 +177,13 @@ function CTASection() {
           pay-to-play, no fluff.
         </p>
 
-    <Link
-  href="/contact"
-  className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
->
-  Request a tailored quote
-  <span className="text-xl leading-none">→</span>
-</Link>
+        <Link
+          href="/contact"
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
+        >
+          Request a tailored quote
+          <span className="text-xl leading-none">→</span>
+        </Link>
       </div>
     </div>
   );

@@ -14,8 +14,9 @@ import {
   FileText,
   Sparkles,
 } from "lucide-react";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Free Ebooks | Learn Mobile App Development & Growth",
   description:
     "Download free comprehensive ebooks on mobile app development, Flutter, AI, and app marketing. Expert guides to help you build and grow better apps.",
@@ -27,6 +28,11 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedSeo("/ebooks", baseMetadata);
+}
 
 export default function EbooksPage() {
   const featuredEbooks = ebooks.filter((e) => e.featured);

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useMagnetic } from "./motion";
+import { useCmsNav } from "@/components/cms/CmsNavContext";
 import { allData, getCategoryForSlug } from "@/content/servicesDetail/index";
 import { caseStudies } from "@/content/case-study";
 import { blogs } from "@/content/blogs";
@@ -105,6 +106,11 @@ export function Navbar() {
   const [ebooksDropdownOpen, setEbooksDropdownOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>("");
   const ctaRef = useMagnetic(0.3);
+  // ERP header items are additive: appended after the site's own links,
+  // skipping any whose URL the site already links to.
+  const cmsLinks = useCmsNav().header.filter(
+    (g) => !links.some((l) => l.href === g.href),
+  );
   const dropdownRef = useRef<HTMLDivElement>(null);
   const servicesButtonRef = useRef<HTMLDivElement>(null);
   const caseStudiesButtonRef = useRef<HTMLDivElement>(null);
@@ -561,6 +567,40 @@ export function Navbar() {
               </AnimatePresence>
             </div>
           </li>
+
+          {/* ERP CMS header navigation (empty unless set in the ERP) */}
+          {cmsLinks.map((g) => (
+            <li key={`cms-${g.href}-${g.label}`} className="relative group/cms">
+              <a
+                href={g.href}
+                {...(g.target
+                  ? { target: g.target, rel: "noopener noreferrer" }
+                  : {})}
+                className="relative px-3 py-1.5 rounded-full transition-colors hover:text-cream flex items-center gap-1.5"
+              >
+                <span className="relative z-10">{g.label}</span>
+                {g.items.length > 0 && <ChevronDown className="size-3.5" />}
+              </a>
+              {g.items.length > 0 && (
+                <div className="invisible absolute left-0 top-full pt-3 opacity-0 transition-opacity group-hover/cms:visible group-hover/cms:opacity-100">
+                  <div className="min-w-[220px] rounded-2xl border border-white/10 bg-[#0a0a0a] p-2 shadow-2xl">
+                    {g.items.map((c) => (
+                      <a
+                        key={`${c.href}-${c.label}`}
+                        href={c.href}
+                        {...(c.target
+                          ? { target: c.target, rel: "noopener noreferrer" }
+                          : {})}
+                        className="block rounded-xl px-4 py-2 text-sm text-cream/80 hover:bg-white/5 hover:text-white"
+                      >
+                        {c.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </li>
+          ))}
         </ul>
 
         <Link
@@ -605,6 +645,21 @@ export function Navbar() {
                 </Link>
               </motion.div>
             ))}
+            {cmsLinks
+              .flatMap((g) => [g, ...g.items])
+              .map((l) => (
+                <a
+                  key={`cms-m-${l.href}-${l.label}`}
+                  href={l.href}
+                  {...(l.target
+                    ? { target: l.target, rel: "noopener noreferrer" }
+                    : {})}
+                  onClick={() => setOpen(false)}
+                  className="block text-base font-semibold text-cream"
+                >
+                  {l.label}
+                </a>
+              ))}
             <Link
               href="/contact"
               onClick={() => setOpen(false)}

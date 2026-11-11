@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
 // Generate static paths
 export async function generateStaticParams() {
@@ -42,7 +43,7 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  return withEditedSeo(`/ebooks/${slug}`, {
     title: ebook.metadata.title_tag,
     description: ebook.metadata.meta_description,
     alternates: { canonical: `/ebooks/${slug}` },
@@ -61,7 +62,7 @@ export async function generateMetadata({
       description: ebook.metadata.meta_description,
       images: [ebook.coverImage],
     },
-  };
+  });
 }
 
 // Page component - MUST be async and await params

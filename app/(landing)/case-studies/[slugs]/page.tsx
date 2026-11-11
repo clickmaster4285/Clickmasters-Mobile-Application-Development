@@ -18,12 +18,24 @@ import {
   Filter,
   Search,
 } from "lucide-react";
+import type { Metadata } from "next";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata = {
+const baseMetadata: Metadata = {
   title: "Case Studies | Mobile App Development Portfolio",
   description:
     "Explore our portfolio of successful mobile app development projects across healthcare, fintech, e-commerce, and more.",
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slugs: string }>;
+}): Promise<Metadata> {
+  const { slugs } = await params;
+  return withEditedSeo(`/case-studies/${slugs}`, baseMetadata);
+}
 
 export default async function CaseStudiesPage() {
   const featuredStudies = getFeaturedCaseStudies();

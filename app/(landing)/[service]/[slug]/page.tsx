@@ -1,5 +1,10 @@
-import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  cmsMetadataOr,
+  renderCmsPageOrNotFound,
+} from "@/components/cms/CmsRoute";
+import { withEditedSeo } from "@/lib/cms/metadata";
 import {
   getContentBySlug,
   getCategoryForSlug,
@@ -22,18 +27,19 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ service: string; slug: string }>;
-}) {
+}): Promise<Metadata> {
   const { service, slug } = await params;
   const content = getContentBySlug(slug);
 
-  if (!content) {
-    return {
+  // Same condition the page uses; otherwise this path may be an ERP page.
+  if (!content || getCategoryForSlug(slug) !== service) {
+    return cmsMetadataOr(`${service}/${slug}`, {
       title: "Service Not Found",
-    };
+    });
   }
 
   const m = content.metadata;
-  return {
+  return withEditedSeo(`/${service}/${slug}`, {
     title: m.title_tag,
     description: m.meta_description,
     alternates: { canonical: `/${service}/${slug}` },
@@ -42,7 +48,7 @@ export async function generateMetadata({
       description: m.meta_description,
       type: "article",
     },
-  };
+  });
 }
 
 export default async function ServiceDetailPage({
@@ -53,8 +59,9 @@ export default async function ServiceDetailPage({
   const { service, slug } = await params;
   const content = getContentBySlug(slug);
 
+  // Not a code-owned guide: render an ERP-created page, else 404.
   if (!content || getCategoryForSlug(slug) !== service) {
-    notFound();
+    return renderCmsPageOrNotFound(`${service}/${slug}`);
   }
 
   const otherServices = allSlugs
@@ -108,13 +115,13 @@ export default async function ServiceDetailPage({
                 team. No pay-to-play, no fluff.
               </p>
 
-            <Link
-  href="/contact"
-  className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
->
-  Request a tailored quote
-  <span className="text-xl leading-none">→</span>
-</Link>
+              <Link
+                href="/contact"
+                className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
+              >
+                Request a tailored quote
+                <span className="text-xl leading-none">→</span>
+              </Link>
             </div>
           </div>
 

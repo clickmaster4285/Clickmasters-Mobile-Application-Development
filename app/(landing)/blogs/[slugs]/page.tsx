@@ -20,12 +20,24 @@ import {
   User,
   Hash,
 } from "lucide-react";
+import type { Metadata } from "next";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata = {
+const baseMetadata: Metadata = {
   title: "Blog | Mobile App Development Insights & Guides",
   description:
     "Explore our latest blog posts on mobile app development trends, AI integration, cross-platform frameworks, UX design, and more.",
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slugs: string }>;
+}): Promise<Metadata> {
+  const { slugs } = await params;
+  return withEditedSeo(`/blogs/${slugs}`, baseMetadata);
+}
 
 export default async function BlogsPage() {
   const featuredBlogs = getFeaturedBlogs();

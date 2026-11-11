@@ -1,3 +1,5 @@
+import { CmsFooterColumns } from "@/components/cms/CmsFooterColumns";
+
 const logo = "/assets/logo_white.webp";
 
 const cols = [
@@ -52,6 +54,7 @@ export function Footer() {
             </div>
           ))}
         </div>
+        <CmsFooterColumns />
         <div className="mt-12 pt-8 border-t border-cream/10 flex flex-wrap justify-between items-center gap-4 text-xs text-cream/40">
           <p>© 2025 ClickMasters. Built with care by the ClickMasters pack.</p>
           <p>clickmastersmobiledevelopmentcompany.com</p>

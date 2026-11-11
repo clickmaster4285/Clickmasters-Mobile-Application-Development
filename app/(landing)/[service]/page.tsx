@@ -6,6 +6,12 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { ServiceClient } from "./ServicesClient";
 import { RevealText } from "@/components/landing/motion";
+import type { Metadata } from "next";
+import {
+  cmsMetadataOr,
+  renderCmsPageOrNotFound,
+} from "@/components/cms/CmsRoute";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
 const categoryLabels: Record<string, string> = {
   "ai-in-app-development": "AI Development",
@@ -70,13 +76,21 @@ export async function generateStaticParams() {
   }));
 }
 
+// Code-owned pages win (A5 step 1); unknown paths fall back to an ERP-created
+// page (step 2) and only then 404 (step 3). Edited-page SEO (B4) is layered
+// on top of whichever page is shown.
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ service: string }>;
-}) {
+}): Promise<Metadata> {
   const { service } = await params;
+  const base = codeOwnedMetadata(service);
+  if (base) return withEditedSeo(`/${service}`, base);
+  return cmsMetadataOr(service, { title: "Service Not Found" });
+}
 
+function codeOwnedMetadata(service: string): Metadata | null {
   // Check if it's a slug (individual content)
   const content = getContentBySlug(service);
   if (content) {
@@ -108,9 +122,7 @@ export async function generateMetadata({
     };
   }
 
-  return {
-    title: "Service Not Found",
-  };
+  return null;
 }
 
 export default async function ServicePage({
@@ -125,9 +137,9 @@ export default async function ServicePage({
   const isSlug = !!content;
   const isCategory = !isSlug && !!allData[service as keyof typeof allData];
 
-  // If neither slug nor category exists, 404
+  // Neither slug nor category: render an ERP-created page, else 404.
   if (!isSlug && !isCategory) {
-    notFound();
+    return renderCmsPageOrNotFound(service);
   }
 
   // Get other services for "More Guides" section
@@ -283,13 +295,13 @@ function CTASection() {
           pay-to-play, no fluff.
         </p>
 
-     <Link
-  href="/contact"
-  className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
->
-  Request a tailored quote
-  <span className="text-xl leading-none">→</span>
-</Link>
+        <Link
+          href="/contact"
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
+        >
+          Request a tailored quote
+          <span className="text-xl leading-none">→</span>
+        </Link>
       </div>
     </div>
   );
