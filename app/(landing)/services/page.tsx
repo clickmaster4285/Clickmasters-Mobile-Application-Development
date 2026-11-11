@@ -3,8 +3,9 @@ import Link from "next/link";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { getChildren, getHubs } from "@/content/guides";
+import { withEditedSeo } from "@/lib/cms/metadata";
 
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: "Mobile App Development Services | ClickMasters",
   description:
     "iOS, Android, Flutter, React Native, app cost, store listings, and industry apps. Each guide is linked from this index.",
@@ -16,6 +17,11 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Edited-page SEO from the ERP (B4), layered on the page's own metadata.
+export async function generateMetadata(): Promise<Metadata> {
+  return withEditedSeo("/services", baseMetadata);
+}
 
 export default function ServicesIndexPage() {
   const hubs = getHubs();

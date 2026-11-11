@@ -1,3 +1,4 @@
+import { CmsFooterColumns } from "@/components/cms/CmsFooterColumns";
 import Link from "next/link";
 import { getHubs } from "@/content/guides";
 import { site } from "@/lib/site";
@@ -81,6 +82,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
+        <CmsFooterColumns />
         <div className="mt-12 pt-8 border-t border-cream/10 flex flex-wrap justify-between items-center gap-4 text-xs text-cream/40">
           <p>© {new Date().getFullYear()} ClickMasters.</p>
           <p>clickmastersmobiledevelopmentcompany.com</p>
