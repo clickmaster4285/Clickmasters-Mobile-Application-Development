@@ -7,7 +7,7 @@ import { Plus } from "lucide-react";
 const faqs = [
   {
     q: "How long does it take to build an app?",
-    a: "Most projects ship in 8–20 weeks. An MVP runs 8–12 weeks; full-featured products 12–20. We share a precise timeline after a 30-minute discovery call.",
+    a: "A first release is often planned across 8–20 weeks, depending on how many platforms and integrations are in scope. We confirm a timeline after the flows are listed. That range is a planning habit, not a measured average from a portfolio.",
   },
   {
     q: "Do you only build mobile apps?",

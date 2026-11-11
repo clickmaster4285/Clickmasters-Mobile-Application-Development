@@ -1,27 +1,13 @@
 import { CmsFooterColumns } from "@/components/cms/CmsFooterColumns";
+import Link from "next/link";
+import { getHubs } from "@/content/guides";
+import { site } from "@/lib/site";
 
 const logo = "/assets/logo_white.webp";
 
-const cols = [
-  {
-    title: "Services",
-    items: ["Native Apps", "Cross-platform", "UI/UX Design", "Tech Consulting"],
-  },
-  {
-    title: "Resources",
-    items: ["Case Studies", "Blog", "Process", "FAQ"],
-  },
-  {
-    title: "Contact",
-    items: [
-      "sale@clickmastersmobiledevelopmentcompany.com",
-      "+1 325 202 4074",
-      "WhatsApp: +1 325 202 4074",
-    ],
-  },
-];
-
 export function Footer() {
+  const hubs = getHubs();
+
   return (
     <footer className="px-6 lg:px-10 py-16 bg-ink text-cream">
       <div className="max-w-[85vw] mx-auto">
@@ -29,34 +15,76 @@ export function Footer() {
           <div>
             <img src={logo} alt="ClickMasters" className="h-8 w-auto mb-5" />
             <p className="text-sm text-cream/60 max-w-xs leading-relaxed">
-              Premium mobile development agency engineering native iOS, Android,
-              and cross-platform apps for ambitious teams.
-            </p>
-            <p className="mt-4 text-xs text-cream/40">
-              Austin, TX · Since 2015
+              ClickMasters builds iOS, Android, Flutter, and React Native apps.
+              The guides on this site explain the work. They are not client
+              scorecards.
             </p>
           </div>
-          {cols.map((c) => (
-            <div key={c.title}>
-              <h3 className="font-display font-bold text-cream mb-4">
-                {c.title}
-              </h3>
-              <ul className="space-y-2 text-sm text-cream/60">
-                {c.items.map((i) => (
-                  <li
-                    key={i}
-                    className="break-words hover:text-hot-pink transition-colors"
-                  >
-                    {i}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div>
+            <h3 className="font-display font-bold text-cream mb-4">Guides</h3>
+            <ul className="space-y-2 text-sm text-cream/60">
+              {hubs.map((hub) => (
+                <li key={hub.path}>
+                  <Link href={hub.path} className="hover:text-hot-pink">
+                    {hub.h1}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-display font-bold text-cream mb-4">Company</h3>
+            <ul className="space-y-2 text-sm text-cream/60">
+              <li>
+                <Link href="/solutions" className="hover:text-hot-pink">
+                  Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-hot-pink">
+                  All services
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-hot-pink">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-hot-pink">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-display font-bold text-cream mb-4">Contact</h3>
+            <ul className="space-y-2 text-sm text-cream/60">
+              <li>
+                <a href={`mailto:${site.email}`} className="hover:text-hot-pink break-all">
+                  {site.email}
+                </a>
+              </li>
+              <li>
+                <a href={`tel:${site.phoneTel}`} className="hover:text-hot-pink">
+                  {site.phoneDisplay}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={site.whatsapp}
+                  rel={site.whatsappRel}
+                  className="hover:text-hot-pink"
+                >
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <CmsFooterColumns />
         <div className="mt-12 pt-8 border-t border-cream/10 flex flex-wrap justify-between items-center gap-4 text-xs text-cream/40">
-          <p>© 2025 ClickMasters. Built with care by the ClickMasters pack.</p>
+          <p>© {new Date().getFullYear()} ClickMasters.</p>
           <p>clickmastersmobiledevelopmentcompany.com</p>
         </div>
       </div>

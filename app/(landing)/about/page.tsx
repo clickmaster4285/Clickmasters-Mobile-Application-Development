@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Target, Heart, Zap, Users } from "lucide-react";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
-import { Team } from "@/components/landing/Team";
 import { useLenisScroll } from "@/components/landing/motion";
 
 const values = [
@@ -57,10 +56,10 @@ export default function AboutPage() {
               We turn bold ideas into apps people love.
             </motion.h1>
             <p className="mt-6 text-lg text-ink/70 max-w-2xl leading-relaxed">
-              Since 2015, ClickMasters has been a tight-knit studio of
-              designers, engineers, and strategists. We&apos;ve shipped 250+
-              mobile products for startups and enterprises — each one built to
-              scale, delight, and perform.
+              ClickMasters is a mobile app studio. We plan and build iOS,
+              Android, Flutter, and React Native products. This site explains
+              that work in plain language. It does not publish review scores,
+              awards, headcount, or client metrics we cannot link to a source.
             </p>
           </div>
         </section>
@@ -72,9 +71,10 @@ export default function AboutPage() {
               Our mission
             </h2>
             <p className="mt-6 text-lg md:text-xl text-cream/75 leading-relaxed">
-              To be the most trusted partner for ambitious teams building on
-              mobile — combining world-class craft with relentless focus on
-              outcomes, so every app we ship moves the business forward.
+              Help teams ship a mobile app whose scope, stack, and store
+              listing match the job the product is supposed to do. We would
+              rather say what the first release includes than decorate the
+              homepage with numbers we cannot show.
             </p>
           </div>
         </section>
@@ -110,8 +110,45 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team (reused) */}
-        <Team />
+        <section className="px-6 lg:px-10 pb-24">
+          <div className="max-w-3xl mx-auto text-ink/75 leading-8 space-y-5">
+            <h2 className="font-display font-extrabold text-3xl text-ink">
+              How to read this site
+            </h2>
+            <p>
+              The guides under Services are the pages we kept after removing a
+              large set of unrelated keyword URLs. Each remaining page is about
+              mobile app development: native iOS, native Android, Flutter,
+              React Native, what a build costs, how a store listing works, or a
+              mobile product in a specific industry. Pages about jobs, venture
+              lists, forex platforms, electronic record catalogs, and similar
+              topics now return a gone response and are not in the sitemap.
+            </p>
+            <p>
+              Nothing here is a laboratory report. Where a page mentions a
+              planning range, that range is a way to talk about scope. It is
+              not a measurement from a test we ran, and it is not a quote. A
+              quote starts when you send the flows, the platforms, and the
+              systems the app must call.
+            </p>
+            <p>
+              If you want to talk about a product, use the contact page. The
+              email is sales@clickmastersmobiledevelopmentcompany.com and the
+              phone is +1 325 202 4074. Please do not use any older placeholder
+              number you may have seen on a previous version of this site.
+            </p>
+            <p>
+              The work itself is ordinary and specific. We help you name the
+              first release, choose native iOS, native Android, Flutter, or
+              React Native for a reason you can repeat, and prepare the store
+              listing from the binary you are actually submitting. We will say
+              when a mobile website is enough. We will not invent a headcount,
+              a founding year, a city, an award, or a star rating to fill a
+              homepage. If a fact is not on this page or the contact page, do
+              not treat an old screenshot of the site as evidence of it.
+            </p>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

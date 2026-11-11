@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-const dashboard = "/assets/marketing/growth_dashboard.jpeg";
+const dashboard = "/assets/marketing/growth_dashboard.webp";
 
 const items = [
   {

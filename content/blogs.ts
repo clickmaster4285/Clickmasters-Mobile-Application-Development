@@ -38,7 +38,7 @@ export const blogs: Blog[] = [
     },
     publishedDate: "2026-01-15",
     readTime: "8 min read",
-    image: "/assets/marketing/growth_dashboard.jpeg",
+    image: "/assets/marketing/growth_dashboard.webp",
     tags: ["Trends", "AI", "Cross-Platform", "Future Tech"],
     featured: true,
     metadata: {

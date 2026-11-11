@@ -9,177 +9,127 @@ export interface Service {
   benefits: string[];
   process: string[];
   featured: boolean;
-  stats?: { label: string; value: string }[];
 }
 
 export const services: Service[] = [
   {
-    id: "general-mobile-app-development",
-    slug: "general-mobile-app-development",
-    title: "Mobile App Development",
-    shortDescription: "End-to-end mobile products for iOS and Android users.",
+    id: "ios-development",
+    slug: "ios-development",
+    title: "iOS App Development",
+    shortDescription:
+      "Native iPhone and iPad apps in Swift, built for App Store review.",
     fullDescription:
-      "We build high-performance mobile applications that users love. From concept to launch, our end-to-end mobile app development services cover strategy, design, engineering, and deployment — scalable, secure, and intuitive mobile experiences.",
-    icon: "Smartphone",
-    technologies: [
-      "Swift",
-      "Kotlin",
-      "React Native",
-      "Flutter",
-      "Firebase",
-      "Node.js",
-    ],
+      "Native iOS apps using Swift and SwiftUI or UIKit, including TestFlight and App Store submission.",
+    icon: "Apple",
+    technologies: ["Swift", "SwiftUI", "UIKit"],
     benefits: [
-      "Single codebase options for faster delivery",
-      "Native performance when needed",
-      "Scalable architecture for millions of users",
-      "Continuous support and maintenance",
+      "Apple platform APIs when the product needs them",
+      "A defined minimum iOS version",
+      "Store listing prepared with the binary",
     ],
-    process: [
-      "Discovery",
-      "Design",
-      "Development",
-      "Testing",
-      "Launch",
-      "Optimize",
-    ],
+    process: ["Flows", "Thin slice", "TestFlight", "Review"],
     featured: true,
-    stats: [
-      { label: "Apps Launched", value: "150+" },
-      { label: "Avg Rating", value: "4.9★" },
-      { label: "Users Served", value: "40M+" },
-    ],
   },
   {
     id: "android-development",
     slug: "android-development",
     title: "Android App Development",
-    shortDescription: "Native Android apps with strong performance.",
+    shortDescription:
+      "Native Android apps in Kotlin, published through Google Play.",
     fullDescription:
-      "Specialized Android development using Kotlin and Java. Material Design, battery-conscious performance, and seamless scaling across thousands of devices.",
+      "Kotlin and Jetpack Compose or views, with Play tracks, data safety, and a target SDK that meets current rules.",
     icon: "Bot",
-    technologies: ["Kotlin", "Java", "Jetpack Compose", "Firebase", "Room DB"],
+    technologies: ["Kotlin", "Jetpack Compose", "Play Console"],
     benefits: [
-      "Pure native Android experience",
-      "Optimized for all screen sizes",
-      "Play Store optimization",
-      "Background task optimization",
+      "Device and version range chosen up front",
+      "Background work designed to survive",
+      "Play listing matched to the binary",
     ],
-    process: [
-      "Requirements",
-      "Architecture",
-      "Development",
-      "Testing",
-      "Deployment",
-    ],
-    featured: true,
-  },
-  {
-    id: "ios-development",
-    slug: "ios-development",
-    title: "iOS App Development",
-    shortDescription: "Native iOS apps built for the Apple ecosystem.",
-    fullDescription:
-      "Expert iOS development using Swift and SwiftUI. We build apps that feel right at home on iPhone and iPad, with smooth animations, deep platform integration, and App Store compliance.",
-    icon: "Apple",
-    technologies: ["Swift", "SwiftUI", "UIKit", "Core Data", "CloudKit"],
-    benefits: [
-      "Pure native iOS experience",
-      "Apple HIG-aligned design",
-      "App Store optimization",
-      "Seamless iCloud integration",
-    ],
-    process: ["Discovery", "Design", "Development", "App Review", "Launch"],
+    process: ["Flows", "Internal track", "Closed test", "Production"],
     featured: true,
   },
   {
     id: "cross-platform-flutter-rn",
     slug: "cross-platform-flutter-rn",
-    title: "Cross-Platform App Development",
-    shortDescription: "Shared-codebase apps for faster delivery.",
+    title: "Flutter and React Native",
+    shortDescription:
+      "One shared codebase for iOS and Android when the product is the same job on both.",
     fullDescription:
-      "Reach both iOS and Android with a single codebase. We use React Native and Flutter to deliver consistent experiences while reducing development time and cost by up to 40%.",
+      "Flutter or React Native for shared UI, with native modules only where the platform requires them.",
     icon: "RefreshCw",
-    technologies: [
-      "React Native",
-      "Flutter",
-      "TypeScript",
-      "Redux",
-      "Firebase",
-    ],
+    technologies: ["Flutter", "React Native", "Kotlin Multiplatform"],
     benefits: [
-      "Write once, run anywhere",
-      "Faster time-to-market",
-      "Consistent UI across platforms",
-      "Lower development costs",
+      "One feature team for both stores",
+      "Native edges budgeted on purpose",
+      "Two store releases still planned",
     ],
-    process: [
-      "Strategy",
-      "Design System",
-      "Development",
-      "Testing",
-      "Dual Launch",
-    ],
+    process: ["Stack choice", "Pilot slice", "Both binaries", "Stores"],
     featured: true,
   },
   {
-    id: "ui-ux-design",
-    slug: "ui-ux-design",
-    title: "UI/UX Design",
-    shortDescription: "Intuitive product experiences designed around users.",
+    id: "cost-pricing",
+    slug: "cost-pricing",
+    title: "App Cost and Pricing",
+    shortDescription:
+      "How scope, platforms, and integrations change what a mobile build costs.",
     fullDescription:
-      "We design clear, accessible user experiences and polished interfaces for mobile and web products, from research and wireframes through interactive prototypes and design systems.",
-    icon: "PanelsTopLeft",
-    technologies: ["Figma", "Prototyping", "Design Systems", "Accessibility"],
+      "A planning guide for app cost. Ranges are not a quote and not a benchmark from this studio.",
+    icon: "CircleDollarSign",
+    technologies: ["Scope", "Phases", "Estimates"],
     benefits: [
-      "User-focused product flows",
-      "Consistent interface patterns",
-      "Accessible visual design",
-      "Validated interactive prototypes",
+      "Line items instead of a single slogan",
+      "Now and later lists kept apart",
+      "A quote only after the flows exist",
     ],
-    process: [
-      "Research",
-      "Information Architecture",
-      "Wireframing",
-      "Prototyping",
-      "Design Handoff",
-    ],
-    featured: false,
+    process: ["List flows", "Mark assumptions", "Phase the work", "Quote"],
+    featured: true,
   },
   {
-    id: "web-pwa-development",
-    slug: "web-pwa-development",
-    title: "Web & PWA Development",
-    shortDescription: "Responsive web apps and installable experiences.",
+    id: "how-to-build-an-app",
+    slug: "how-to-build-an-app",
+    title: "Build and App Store",
+    shortDescription:
+      "From the first flow list to a store listing, including app store optimisation.",
     fullDescription:
-      "We build responsive web applications and progressive web apps that work across devices, support installable experiences, and integrate with your existing services.",
-    icon: "Hexagon",
-    technologies: ["Next.js", "TypeScript", "Progressive Web Apps", "APIs"],
+      "The sequence for a first release and the listing work that has to match the binary you submit.",
+    icon: "Rocket",
+    technologies: ["Product scope", "QA script", "ASO"],
     benefits: [
-      "Responsive across screen sizes",
-      "Installable app-like experience",
-      "Integration with existing services",
-      "Accessible, maintainable interfaces",
+      "A thin slice before a wide build",
+      "Store assets made from the real app",
+      "Listing fields explained for both stores",
     ],
-    process: [
-      "Discovery",
-      "UX & Architecture",
-      "Development",
-      "Testing",
-      "Deployment",
+    process: ["Job sentence", "Thin slice", "QA script", "Listing"],
+    featured: true,
+  },
+  {
+    id: "solutions",
+    slug: "solutions",
+    title: "Industry Apps",
+    shortDescription:
+      "Mobile products for healthcare, banking, grocery, and local delivery.",
+    fullDescription:
+      "Industry guides that stay on the mobile app: clinical clients, banking clients, grocery orders, and delivery stops.",
+    icon: "Building2",
+    technologies: ["Healthcare", "Banking", "Delivery"],
+    benefits: [
+      "The mobile client, not an unrelated software catalog",
+      "Operations named before screens",
+      "No borrowed metrics",
     ],
-    featured: false,
+    process: ["Name the job", "Name the system", "Pilot", "Widen"],
+    featured: true,
   },
 ];
 
 export function getServiceBySlug(slug: string): Service | undefined {
-  return services.find((s) => s.slug === slug);
+  return services.find((service) => service.slug === slug);
 }
 
 export function getAllServiceSlugs(): string[] {
-  return services.map((s) => s.slug);
+  return services.map((service) => service.slug);
 }
 
 export function getFeaturedServices(): Service[] {
-  return services.filter((s) => s.featured);
+  return services.filter((service) => service.featured);
 }

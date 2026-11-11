@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import type { ReactNode, RefObject } from "react";
 import { useMagnetic } from "@/components/landing/motion";
 
-const digitalCity = "/assets/marketing/digital_city.jpeg";
+const digitalCity = "/assets/marketing/digital-city.webp";
 
 function MagneticLink({
   href,
@@ -28,79 +29,6 @@ function MagneticLink({
   );
 }
 
-function ReviewBadge({
-  rating,
-  source,
-  count,
-  logo,
-}: {
-  rating: string;
-  source: string;
-  count: string;
-  logo: ReactNode;
-}) {
-  return (
-    <div className="flex items-center gap-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-ink/10 px-4 py-3 shadow-sm">
-      <div className="size-9 rounded-lg bg-ink/5 grid place-items-center flex-shrink-0">
-        {logo}
-      </div>
-      <div className="leading-tight">
-        <div className="flex items-center gap-1">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} className="size-3 fill-sun text-sun" />
-          ))}
-          <span className="ml-1 text-xs font-bold text-ink">{rating}</span>
-        </div>
-        <p className="text-[11px] text-ink/60 mt-0.5">
-          <span className="font-semibold text-ink/80">{source}</span> · {count}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function GoogleG() {
-  return (
-    <svg viewBox="0 0 24 24" className="size-5" aria-hidden>
-      <path
-        fill="#4285F4"
-        d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.75h3.57c2.08-1.92 3.22-4.74 3.22-8.3z"
-      />
-      <path
-        fill="#34A853"
-        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.75c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.15-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
-      />
-      <path
-        fill="#FBBC05"
-        d="M5.85 14.12A6.6 6.6 0 015.5 12c0-.74.13-1.46.35-2.12V7.04H2.18A11 11 0 001 12c0 1.78.43 3.46 1.18 4.96l3.67-2.84z"
-      />
-      <path
-        fill="#EA4335"
-        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.04l3.67 2.84C6.71 7.31 9.14 5.38 12 5.38z"
-      />
-    </svg>
-  );
-}
-
-function ClutchC() {
-  return (
-    <span className="font-display font-extrabold text-base text-[#FF3D2E]">
-      C
-    </span>
-  );
-}
-
-function TrustpilotStar() {
-  return (
-    <svg viewBox="0 0 24 24" className="size-5" aria-hidden>
-      <path
-        fill="#00B67A"
-        d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7.3L12 17.8 5.8 21.5l1.6-7.3L2 9.5l7.1-.6L12 2z"
-      />
-    </svg>
-  );
-}
-
 function PhoneMockup() {
   return (
     <motion.div
@@ -120,10 +48,10 @@ function PhoneMockup() {
               Good morning, Alex
             </p>
             <div className="mt-5 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 p-3">
-              <p className="text-[10px] opacity-80 uppercase tracking-wider">
-                Active users
+                <p className="text-[10px] opacity-80 uppercase tracking-wider">
+                Status
               </p>
-              <p className="font-display font-extrabold text-3xl">3.2M</p>
+              <p className="font-display font-extrabold text-3xl">Draft</p>
               <div className="mt-2 h-1.5 rounded-full bg-white/20 overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
@@ -136,15 +64,15 @@ function PhoneMockup() {
             <div className="mt-3 grid grid-cols-2 gap-2">
               <div className="rounded-xl bg-white/15 backdrop-blur-sm p-2.5 border border-white/20">
                 <p className="text-[9px] opacity-80 uppercase tracking-wider">
-                  Rating
+                  Sprint
                 </p>
-                <p className="font-display font-bold text-lg">4.9★</p>
+                <p className="font-display font-bold text-lg">Build</p>
               </div>
               <div className="rounded-xl bg-white/15 backdrop-blur-sm p-2.5 border border-white/20">
                 <p className="text-[9px] opacity-80 uppercase tracking-wider">
-                  Uptime
+                  Queue
                 </p>
-                <p className="font-display font-bold text-lg">99.9%</p>
+                <p className="font-display font-bold text-lg">3 items</p>
               </div>
             </div>
             <div className="mt-auto rounded-2xl bg-white text-ink p-3">
@@ -170,8 +98,8 @@ function PhoneMockupBack() {
           <p className="text-[9px] uppercase tracking-widest opacity-60">
             Analytics
           </p>
-          <p className="font-display font-bold text-base mt-1">+248%</p>
-          <p className="text-[9px] opacity-60">retention vs. baseline</p>
+          <p className="font-display font-bold text-base mt-1">Notes</p>
+          <p className="text-[9px] opacity-60">open questions</p>
           <svg
             viewBox="0 0 100 50"
             className="mt-4 w-full text-sun"
@@ -253,44 +181,18 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <MagneticLink
-              href="#contact"
+              href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-hot-pink text-white px-7 py-4 font-semibold shadow-[0_18px_50px_-18px_color-mix(in_oklab,var(--color-hot-pink)_70%,transparent)] transition-transform duration-300"
             >
               Get in Touch
               <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
             </MagneticLink>
             <MagneticLink
-              href="#work"
+              href="/services"
               className="rounded-full border-2 border-ink text-ink px-7 py-4 font-semibold bg-white/70 backdrop-blur-sm transition-colors hover:bg-ink hover:text-cream"
             >
-              See Our Work
+              Read the guides
             </MagneticLink>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.55, duration: 0.6 }}
-            className="mt-10 flex flex-wrap items-center gap-3"
-          >
-            <ReviewBadge
-              rating="4.9"
-              source="Google"
-              count="1,247 reviews"
-              logo={<GoogleG />}
-            />
-            <ReviewBadge
-              rating="4.8"
-              source="Clutch"
-              count="89 reviews"
-              logo={<ClutchC />}
-            />
-            <ReviewBadge
-              rating="4.9"
-              source="Trustpilot"
-              count="342 reviews"
-              logo={<TrustpilotStar />}
-            />
           </motion.div>
         </div>
 
@@ -308,11 +210,13 @@ export function Hero() {
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-2 left-0 right-0 mx-auto w-[92%] aspect-[16/10] rounded-3xl overflow-hidden border-2 border-ink/10 shadow-[0_30px_60px_-25px_rgba(0,0,0,0.45)] rotate-[-3deg]"
           >
-            <img
+            <Image
               src={digitalCity}
-              alt="Connected digital ecosystem: apps, websites, AI, marketing and analytics"
+              alt="Abstract city skyline used as a visual for connected mobile products"
+              width={1400}
+              height={875}
+              priority
               className="w-full h-full object-cover"
-              loading="eager"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
             <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white">

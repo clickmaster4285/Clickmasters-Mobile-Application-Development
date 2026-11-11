@@ -1,26 +1,19 @@
-// app/(landing)/services/page.tsx
-import Link from "next/link";
 import type { Metadata } from "next";
-import {
-  allServices,
-  allSlugs,
-  getContentBySlug,
-} from "@/content/services/index";
+import Link from "next/link";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
-import { RevealText } from "@/components/landing/motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { getChildren, getHubs } from "@/content/guides";
 import { withEditedSeo } from "@/lib/cms/metadata";
 
 const baseMetadata: Metadata = {
-  title: "Services | Mobile App Development Guides & Deep Dives",
+  title: "Mobile App Development Services | ClickMasters",
   description:
-    "Browse all our in-depth service guides covering mobile app development, AI integration, cross-platform frameworks, UI/UX design, and more.",
+    "iOS, Android, Flutter, React Native, app cost, store listings, and industry apps. Each guide is linked from this index.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Services | Mobile App Development Guides & Deep Dives",
+    title: "Mobile App Development Services | ClickMasters",
     description:
-      "Browse all our in-depth service guides covering mobile app development, AI integration, cross-platform frameworks, UI/UX design, and more.",
+      "iOS, Android, Flutter, React Native, app cost, store listings, and industry apps. Each guide is linked from this index.",
     type: "website",
   },
 };
@@ -30,211 +23,102 @@ export async function generateMetadata(): Promise<Metadata> {
   return withEditedSeo("/services", baseMetadata);
 }
 
-function formatTitle(title: string) {
-  return title.replace(/ Complete 2026 Guide$/, "").trim();
-}
-
-type ServiceCard = {
-  slug: string;
-  title: string;
-  description: string;
-  category?: string;
-};
-
-function buildServiceCards(): ServiceCard[] {
-  return allSlugs
-    .map((slug) => {
-      const content = getContentBySlug(slug);
-      if (!content) return null;
-
-      return {
-        slug,
-        title: content.metadata?.title_tag
-          ? formatTitle(content.metadata.title_tag)
-          : slug,
-        description: content.metadata?.meta_description ?? "",
-        category: (content.metadata as { category?: string })?.category,
-      };
-    })
-    .filter(Boolean) as ServiceCard[];
-}
-
 export default function ServicesIndexPage() {
-  const cards = buildServiceCards();
+  const hubs = getHubs();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-cream text-ink">
       <Navbar />
-
-      <main className="px-4 pt-36 pb-16">
-        <div className="mx-auto max-w-[85vw]">
-          {/* ================= HEADER ================= */}
-          <div className="text-center">
-            <div className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-              <span
-                className="inline-block h-2 w-2 rounded-full"
-                style={{ background: "var(--gradient-brand)" }}
-              />
-              What we build
-            </div>
-
-            <p className="mt-6 font-script text-5xl text-brand-pink">
-              services
+      <main className="px-6 lg:px-10 pt-36 pb-20">
+        <div className="mx-auto max-w-5xl">
+          <p className="font-script text-4xl text-hot-pink">services</p>
+          <h1 className="mt-2 font-display font-extrabold text-5xl md:text-6xl leading-[0.95]">
+            Mobile app development services
+          </h1>
+          <div className="mt-6 max-w-3xl space-y-5 text-lg leading-relaxed text-ink/70">
+            <p>
+              These are the guides we kept. Each one is about building,
+              pricing, or releasing a mobile app. Off-topic keyword pages have
+              been removed. Start with a hub, then open the article that
+              matches the decision in front of you. The six hubs are iOS,
+              Android, Flutter and React Native, app cost, how to build an app
+              (including the store listing), and industry apps, which live on
+              the solutions page and link back here.
             </p>
-
-            <h1 className="mt-1 font-script text-7xl leading-[1.05] tracking-tight text-foreground sm:text-6xl">
-              All Services
-            </h1>
-
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Explore our complete library of service guides, deep dives, and
-              resources — covering everything from mobile app development to AI
-              integration and beyond.
+            <p>
+              A hub is the page to read first. It says when that way of
+              building fits, what a first release usually contains, and what
+              this studio will and will not claim. The articles under a hub
+              take one decision further: Swift rather than “an iPhone app” in
+              the abstract, publishing to Google Play, a Flutter project, a
+              React Native project, Kotlin Multiplatform, the cost line items,
+              a business app, a hybrid shell versus a shared UI toolkit, and
+              the industry briefs for care, banking, grocery, and local
+              delivery. Every one of those URLs is linked from this index, from
+              its hub, and from the footer, so none of them is an orphan.
+            </p>
+            <p>
+              Pages that used to rank for jobs, courses, venture-capital lists,
+              forex and trading platforms, electronic medical record catalogs,
+              and generic software pricing are gone. Requesting one returns
+              HTTP 410 and a noindex header. They are not in the sitemap. If a
+              search result still shows one, that is a stale index entry, not
+              a page we want you to brief a project from. Use the guides below
+              instead, then contact the studio with the flows, the platforms,
+              and the systems the app must call. A planning range in a guide is
+              not a quote and not a test we ran.
             </p>
           </div>
-
-          <div className="mt-8 h-px w-full bg-border" />
-
-          {/* ================= SERVICES GRID ================= */}
-          <div className="mt-16">
-            <div className="mb-10">
-              <p className="font-script text-2xl text-brand-pink">explore</p>
-              <h2 className="mt-1 font-display text-3xl font-extrabold text-foreground">
-                Browse by Service
-              </h2>
-              <p className="mt-2 text-muted-foreground">
-                {cards.length} guides and counting
-              </p>
-            </div>
-
-            {cards.length === 0 ? (
-              <div className="rounded-3xl border border-border bg-card p-10 text-center text-muted-foreground">
-                No services available yet.
-              </div>
-            ) : (
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {cards.map((card) => (
-                  <Link
-                    key={card.slug}
-                    href={`/${card.slug}`}
-                    className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-pink/40 hover:shadow-xl"
-                  >
-                    {card.category && (
-                      <span className="mb-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-brand-pink/10 px-3 py-1 text-xs font-medium text-brand-pink">
-                        <Sparkles className="h-3 w-3" />
-                        {card.category}
-                      </span>
-                    )}
-
-                    <h3 className="line-clamp-2 font-display text-xl font-bold text-foreground transition-colors group-hover:text-brand-pink">
-                      {card.title}
-                    </h3>
-
-                    <p className="mt-3 line-clamp-3 flex-1 text-sm leading-7 text-muted-foreground">
-                      {card.description}
-                    </p>
-
-                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-pink">
-                      Read Guide
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </div>
-
-                    <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-300 group-hover:ring-brand-pink/10" />
+          <div className="mt-12 space-y-10">
+            {hubs.map((hub) => (
+              <section key={hub.path}>
+                <h2 className="font-display text-2xl font-bold">
+                  <Link href={hub.path} className="hover:text-hot-pink">
+                    {hub.h1}
                   </Link>
+                </h2>
+                <p className="mt-2 max-w-2xl text-ink/70">{hub.description}</p>
+                <ul className="mt-4 space-y-2">
+                  {getChildren(hub.path).map((article) => (
+                    <li key={article.path}>
+                      <Link
+                        href={article.path}
+                        className="font-semibold text-hot-pink"
+                      >
+                        {article.h1}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))}
+            <section>
+              <h2 className="font-display text-2xl font-bold">
+                <Link href="/solutions" className="hover:text-hot-pink">
+                  Industry apps
+                </Link>
+              </h2>
+              <p className="mt-2 max-w-2xl text-ink/70">
+                Healthcare, banking, grocery, and local delivery. These pages
+                describe the mobile product, not unrelated software categories.
+              </p>
+              <ul className="mt-4 space-y-2">
+                {getChildren("/solutions").map((article) => (
+                  <li key={article.path}>
+                    <Link
+                      href={article.path}
+                      className="font-semibold text-hot-pink"
+                    >
+                      {article.h1}
+                    </Link>
+                  </li>
                 ))}
-              </div>
-            )}
+              </ul>
+            </section>
           </div>
-
-          <CTASection />
-
-          <MoreGuidesSection services={allServices.slice(0, 3)} />
         </div>
       </main>
-
       <Footer />
-    </div>
-  );
-}
-
-// ===================== Helper Components =====================
-
-function CTASection() {
-  return (
-    <div className="my-14 overflow-hidden rounded-3xl bg-[#0a0a0a] p-10 sm:p-14 md:p-16 text-white">
-      <div className="max-w-2xl mx-auto text-center">
-        <p className="font-script text-4xl md:text-5xl text-primary tracking-tight">
-          let's talk
-        </p>
-
-        <h3 className="mt-4 font-display text-4xl sm:text-5xl md:text-6xl font-black leading-tight">
-          Ready to get an itemized estimate
-          <br className="hidden sm:block" /> for your project?
-        </h3>
-
-        <p className="mt-6 text-lg text-white/70 max-w-md mx-auto">
-          Request current, tailored pricing and a scoped plan from our team. No
-          pay-to-play, no fluff.
-        </p>
-
-        <Link
-          href="/contact"
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-white transition-all hover:bg-[#ff4da8] hover:scale-105 active:scale-95 shadow-lg shadow-pink-500/30"
-        >
-          Request a tailored quote
-          <span className="text-xl leading-none">→</span>
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-function MoreGuidesSection({
-  services,
-}: {
-  services: Array<{
-    slug: string;
-    metadata: { title_tag?: string; meta_description?: string };
-  }>;
-}) {
-  return (
-    <div className="my-16">
-      <div className="mb-10 text-center">
-        <p className="font-script text-3xl text-brand-pink">Featured</p>
-
-        <RevealText className="mt-3 font-display font-extrabold text-4xl md:text-5xl text-ink leading-tight">
-          Popular Guides
-        </RevealText>
-
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
-          Start with some of our most-read service guides.
-        </p>
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-3">
-        {services.map(({ slug, metadata }) => (
-          <Link
-            key={slug}
-            href={`/${slug}`}
-            className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-pink/40 hover:shadow-xl"
-          >
-            <h3 className="font-display text-xl font-bold text-foreground transition-colors group-hover:text-brand-pink">
-              {metadata.title_tag ? formatTitle(metadata.title_tag) : slug}
-            </h3>
-
-            <p className="mt-3 line-clamp-3 text-sm leading-7 text-muted-foreground">
-              {metadata.meta_description}
-            </p>
-
-            <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-pink">
-              Read Guide
-              <span className="text-lg">→</span>
-            </div>
-
-            <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-300 group-hover:ring-brand-pink/10" />
-          </Link>
-        ))}
-      </div>
     </div>
   );
 }

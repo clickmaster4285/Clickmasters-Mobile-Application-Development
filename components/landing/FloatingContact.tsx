@@ -3,14 +3,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { site } from "@/lib/site";
 
 export function FloatingContact() {
   const [hover, setHover] = useState(false);
   return (
     <a
-      href="https://wa.me/13252024074?text=Hi%20ClickMasters%2C%20I%27d%20like%20to%20talk%20about%20a%20project"
+      href={`${site.whatsapp}?text=Hi%20ClickMasters%2C%20I%27d%20like%20to%20talk%20about%20a%20project`}
       target="_blank"
-      rel="noreferrer"
+      rel={site.whatsappRel}
       aria-label="Chat on WhatsApp"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
