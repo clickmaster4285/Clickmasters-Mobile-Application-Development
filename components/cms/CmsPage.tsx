@@ -4,7 +4,7 @@ import { Footer } from "@/components/landing/Footer";
 import { allowCustomJs } from "@/lib/cms/config";
 import { sanitizeCss, sanitizeHtml } from "@/lib/cms/sanitize";
 import type { CmsPage as CmsPageData } from "@/lib/cms/types";
-import { CmsSectionRenderer } from "./CmsSectionRenderer";
+import { CmsSectionRenderer, visibleSections } from "./CmsSectionRenderer";
 import { PAGE_TONE } from "./primitives";
 
 // ERP-created pages use this website's own look: same Navbar / Footer, cream
@@ -17,12 +17,9 @@ export function CmsPage({ page }: { page: CmsPageData }) {
   const html = sanitizeHtml(page.customCode?.html);
   const js =
     typeof page.customCode?.js === "string" ? page.customCode.js.trim() : "";
-  const sections = Array.isArray(page.sections) ? page.sections : [];
-  const startsWithHero =
-    [...sections]
-      .filter((s) => s && s.hidden !== true)
-      .sort((a, b) => (Number(a.order) || 0) - (Number(b.order) || 0))[0]
-      ?.type === "hero";
+  // Same list the renderer uses, so a leading (ignored) ERP header section
+  // does not stop a hero from being treated as first.
+  const startsWithHero = visibleSections(page.sections)[0]?.type === "hero";
 
   return (
     <div className="min-h-screen bg-background">

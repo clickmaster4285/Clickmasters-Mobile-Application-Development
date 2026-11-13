@@ -2,21 +2,17 @@ import type { CmsPost, CmsSection } from "@/lib/cms/types";
 import { SECTION_COMPONENTS } from "./sections";
 
 /**
- * Renders created-page content sections (A3/A4), sorted by `order`.
- * Hidden sections are skipped unless `settings.required` is true; unknown
- * section types are skipped silently. Edit instructions (Part B) never go
- * through here.
+ * Created-page content sections (A3/A4) that will actually render, sorted by
+ * `order`. Hidden sections are skipped unless `settings.required` is true;
+ * unknown section types are skipped silently. ERP "header"/"footer" sections
+ * are not in SECTION_COMPONENTS: CMS pages always use the site's own
+ * Navbar/Footer, so rendering them would add a second navbar.
  */
-export function CmsSectionRenderer({
-  sections,
-  posts = [],
-}: {
-  sections: CmsSection[] | undefined;
-  posts?: CmsPost[];
-}) {
-  if (!Array.isArray(sections)) return null;
-
-  const visible = sections
+export function visibleSections(
+  sections: CmsSection[] | undefined,
+): CmsSection[] {
+  if (!Array.isArray(sections)) return [];
+  return sections
     .filter(
       (s): s is CmsSection =>
         !!s && typeof s === "object" && typeof s.type === "string",
@@ -32,6 +28,18 @@ export function CmsSectionRenderer({
         a.index - b.index,
     )
     .map(({ s }) => s);
+}
+
+/** Renders created-page content sections. Edit instructions (Part B) never go through here. */
+export function CmsSectionRenderer({
+  sections,
+  posts = [],
+}: {
+  sections: CmsSection[] | undefined;
+  posts?: CmsPost[];
+}) {
+  const visible = visibleSections(sections);
+  if (visible.length === 0) return null;
 
   return (
     <>
