@@ -55,61 +55,8 @@ const SHADOW = "shadow-[0_30px_70px_-30px_rgba(0,0,0,0.3)]";
 const ARROW_LINK =
   "mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-hot-pink";
 
-/* ---------------------------- chrome ---------------------------- */
-
-function HeaderSection(p: SectionProps) {
-  const c = contentOf(p);
-  const items = asItems(c.navItems);
-  return shell(
-    p,
-    <div className="flex flex-wrap items-center justify-between gap-5 rounded-full bg-ink px-6 py-3 text-cream">
-      <CmsLink
-        url="/"
-        className="flex items-center gap-3 font-display font-bold"
-      >
-        {c.showLogo !== false && c.logoImage ? (
-          <CmsImage src={c.logoImage} alt={c.logoText} className="h-5 w-auto" />
-        ) : null}
-        {text(c.logoText)}
-      </CmsLink>
-      {items.length > 0 && (
-        <nav className="flex flex-wrap gap-6 text-sm font-medium text-cream/80">
-          {items.map((item, i) => (
-            <CmsLink
-              key={i}
-              url={item.url}
-              newTab={item.newTab === true}
-              className="transition-colors hover:text-cream"
-            >
-              {text(item.label)}
-            </CmsLink>
-          ))}
-        </nav>
-      )}
-      <CmsButton label={c.ctaLabel} url={c.ctaUrl} />
-    </div>,
-    { defaultPadding: [24, 24] },
-  );
-}
-
-function FooterSection(p: SectionProps) {
-  const c = contentOf(p);
-  return shell(
-    p,
-    <div className="flex flex-col gap-3 border-t border-[var(--cms-border)] pt-8 text-sm text-[var(--cms-fg-muted)] md:flex-row md:items-center md:justify-between">
-      <div>
-        {text(c.logoText) && (
-          <div className="font-display font-bold text-[var(--cms-fg)]">
-            {text(c.logoText)}
-          </div>
-        )}
-        {text(c.tagline) && <div className="mt-1">{text(c.tagline)}</div>}
-      </div>
-      {text(c.copyright) && <div className="text-xs">{text(c.copyright)}</div>}
-    </div>,
-    { defaultPadding: [48, 48] },
-  );
-}
+// ERP "header" / "footer" sections are intentionally not rendered: CMS
+// pages use the site's own Navbar and Footer (see CmsPage).
 
 /* ----------------------------- hero ----------------------------- */
 
@@ -1151,7 +1098,6 @@ export const SECTION_COMPONENTS: Record<
   string,
   (props: SectionProps) => ReactNode
 > = {
-  header: HeaderSection,
   hero: HeroSection,
   text: TextSection,
   richText: RichTextSection,
@@ -1178,6 +1124,5 @@ export const SECTION_COMPONENTS: Record<
   relatedPosts: RelatedPostsSection,
   author: AuthorSection,
   customContent: CustomContentSection,
-  footer: FooterSection,
   html: HtmlSection,
 };
