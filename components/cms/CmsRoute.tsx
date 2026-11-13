@@ -10,9 +10,12 @@ import { CmsPage } from "./CmsPage";
  * Used as the fallback of the code-owned dynamic routes ([service],
  * [service]/[slug]) and by the deep [...rest] route.
  */
-export async function renderCmsPageOrNotFound(path: string) {
+export async function renderCmsPageOrNotFound(
+  path: string,
+  { fresh = false }: { fresh?: boolean } = {},
+) {
   const slug = normalizeSlug(path);
-  const page = await getCmsPage(slug);
+  const page = await getCmsPage(slug, fresh);
   if (!page) notFound();
   return <CmsPage page={page} />;
 }
@@ -21,12 +24,16 @@ export async function renderCmsPageOrNotFound(path: string) {
 export async function cmsMetadataOr(
   path: string,
   fallback: Metadata,
+  { fresh = false }: { fresh?: boolean } = {},
 ): Promise<Metadata> {
   const slug = normalizeSlug(path);
-  const page = await getCmsPage(slug);
+  const [page, pages] = await Promise.all([
+    getCmsPage(slug, fresh),
+    getCmsPages(fresh),
+  ]);
   if (!page) return fallback;
 
-  const listed = (await getCmsPages()).find(
+  const listed = pages.find(
     (p) => typeof p.slug === "string" && normalizeSlug(p.slug) === slug,
   );
   const withNoindex =
