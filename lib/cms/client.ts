@@ -96,19 +96,27 @@ export const getCmsSiteInfo = cache(async (): Promise<CmsSiteInfo | null> => {
   return result?.data ?? null;
 });
 
-/** A2 — list of created pages. */
-export const getCmsPages = cache(async (): Promise<CmsPageSummary[]> => {
-  const result = await cmsGet<{ pages?: CmsPageSummary[] }>("/pages");
-  const pages = result?.data?.pages;
-  return Array.isArray(pages) ? pages : [];
-});
+/**
+ * A2 — list of created pages. `fresh` bypasses the ~60s data cache (only for
+ * dynamic routes, e.g. app/cms-page, so CRM changes show on the first load).
+ */
+export const getCmsPages = cache(
+  async (fresh: boolean = false): Promise<CmsPageSummary[]> => {
+    const result = await cmsGet<{ pages?: CmsPageSummary[] }>("/pages", {
+      fresh,
+    });
+    const pages = result?.data?.pages;
+    return Array.isArray(pages) ? pages : [];
+  },
+);
 
 /** A3 — one created page by (normalized) slug; null when missing or ERP down. */
 export const getCmsPage = cache(
-  async (slug: string): Promise<CmsPage | null> => {
+  async (slug: string, fresh: boolean = false): Promise<CmsPage | null> => {
     const normalized = normalizeSlug(slug);
     const result = await cmsGet<{ page?: CmsPage }>(
       `/pages/${encodeSlugForUrl(normalized)}`,
+      { fresh },
     );
     const page = result?.data?.page;
     return page && typeof page === "object" ? page : null;

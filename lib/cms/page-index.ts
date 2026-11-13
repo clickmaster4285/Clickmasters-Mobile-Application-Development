@@ -1,20 +1,25 @@
 import { cmsBaseUrl, cmsWarn } from "./config";
 import { normalizeSlug } from "./slug";
 
-// Slugs of every ERP-created page, for use in proxy.ts (outside React, so no
-// Next data cache): kept in memory for TTL_MS. Any failure yields an empty
-// set, so the site behaves exactly as if the ERP did not exist.
+// Slugs of every ERP/CRM-created page, for proxy.ts (outside React, so no
+// Next data cache). Kept in memory, but never trusted stale on a miss: a URL
+// that is not in the list triggers a fresh check (at most once per
+// MISS_RECHECK_MS), so a page just created in the CRM is found on the very
+// first visit — no refresh needed. Any failure keeps the last good list.
 
-const TTL_MS = 60_000;
-const FAILURE_TTL_MS = 15_000;
+const MISS_RECHECK_MS = 3_000;
+const HIT_REFRESH_MS = 15_000;
 const REQUEST_TIMEOUT_MS = 2500;
 
-let cached: { at: number; ttl: number; slugs: Set<string> } | null = null;
-let inflight: Promise<Set<string>> | null = null;
+let cached: { at: number; slugs: Set<string> } | null = null;
+let inflight: Promise<void> | null = null;
 
-async function load(): Promise<Set<string>> {
+async function load(): Promise<void> {
   const base = cmsBaseUrl();
-  if (!base) return new Set();
+  if (!base) {
+    cached = { at: Date.now(), slugs: new Set() };
+    return;
+  }
   try {
     const res = await fetch(`${base}/pages`, {
       headers: { Accept: "application/json" },
@@ -33,29 +38,39 @@ async function load(): Promise<Set<string>> {
         if (typeof p?.slug === "string") slugs.add(normalizeSlug(p.slug));
       }
     }
-    cached = { at: Date.now(), ttl: TTL_MS, slugs };
-    return slugs;
+    cached = { at: Date.now(), slugs };
   } catch (error) {
     cmsWarn(
       "page index failed:",
       error instanceof Error ? error.message : error,
     );
-    // Keep serving the last good list; retry sooner than a normal refresh.
-    const slugs = cached?.slugs ?? new Set<string>();
-    cached = { at: Date.now(), ttl: FAILURE_TTL_MS, slugs };
-    return slugs;
+    // Keep the last good list; don't hammer a failing ERP on every miss.
+    cached = { at: Date.now(), slugs: cached?.slugs ?? new Set() };
   }
 }
 
-/** True when the ERP has a created page at `path`. */
+function refresh(): Promise<void> {
+  inflight ??= load().finally(() => {
+    inflight = null;
+  });
+  return inflight;
+}
+
+/** True when the ERP/CRM has a created page at `path`. */
 export async function hasCmsPage(path: string): Promise<boolean> {
   const slug = normalizeSlug(path);
-  if (!cached || Date.now() - cached.at >= cached.ttl) {
-    inflight ??= load().finally(() => {
-      inflight = null;
-    });
-    // Serve the previous list while refreshing; only the first call waits.
-    if (!cached) await inflight;
+  if (!cached) await refresh();
+
+  const age = Date.now() - cached!.at;
+  if (cached!.slugs.has(slug)) {
+    // Known page: answer now, refresh in the background so deletions apply.
+    if (age >= HIT_REFRESH_MS) void refresh();
+    return true;
   }
-  return cached?.slugs.has(slug) ?? false;
+  // Not in the list: it may have just been created — check fresh.
+  if (age >= MISS_RECHECK_MS) {
+    await refresh();
+    return cached!.slugs.has(slug);
+  }
+  return false;
 }
